@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: 'Africa Govtech Week 2025',
     images: [
       {
-        url: '/images/opengraph-image.jpg',
+        url: 'https://africagovtechweek.com/images/opengraph-image.jpg',
         width: 800,
         height: 418,
         alt: 'Africa Govtech Week 2025',
@@ -64,10 +64,10 @@ export const metadata: Metadata = {
     // images: '/images/opengraph-image.jpg',
     images: [
       {
-        url: '/images/opengraph-image.jpg',
+        url: 'https://africagovtechweek.com/images/opengraph-image.jpg',
         // width: 1200,
-        width: 800,
         // height: 630,
+        width: 800,
         height: 418,
         alt: 'Africa Govtech Week 2025',
       }
