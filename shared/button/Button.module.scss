@@ -1,0 +1,41 @@
+@import "@/styles/imports";
+
+.button {
+	-webkit-tap-highlight-color: transparent;
+	transition: all 0.2s ease-out;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	gap: 1rem;
+	background-color: #3DB54A;
+	padding: 1.5rem 5.6rem;
+	p {
+		font-family: $font-gothic-bold;
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 2.8rem;
+		color: #14361B;
+		text-wrap: nowrap;
+	}
+	&:hover {
+		.button_icon {
+			transition: rotate 0.4s linear;
+			rotate: 180deg;
+		}
+	}
+	&:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+	&[data-type="secondary"]{
+		background-color: transparent;
+		border: 0.1rem solid #3DB54A;
+		p{
+			color: #fff;
+		}
+	}
+}
