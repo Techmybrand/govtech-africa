@@ -1,3 +1,4 @@
+import Accordion from "./Accordion/Accordion";
 import BookATicket from "./BookATicket/BookATicket";
 import Button from "./button/Button";
 import CountDown from "./CountDown/CountDown";
@@ -24,5 +25,6 @@ export { Logo, Header, Footer, Button, Hero, InputField, TextArea,
     GovTechInNumbers,
     CountDown,
     Select,
+    Accordion,
     
 };

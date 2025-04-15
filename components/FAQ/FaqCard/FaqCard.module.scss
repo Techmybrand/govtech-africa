@@ -1,0 +1,52 @@
+@import '@/styles/imports';
+
+.faq_card_container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    h1 {
+        font-size: 2rem;
+        color: #616161;
+        font-family: $font-gothic-bold;
+    }
+    .q_and_a_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        width: 65%;
+    }
+    .answers_container {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        h6, p {
+            font-family: $font-gothic;
+            font-size: 1.4rem;
+            color: #000;
+        }
+        h6 {
+            font-family: $font-gothic-bold;
+        }
+    }
+
+    @include screenMax('tablet') {
+        .q_and_a_wrapper {
+            width: 70%;
+        }
+    }
+
+    @include screenMax('mobile') {
+        justify-content: unset;
+        flex-direction: column;
+        gap: 1.6rem;
+        h1 {
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            width: 100%;
+        }
+        .q_and_a_wrapper {
+            width: 100%;
+        }
+    }
+}
