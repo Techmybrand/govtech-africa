@@ -1,10 +1,8 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import { Button, Logo } from '@/shared';
 import Link from 'next/link';
 import styles from './Header.module.scss';
-import Logo from '../logo/Logo';
-import Button from '../button/Button';
-
 interface Props {
   type: 'default' | 'new'
 }
@@ -36,14 +34,39 @@ const Header = ({type = 'default'}: Props) => {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <div className={styles.headerContent}>
-            <Link href="/">
-              <Logo className={styles.logo} />
-            </Link>
-
+          <Link href="/">
+            <Logo className={styles.logo} />
+          </Link>
           <div className={styles.mobileMenuToggle} onClick={toggleMobileMenu}>
             <span></span>
             <span></span>
             <span></span>
+          </div>
+
+          <ul className={styles.navList_lg}>
+              <li className={styles.navItem}>
+                <Link href="/" className={styles.navLink}>Home</Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link href="/about" className={styles.navLink}>
+                  {type === 'default' ? 'About' : 'About AGW'}
+                </Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link href="/partner" className={styles.navLink}>
+                  {type === 'default' ? 'Partner' : 'Partner/sponsor'}
+                </Link>
+              </li>
+          </ul>
+          <div className={styles.button_container_lg}>
+            <Link href="/register">
+              <Button className={styles.button}>Register</Button>
+            </Link>
+            <Link href="/contact">
+              <Button buttonType='secondary' className={styles.button}>
+                Contact Us
+              </Button>
+            </Link>
           </div>
 
           <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>

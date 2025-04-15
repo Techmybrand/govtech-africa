@@ -1,6 +1,7 @@
 @import "@/styles/imports";
 
 .africa {
+    max-width: 1440px;
     background-color: #FFFFFF;
     padding: 9.2rem 11.4rem 39.1rem;
     position: relative;
@@ -8,7 +9,7 @@
         h1 {
             font-size: 6rem;
             font-family: $font-gothic-bold;
-            line-height: 100%;
+            line-height: 6.4rem;
             color: #3DB54A;
         }
     }
@@ -32,14 +33,14 @@
             padding-left: 2rem;
             h2 {
                 font-size: 6rem;
-                line-height: 100%;
+                line-height: 6.4rem;
                 color: #3DB54A;
                 font-family: $font-gothic-bold;
                 margin-bottom: 0.4rem;
             }
             p {
                 font-size: 1.6rem;
-                line-height: 100%;
+                line-height: 2.4rem;
                 font-family: $font-gothic-bold;
             }
         }
@@ -62,6 +63,7 @@
         .text {
             h1 {
                 font-size: 4rem;
+                line-height: 5.6rem;
             }
         }
         .row {
@@ -76,6 +78,7 @@
         .text {
             h1 {
                 font-size: 3.5rem;
+                line-height: 4.4rem;
             }
         }
         .row {
@@ -96,9 +99,11 @@
                 padding-left: 1.4rem;
                 h2 {
                     font-size: 2rem;
+                    line-height: 2.4rem;
                 }
                 p {
                     font-size: 1.2rem;
+                    line-height: 1.6rem;
                 }
             }
         }

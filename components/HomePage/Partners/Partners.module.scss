@@ -1,6 +1,7 @@
 @import "@/styles/imports";
 
 .partners_container {
+    max-width: 1440px;
     padding: 6rem 10rem 0;
     width: 100%;
     background: $col-white;
@@ -18,7 +19,7 @@
             font-family: $font-gothic-bold;
             font-size: 3.5rem;
             color: #14361B;
-            line-height: 1;
+            line-height: 4.4rem;
         }
         .text_body {
             width: 100%;
@@ -26,12 +27,12 @@
                 font-family: $font-gothic;
                 font-size: 1.6rem;
                 color: #14361B;
-                line-height: 1;
+                line-height: 2rem;
                 text-align: left;
                 span {
                     font-family: $font-gothic-bold;
                     font-size: 1.6rem;
-                    line-height: 1;
+                    line-height: 2rem;
                     color: #14361B;
                 }
             }
@@ -54,6 +55,7 @@
             gap: 3.2rem;
             h2 {
                 font-size: 2rem;
+                line-height: 2.4rem;
             }
             .text_body {
                 display: flex;
@@ -64,8 +66,10 @@
                 }
                 h3 {
                     font-size: 1.2rem;
+                    line-height: 1.6rem;
                     span {
                         font-size: 1.2rem;
+                        line-height: 1.6rem;
                     }
                 }
             }

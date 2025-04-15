@@ -1,6 +1,7 @@
 @import "@/styles/imports";
 
 .registration_container {
+    max-width: 1440px;
     background: $col-white;
     padding: 0 8.5rem 10rem;
     .content_container {
@@ -21,12 +22,12 @@
                     color: #3DB54A;
                     font-family: $font-gothic-bold;
                     font-size: 3.5rem;
-                    line-height: 1;
+                    line-height: 4.4rem;
                 }
                 h3 {
                     font-family: $font-gothic;
-                    line-height: 1;
                     font-size: 1.6rem;
+                    line-height: 2.4rem;
                     color: $col-white;
                 }
                 .custom_link_class {
@@ -73,9 +74,11 @@
                     gap: 2.4rem;
                     h2 {
                         font-size: 2rem;
+                        line-height: 2.4rem;
                     }
                     h3 {
                         font-size: 1.2rem;
+                        line-height: 1.6rem;
                     }
                 }
                 .content_image {

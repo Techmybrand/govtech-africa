@@ -1,6 +1,7 @@
 @import "@/styles/imports";
 
 .detailed_pair_display_container {
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     gap: 12rem;

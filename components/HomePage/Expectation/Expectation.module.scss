@@ -1,6 +1,7 @@
 @import "@/styles/imports";
 
 .expectation_container {
+    max-width: 1440px;
     padding: 12rem 13rem;
     background: $col-white;
     width: 100%;
@@ -13,7 +14,7 @@
             h2 {
                 color: #14361B;
                 font-size: 3.5rem;
-                line-height: 100%;
+                line-height: 4.4rem;
                 font-family: $font-gothic-bold;
             }
         }
@@ -24,7 +25,7 @@
             li {
                 font-family: $font-gothic;
                 font-size: 1.6rem;
-                line-height: 1;
+                line-height: 2rem;
                 color: #14361B;
                 list-style-type: disc!important;
 
@@ -33,7 +34,7 @@
         h3 {
             font-family: $font-gothic;
             font-size: 1.6rem;
-            line-height: 1;
+            line-height: 2rem;
             color: #14361B;
         }
         .text_btn {
@@ -52,16 +53,19 @@
             .text_header {
                 h2 {
                     font-size: 2rem;
+                    line-height: 2.4rem;
                 }
             }
             .text_list_wrapper {
                 li {
                     text-align: left;
                     font-size: 1.2rem;
+                    line-height: 1.6rem;
                 }
             }
             h3 {
                 font-size: 1.2rem;
+                line-height: 1.6rem;
                 text-align: left;
             }
         }

@@ -1,6 +1,7 @@
 @import "@/styles/imports";
 
 .book_a_ticket_container {
+    max-width: 1440px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -15,7 +16,7 @@
             font-family: $font-gothic-bold;
             color: $col-white;
             font-size: 2.9rem;
-            line-height: 100%;
+            line-height: 3.2rem;
         }
         .buttons {
             display: flex;
@@ -43,7 +44,7 @@
                 h3 {
                     font-family: $font-gothic-bold;
                     font-size: 1.6rem;
-                    line-height: 100%;
+                    line-height: 2.4rem;
                     color: #3DB54A;
                 }
             }
@@ -66,6 +67,7 @@
             flex-direction: column;
             h2 {
                 font-size: 1.6rem;
+                line-height: 2.4rem;
             }
             .buttons {
                 gap: 2rem;

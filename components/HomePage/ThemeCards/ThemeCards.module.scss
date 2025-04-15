@@ -1,6 +1,7 @@
 @import "@/styles/imports";
 
 .theme_cards_container {
+    max-width: 1440px;
     padding: 0 10rem;
     margin: 10rem 0 0;
     .text_details {
@@ -28,13 +29,13 @@
             font-family: $font-gothic-bold;
             color: #3DB54A;
             font-size: 3.5rem;
-            line-height: 100%;
+            line-height: 4.4rem;
         }
         h6 {
             font-family: $font-gothic;
             color: #14361B;
             font-size: 1.6rem;
-            line-height: 100%;
+            line-height: 2.4rem;
         }
         .theme_details_text {
             display: flex;
@@ -44,13 +45,13 @@
                 color: #14361B;
                 font-family: $font-gothic-bold;
                 font-size: 3.5rem;
-                line-height: 100%;
+                line-height: 4.4rem;
             }
             p {
                 font-family: $font-gothic;
                 color: #14361B;
                 font-size: 1.6rem;
-                line-height: 100%;
+                line-height: 2rem;
             }
         }
         .link_container {
@@ -62,7 +63,7 @@
         padding: 0 5rem;
         .text_details{
             h3 {
-                line-height: 2.5rem;
+                line-height: 2.4rem;
             }
         }
     }
@@ -74,6 +75,7 @@
             width: 100%;
             h3 {
                 font-size: 1.2rem;
+                line-height: 1.6rem;
             }
         }
         .theme_details {
@@ -85,6 +87,7 @@
             }
             h3 {
                 font-size: 2rem;
+                line-height: 2.4rem;
             }
             h6 {
                 display: none;
@@ -93,6 +96,7 @@
                 gap: 1.6rem;
                 h4 {
                     font-size: 2rem;
+                    line-height: 2.4rem;
                 }
             }
             .link_container {
