@@ -1,6 +1,7 @@
 @import "@/styles/imports";
 
 .participation_section {
+    max-width: 1440px;
     padding: 15rem 8.5rem 17rem;
     width: 100%;
     background: #14361B;
@@ -10,8 +11,8 @@
     h2 {
         color: #3DB54A;
         font-size: 6rem;
+        line-height: 7.2rem;
         font-family: $font-gothic-bold;
-        line-height: 1;
     }
     .cards_container {
         @include grid(repeat(2, 1fr), 9.5rem, 7.5rem);
@@ -41,12 +42,13 @@
                 width: 40rem;
                 color: $col-white;
                 font-size: 3.5rem;
-                line-height: 1;
+                list-style: 4.4rem;
                 font-family: $font-gothic-bold;
             }
             p {
                 display: none;
                 font-size: 1.2rem;
+                line-height: 1.6rem;
                 font-family: $font-gothic;
                 color: $col-white;
             }
@@ -62,6 +64,7 @@
                 padding: 3rem;
                 h3 {
                     font-size: 3.2rem;
+                    line-height: 4.4rem;
                 }
             }
         }
@@ -71,7 +74,8 @@
         padding: 5.2rem 1.6rem 9rem;
         gap: 4rem;
         h2 {
-            font-size: 2rem
+            font-size: 2rem;
+            line-height: 2.4rem;
         }
         .cards_container {
             @include grid(repeat(1, 1fr), 1rem, 3.2rem);
@@ -81,6 +85,7 @@
                 height: 27.8rem;
                 h3 {
                     font-size: 2rem;
+                    line-height: 2.4rem;
                     width: 90%;
                 }
                 p {

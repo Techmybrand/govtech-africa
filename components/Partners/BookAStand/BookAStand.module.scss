@@ -1,6 +1,7 @@
 @import "@/styles/imports";
 
 .container {
+    max-width: 1440px;
     background: #3DB54A;
     padding: 14rem 8.2rem 19rem;
     .wrapper {
@@ -12,7 +13,7 @@
             color: #14361B;
             font-family: $font-gothic-bold;
             font-size: 3.5rem;
-            line-height: 1;
+            line-height: 4.4rem;
             margin-bottom: 0.8rem;
         }
         .text_body {
@@ -24,7 +25,7 @@
                 font-family: $font-gothic;
                 color: $col-white;
                 font-size: 1.6rem;
-                line-height: 1;
+                line-height: 2.4rem;
             }
         }
         .custom_link_class {
@@ -33,6 +34,7 @@
         }
         .custom_link_class > p {
             font-size: 2rem!important;
+            line-height: 2.4rem!important;
             color: #14361B!important;
         }
     }
@@ -56,6 +58,7 @@
             display: flex;
             h1 {
                 font-size: 2rem;
+                line-height: 2.4rem;
                 text-align: left;
             }
             .text_body {
@@ -65,11 +68,13 @@
                 gap: 0.8rem;
                 h3 {
                     font-size: 1.2rem;
+                    line-height: 1.6rem;
                     text-align: left;
                 }
             }
             .custom_link_class > p {
                 font-size: 1.2rem!important;
+                line-height: 1.6rem!important;
             }
             .custom_link_class {
                 margin-top: 0!important;

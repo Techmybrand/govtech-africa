@@ -1,6 +1,7 @@
 @import "@/styles/imports";
 
 .contact_us_container {
+    max-width: 1440px;
     padding: 7.5rem 9rem 12rem;
     background: $col-white;
     width: 100%;
@@ -13,14 +14,14 @@
         h1 {
             color: #3DB54A;
             font-family: $font-gothic-bold;
-            line-height: 1;
+            line-height: 6.4rem;
             font-size: 5rem;
             width: 50%;
         }
         h3 {
             color: #616161;
             font-family: $font-gothic-bold;
-            line-height: 1;
+            line-height: 2.4rem;
             font-size: 2rem;
             width: 50%;
         }
@@ -50,6 +51,7 @@
                     color: #3DB54A;
                     font-family: $font-gothic-bold;
                     font-size: 1.6rem;
+                    line-height: 2.4rem;
                 }
                 .icon {
                     position: relative;
@@ -74,6 +76,7 @@
                 color: #3DB54A;
                 font-family: $font-gothic-bold;
                 font-size: 1.6rem;
+                font-size: 2rem;
             }
             .icon {
                 position: relative;
@@ -103,13 +106,13 @@
                     font-family: $font-gothic-bold;
                     color: #3DB54A;
                     font-size: 3.5rem;
-                    line-height: 1;
+                    line-height: 4.4rem;
                     margin-bottom: 0.8rem;
                 }
                 p, a {
                     font-family: $font-gothic;
                     color: #616161;
-                    line-height: 1;
+                    line-height: 2.4rem;
                     font-size: 2rem;
                 }
             }
@@ -141,9 +144,11 @@
                 .text {
                     h3 {
                         font-size: 2.8rem;
+                        line-height: 3.2rem;
                     }
                     p {
                         font-size: 1.6rem;
+                        line-height: 2rem;
                     }
                 }
             }
@@ -159,12 +164,14 @@
             margin-bottom: 1.6rem;
             h1 {
                 font-size: 2rem;
+                line-height: 2.4rem;
                 text-align: left;
                 width: 100%;
             }
             h3 {
                 text-align: left;
                 font-size: 1.2rem;
+                line-height: 1.6rem;
                 width: 100%;
             }
         }
@@ -208,9 +215,11 @@
                     h3 {
                         font-size: 2rem;
                         text-align: left;
+                        line-height: 2.4rem;
                     }
                     p, q {
                         font-size: 1.2rem;
+                        line-height: 1.6rem;
                         text-align: left;
                     }
                 }
