@@ -26,3 +26,14 @@ export interface NavLink {
 	button?: string;
 	icon?: string;
 }
+
+export interface footerNavProps {
+	label: string
+	href: string
+}
+
+export interface socialsProps {
+	label: string
+	href: string
+	icon: string
+}

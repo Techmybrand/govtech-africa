@@ -46,7 +46,7 @@ const Button = ({
 					<Image src={iconPrefix} layout="fill" alt="" />
 				</figure>
 			)}
-			<p>{children}</p>
+			<div className={styles.children}>{children}</div>
 		</button>
 	);
 };

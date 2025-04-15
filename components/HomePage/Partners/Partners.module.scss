@@ -1,0 +1,74 @@
+@import "@/styles/imports";
+
+.partners_container {
+    padding: 6rem 10rem 0;
+    width: 100%;
+    background: $col-white;
+    .wrapper_class {
+        flex-direction: row!important;
+        align-items: flex-start!important;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 2.6rem;
+        width: 100%;
+        h2 {
+            text-align: left;
+            font-family: $font-gothic-bold;
+            font-size: 3.5rem;
+            color: #14361B;
+            line-height: 1;
+        }
+        .text_body {
+            width: 100%;
+            h3 {
+                font-family: $font-gothic;
+                font-size: 1.6rem;
+                color: #14361B;
+                line-height: 1;
+                text-align: left;
+                span {
+                    font-family: $font-gothic-bold;
+                    font-size: 1.6rem;
+                    line-height: 1;
+                    color: #14361B;
+                }
+            }
+        }
+    }
+
+    @include screenMax('tablet') {
+        padding: 6rem 3.2rem 0;
+        .text {
+            gap: 2rem;
+        }
+    }
+
+    @include screenMax('mobile') {
+        padding: 4rem 1.6rem 0;
+        .wrapper_class {
+            flex-direction: column-reverse!important;
+        }
+        .text {
+            gap: 3.2rem;
+            h2 {
+                font-size: 2rem;
+            }
+            .text_body {
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+                br {
+                    display: none;
+                }
+                h3 {
+                    font-size: 1.2rem;
+                    span {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

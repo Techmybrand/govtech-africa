@@ -1,0 +1,82 @@
+@import "@/styles/imports";
+
+.container {
+    background: #3DB54A;
+    padding: 14rem 8.2rem 19rem;
+    .wrapper {
+        align-items: flex-start!important;
+        flex-direction: row-reverse!important;
+    }
+    .text_details {
+        h1 {
+            color: #14361B;
+            font-family: $font-gothic-bold;
+            font-size: 3.5rem;
+            line-height: 1;
+            margin-bottom: 0.8rem;
+        }
+        .text_body {
+            margin: 3.2rem 0 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            h3 {
+                font-family: $font-gothic;
+                color: $col-white;
+                font-size: 1.6rem;
+                line-height: 1;
+            }
+        }
+        .custom_link_class {
+            max-width: fit-content!important;
+            margin-top: 0.4rem!important;
+        }
+        .custom_link_class > p {
+            font-size: 2rem!important;
+            color: #14361B!important;
+        }
+    }
+
+    @include screenMax('tablet') {
+        padding: 8rem 6rem;
+        .text_details {
+            .text_body {
+                margin: 1.6rem 0 2.4rem;
+            }
+        }
+    }
+
+    @include screenMax('mobile') {
+        padding: 4rem 2rem;
+        .wrapper {
+            flex-direction: column-reverse!important;
+        }
+        .text_details {
+            flex-direction: column;
+            display: flex;
+            h1 {
+                font-size: 2rem;
+                text-align: left;
+            }
+            .text_body {
+                margin: 0.8rem 0 2.4rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+                h3 {
+                    font-size: 1.2rem;
+                    text-align: left;
+                }
+            }
+            .custom_link_class > p {
+                font-size: 1.2rem!important;
+            }
+            .custom_link_class {
+                margin-top: 0!important;
+                &::after {
+                    top: -0.4rem!important;
+                }
+            }
+        }
+    }
+}

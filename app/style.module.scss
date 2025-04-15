@@ -299,6 +299,7 @@
 		@include flex(flex-start, center);
 		flex-wrap: nowrap;
 		white-space: nowrap;
+		overflow-x: hidden;
 		.slide {
 			position: relative;
 			flex-shrink: 0;

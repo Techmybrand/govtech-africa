@@ -1,0 +1,55 @@
+@import "@/styles/imports";
+
+.countdown {
+    width: 100%;
+    background-color: #FFE5D9;
+    padding: 6.5rem 0;
+    margin: 5rem 0 11rem;
+    @include flex(flex-start, center, column);
+    gap: 3.3rem;
+    .text {
+        h6 {
+            color: #FF1053;
+            font-size: 2rem;
+            line-height: 100%;
+            letter-spacing: 165%;
+        }
+    }
+    .countdown_text {
+        @include flex(center);
+        gap: 1.5rem;
+        p, h3, span {
+            font-size: 5.2rem;
+            color: #FF1053;
+            font-family: $font-gothic-bold;
+            line-height: 100%;
+        }
+        .text {
+            @include flex(flex-start, center);
+            gap: 1.5rem;
+        }
+    }
+
+    @include screenMax('mobile') {
+        gap: 2.4rem;
+        padding: 3.2rem 0;
+        margin: 1rem 0 7rem;
+        .countdown_text {
+            h3, span, p {
+                font-size: 1.2rem;
+            }
+            p {
+                color: #14361B;
+                font-family: $font-gothic;
+            }
+            .text {
+                flex-direction: column;
+            }
+        }
+        .text {
+            h6 {
+                font-size: 1rem;
+            }
+        }
+    }
+}
