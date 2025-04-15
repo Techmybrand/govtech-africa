@@ -1,0 +1,69 @@
+@import "@/styles/imports";
+
+.expectation_container {
+    padding: 12rem 13rem;
+    background: $col-white;
+    width: 100%;
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 2.6rem;
+        .text_header {
+            text-align: left;
+            h2 {
+                color: #14361B;
+                font-size: 3.5rem;
+                line-height: 100%;
+                font-family: $font-gothic-bold;
+            }
+        }
+        .text_list_wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            li {
+                font-family: $font-gothic;
+                font-size: 1.6rem;
+                line-height: 1;
+                color: #14361B;
+                list-style-type: disc!important;
+
+            }
+        }
+        h3 {
+            font-family: $font-gothic;
+            font-size: 1.6rem;
+            line-height: 1;
+            color: #14361B;
+        }
+        .text_btn {
+            position: relative;
+        }
+    }
+
+    @include screenMax('tablet') {
+        padding: 6rem 6.5rem;
+    }
+
+    @include screenMax('mobile') {
+        padding: 4rem 3.2rem 0;
+        .text {
+            gap: 1.6rem;
+            .text_header {
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+            .text_list_wrapper {
+                li {
+                    text-align: left;
+                    font-size: 1.2rem;
+                }
+            }
+            h3 {
+                font-size: 1.2rem;
+                text-align: left;
+            }
+        }
+    }
+}

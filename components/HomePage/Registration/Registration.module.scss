@@ -1,0 +1,89 @@
+@import "@/styles/imports";
+
+.registration_container {
+    background: $col-white;
+    padding: 0 8.5rem 10rem;
+    .content_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #14361B;
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 8rem;
+            .content_text {
+                display: flex;
+                flex-direction: column;
+                gap: 6.3rem;
+                width: 55rem;
+                h2 {
+                    color: #3DB54A;
+                    font-family: $font-gothic-bold;
+                    font-size: 3.5rem;
+                    line-height: 1;
+                }
+                h3 {
+                    font-family: $font-gothic;
+                    line-height: 1;
+                    font-size: 1.6rem;
+                    color: $col-white;
+                }
+                .custom_link_class {
+                    width: 100%!important;
+                }
+            }
+            .content_image {
+                position: relative;
+                width: 45.6rem;
+                height: 49.7rem;
+                margin-top: 10rem;
+            }
+        }
+    }
+
+    @include screenMax('tablet') {
+        padding: 0 4rem 8rem;
+        .content_container {
+            padding: 0 5rem;
+            .content {
+                gap: 4rem;
+                .content_text {
+                    gap: 4rem;
+                    width: 50%;
+                }
+                .content_image {
+                    width: 50%;
+                    margin-top: 5rem;
+                }
+            }
+        }
+    }
+
+    @include screenMax('mobile') {
+        padding: 0 1.6rem 6rem;
+        .content_container {
+            padding: 0 2.4rem;
+            .content {
+                flex-direction: column;
+                padding-top: 4rem;
+                gap: 2.4rem;
+                .content_text {
+                    width: 100%;
+                    gap: 2.4rem;
+                    h2 {
+                        font-size: 2rem;
+                    }
+                    h3 {
+                        font-size: 1.2rem;
+                    }
+                }
+                .content_image {
+                    width: 100%;
+                    margin-top: 0;
+                    height: 37.5rem;
+                }
+            }
+        }
+    }
+}

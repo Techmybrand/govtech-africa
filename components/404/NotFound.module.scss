@@ -1,0 +1,68 @@
+@import "@/styles/imports";
+
+.not_found_container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid #3DB54A;
+    // border: 0.1rem solid #0F3D25;
+    position: relative;
+    background-image: url('../../public/images/404_page_bg.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0F3D25;
+        opacity: 0.85;
+        z-index: 1;
+
+    }
+    .details {
+        display: flex;
+        flex-direction: column;
+        gap: 7.3rem;
+        margin: 0 auto;
+        z-index: 2;
+        .image {
+            position: relative;
+            width: 77.2rem;
+            height: 47rem;
+        }
+        h3 {
+            text-align: center;
+            font-family: $font-gothic;
+            font-size: 3.5rem;
+            color: $col-white;
+            line-height: 100%;
+        }
+    }
+
+    @include screenMax('tablet') {
+        background-size: cover;
+        height: 94vh;
+        .details {
+            .image {
+                height: 45rem;
+            }
+        }
+    }
+
+    @include screenMax('mobile') {
+        height: 90vh;
+        .details {
+            .image {
+                width: 22.7rem;
+                height: 14.3rem;
+            }
+            h3 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

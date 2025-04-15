@@ -1,13 +1,15 @@
-"use client"
-
-// src/components/Header.jsx
+"use client";
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.scss';
 import Logo from '../logo/Logo';
 import Button from '../button/Button';
 
-const Header = () => {
+interface Props {
+  type: 'default' | 'new'
+}
+
+const Header = ({type = 'default'}: Props) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -50,19 +52,27 @@ const Header = () => {
                 <Link href="/" className={styles.navLink}>Home</Link>
               </li>
               <li className={styles.navItem}>
-                <Link href="/about" className={styles.navLink}>About AGW</Link>
+                <Link href="/about" className={styles.navLink}>
+                  {type === 'default' ? 'About' : 'About AGW'}
+                </Link>
               </li>
               <li className={styles.navItem}>
-                <Link href="/partner" className={styles.navLink}>Partner/sponsor</Link>
+                <Link href="/partner" className={styles.navLink}>
+                  {type === 'default' ? 'Partner' : 'Partner/sponsor'}
+                </Link>
               </li>
             </ul>
-		  <div className={styles.button_container}>
-                <Link href="/register">
-                  <Button className={styles.button}>Register</Button>
-                </Link>
-                <Link href="/contact"><Button buttonType='secondary' className={styles.button}>Contact Us</Button></Link>
 
-		  </div>
+		        <div className={styles.button_container}>
+              <Link href="/register">
+                <Button className={styles.button}>Register</Button>
+              </Link>
+              <Link href="/contact">
+                <Button buttonType='secondary' className={styles.button}>
+                  Contact Us
+                </Button>
+              </Link>
+		        </div>
           </nav>
         </div>
       </div>

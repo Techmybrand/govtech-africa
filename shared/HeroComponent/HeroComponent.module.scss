@@ -1,0 +1,74 @@
+@import "@/styles/imports";
+
+.hero_container {
+    width: 100vw;
+    height: 77.2rem;
+    position: relative;
+    display: flex;
+    .background_image_wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        .background_image {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .background_image img {
+            object-fit: cover;
+        }
+    }
+    .hero_content_wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        gap: 1.6rem;
+        z-index: 2;
+        padding: 0 0 0 18rem;
+        h3 {
+            color: #3DB54A;
+            font-family: $font-gothic-bold;
+            font-size: 8rem;
+            line-height: 100%;
+        }
+        p {
+            color: $col-white;
+            font-family: $font-gothic;
+            font-size: 2rem;
+            line-height: 100%;
+            max-width: 67rem;
+        }
+    }
+    &[data-type = "small"] {
+        height: 37.6rem;
+    }
+
+    @include screenMax('tablet') {
+        .hero_content_wrapper {
+            padding: 0 0 0 8rem;
+            h3 {
+                font-size: 5.6rem;
+            }
+            p {
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+    @include screenMax('mobile') {
+        height: 90vh;
+        .hero_content_wrapper {
+            padding: 0 0 0 1.8rem;
+            h3 {
+                font-size: 3.2rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,254 @@
+@import "@/styles/imports";
+
+.theme_cards_container {
+    margin: 10rem 0 0;
+    & > section {
+        gap: 3rem;
+    }
+    .first_container {
+        padding: 0 10rem;
+        .wrapper_class, .wrapper_class_reverse {
+            align-items: flex-start!important;
+            flex-direction: row-reverse!important;
+        }
+    
+        .text_details {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            h1 {
+                color: #14361B;
+                font-family: $font-gothic-bold;
+                font-size: 3.5rem;
+                line-height: 1;
+            }
+            h3 {
+                font-size: 2rem;
+                line-height: 2.8rem;
+                color: #616161;
+                font-family: $font-gothic;
+            }
+        }
+        .theme_details {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            width: 100%;
+            h3 {
+                font-family: $font-gothic-bold;
+                color: #3DB54A;
+                font-size: 3.5rem;
+                line-height: 100%;
+            }
+            h6 {
+                font-family: $font-gothic;
+                color: #14361B;
+                font-size: 1.6rem;
+                line-height: 100%;
+            }
+            .details_container {
+                display: flex;
+                gap: 0.8rem;
+                align-items: center;
+                width: 100%;
+                .details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.8rem;
+                    h3 {
+                        font-size: 2.4rem;
+                        color: #3DB54A;
+                        line-height: 1;
+                        font-family: $font-gothic-bold;
+                    }
+                    p {
+                        color: #616161;
+                        font-family: $font-gothic;
+                        font-size: 1.6rem;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+    }
+    .theme_container {
+        margin: 6rem 0;
+        width: 100%;
+        padding: 6.8rem 0;
+        border-top: 0.1rem solid #000;
+        border-bottom: 0.1rem solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .theme_container_content {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            width: 80rem;
+            margin: 0 auto;
+            h1 {
+                font-size: 3.5rem;
+                color: #3DB54A;
+                line-height: 1;
+                font-family: $font-gothic-bold;
+                text-align: center;
+            }
+            .subtext {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                h3 {
+                    text-align: center;
+                    color: #14361B;
+                    font-size: 3.5rem;
+                    line-height: 1;
+                    font-family: $font-gothic-bold;
+                }
+                p {
+                    text-align: center;
+                    font-size: 2rem;
+                    color: #14361B;
+                    line-height: 1;
+                    font-family: $font-gothic;
+                }
+            }
+        }
+    }
+    .event_details {
+        width: 100%;
+        padding: 0 10rem;
+        margin: 0 0 12rem;
+        .wrapper_class {
+            align-items: flex-start!important;
+            flex-direction: row-reverse!important;
+        }
+        .event_details_text {
+            display: flex;
+            flex-direction: column;
+            gap: 5.2rem;
+            h1 {
+                font-size: 3.5rem;
+                font-family: $font-gothic-bold;
+                line-height: 1;
+                color: #14361B;
+            }
+            h3 {
+                font-size: 1.6rem;
+                font-family: $font-gothic;
+                color: #616161;
+                line-height: 1;
+            }
+        }
+    }
+
+    @include screenMax('tablet'){
+        .first_container {
+            padding: 0 5rem;
+            .text_details{
+                h1 {
+                    line-height: 2.5rem;
+                }
+            }
+        }
+        .theme_container {
+            margin: 2rem 0;
+            .theme_container_content {
+                width: 55rem;
+            }
+        }
+        .event_details {
+            padding: 0 4rem;
+            margin: 0 0 8rem;
+        }
+    }
+
+    @include screenMax('mobile') {
+        margin: 5rem 0 0;
+        & > section {
+            gap: 3rem!important;
+        }
+        .first_container {
+            padding: 0 1.6rem;
+            .wrapper_class {
+                flex-direction: column-reverse!important;
+            }
+            .wrapper_class_reverse {
+                flex-direction: column!important;
+            }
+            .text_details {
+                width: 100%;
+                h1 {
+                    font-size: 2rem;
+                    text-align: left;
+                }
+                h3 {
+                    font-size: 1.2rem;
+                    text-align: left;
+                }
+            }
+            .theme_details {
+                gap: 1.6rem;
+                margin: 0 auto;
+                width: 100%;
+                h3 {
+                    font-size: 1.2rem;
+                    text-align: left;
+                }
+                h6 {
+                    font-size: 1rem;
+                    text-align: left;
+                }
+                .details_container {
+                    .details {
+                        h3 {
+                            font-size: 1.6rem;
+                            text-align: left;
+                        }
+                        p {
+                            font-size: 1rem;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        .theme_container {
+            margin: 0 0 6rem;
+            padding: 4rem 0;
+            .theme_container_content {
+                width: 100%;
+                padding: 0 4rem;
+                h1 {
+                    font-size: 2rem;
+                }
+                .subtext {
+                    h3 {
+                        font-size: 2rem;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        .event_details {
+            padding: 0 2rem;
+            margin: 0;
+            .wrapper_class {
+                flex-direction: column-reverse!important;
+            }
+            .event_details_text {
+                gap: 1.6rem;
+                h1 {
+                    font-size: 2rem;
+                    text-align: left;
+                }
+                h3 {
+                    font-size: 1.2rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

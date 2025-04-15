@@ -228,16 +228,47 @@ export const socialMediaLinks = [
 	{
 		label: "twitter",
 		href: "#",
-		icon: "/svgs/twitter.svg"
+		icon: "/svgs/twitter_dark.svg"
 	},
 	{
 		label: "instagram",
 		href: "#",
-		icon: "/svgs/instagram.svg"
+		icon: "/svgs/instagram_dark.svg"
 	},
 	{
 		label: "linkedIn",
 		href: "#",
-		icon: "/svgs/linkedin.svg"
+		icon: "/svgs/linkedin_dark.svg"
 	}
 ];
+
+export const footerNav = [
+	{
+		label: 'About',
+		href: '/about-us'
+	},
+	{
+		label: 'Partner/sponsor',
+		href: '/partner'
+	},
+	{
+		label: 'Book a stand',
+		href: '#book-a-stand'
+	},
+	{
+		label: 'Register',
+		href: '#register'
+	},
+	{
+		label: 'Contact us',
+		href: '/contact'
+	},
+	{
+		label: 'FAQ',
+		href: '/faq'
+	},
+	{
+		label: 'Privacy Policy',
+		href: '/'
+	},
+]
