@@ -85,16 +85,16 @@
 }
 
 .navItem {
-  a{
-	@extend %text-20;
-	font-weight: 700;
-	font-family: $font-gothic-bold;
+  a {
+    @extend %text-20;
+    font-weight: 400;
+    font-family: $font-gothic;
   }
 }
 
 .navLink {
   color: $white;
-  font-weight: 500;
+  font-weight: 400;
   position: relative;
   padding: 0.5rem 0;
   
@@ -116,6 +116,12 @@
     background-color: $secondary-green;
     transition: width 0.3s ease;
   }
+}
+
+.active {
+  color: $col-white;
+  font-family: $font-gothic-bold;
+  font-weight: 900!important;
 }
 
 .mobileMenuToggle {

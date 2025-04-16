@@ -3,11 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { Button, Logo } from '@/shared';
 import Link from 'next/link';
 import styles from './Header.module.scss';
+import { usePathname } from 'next/navigation';
 interface Props {
   type: 'default' | 'new'
 }
 
 const Header = ({type = 'default'}: Props) => {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -29,6 +31,9 @@ const Header = ({type = 'default'}: Props) => {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+  const checkActive = (href: string) => {
+    return pathname === href
+  }
 
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
@@ -45,15 +50,18 @@ const Header = ({type = 'default'}: Props) => {
 
           <ul className={styles.navList_lg}>
               <li className={styles.navItem}>
-                <Link href="/" className={styles.navLink}>Home</Link>
+                <Link href="/" 
+                  className={`${checkActive('/') ? styles.active : ''} ${styles.navLink}`}>
+                    Home
+                  </Link>
               </li>
               <li className={styles.navItem}>
-                <Link href="/about" className={styles.navLink}>
+                <Link href="/about" className={`${checkActive('/about') ? styles.active : ''} ${styles.navLink}`}>
                   {type === 'default' ? 'About' : 'About AGW'}
                 </Link>
               </li>
               <li className={styles.navItem}>
-                <Link href="/partner" className={styles.navLink}>
+                <Link href="/partner" className={`${checkActive('/partner') ? styles.active : ''} ${styles.navLink}`}>
                   {type === 'default' ? 'Partner' : 'Partner/sponsor'}
                 </Link>
               </li>
@@ -72,15 +80,15 @@ const Header = ({type = 'default'}: Props) => {
           <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <Link href="/" className={styles.navLink}>Home</Link>
+                <Link href="/" className={`${checkActive('/') ? styles.active : ''} ${styles.navLink}`}>Home</Link>
               </li>
               <li className={styles.navItem}>
-                <Link href="/about" className={styles.navLink}>
+                <Link href="/about" className={`${checkActive('/about') ? styles.active : ''} ${styles.navLink}`}>
                   {type === 'default' ? 'About' : 'About AGW'}
                 </Link>
               </li>
               <li className={styles.navItem}>
-                <Link href="/partner" className={styles.navLink}>
+                <Link href="/partner" className={`${checkActive('/partner') ? styles.active : ''} ${styles.navLink}`}>
                   {type === 'default' ? 'Partner' : 'Partner/sponsor'}
                 </Link>
               </li>
