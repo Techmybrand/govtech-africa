@@ -19,7 +19,7 @@
     }
     .answers_container {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 0.4rem;
         h6, p {
             font-family: $font-gothic;
@@ -33,15 +33,22 @@
     }
 
     @include screenMax('tablet') {
+        justify-content: unset;
+        flex-direction: column;
+        gap: 1.6rem;
         .q_and_a_wrapper {
-            width: 70%;
+            width: 100%;
+        }
+        .answers_container {
+            h6, p {
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+            }
         }
     }
 
     @include screenMax('mobile') {
-        justify-content: unset;
-        flex-direction: column;
-        gap: 1.6rem;
+        gap: 1.4rem;
         h1 {
             font-size: 1.2rem;
             line-height: 1.6rem;
@@ -49,6 +56,12 @@
         }
         .q_and_a_wrapper {
             width: 100%;
+        }
+        .answers_container {
+            h6, p {
+                font-size: 0.9rem;
+                line-height: 1.2rem;
+            }
         }
     }
 }

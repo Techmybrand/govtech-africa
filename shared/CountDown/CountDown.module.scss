@@ -1,68 +1,74 @@
 @import "@/styles/imports";
 
 .countdown_wrapper {
-    max-width: 1440px;
     width: 100%;
     background: $col-white;
-    margin: 0 auto;
-    padding: 5rem 10rem 2rem;
-    .countdown {
-        padding: 6.5rem 0;
-        width: 100%;
-        background-color: #FFE5D9;
-        @include flex(flex-start, center, column);
-        gap: 3.3rem;
-        .text {
-            h6 {
-                color: #FF1053;
-                font-size: 2rem;
-                line-height: 3rem;
-                letter-spacing: 165%;
-            }
-        }
-        .countdown_text {
-            @include flex(center);
-            gap: 1.5rem;
-            p, h3, span {
-                font-size: 5.2rem;
-                color: #FF1053;
-                font-family: $font-gothic-bold;
-                line-height: 6.4rem;
-            }
+    .countdown_container {
+        margin: 0 auto;
+        max-width: 1440px;
+        padding: 5rem 10rem 2rem;
+        .countdown {
+            padding: 6.5rem 0;
+            width: 100%;
+            background-color: #FFE5D9;
+            @include flex(flex-start, center, column);
+            gap: 3.3rem;
             .text {
-                @include flex(flex-start, center);
-                gap: 1.5rem;
+                h6 {
+                    color: #FF1053;
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    letter-spacing: 165%;
+                }
             }
+            .countdown_text {
+                @include flex(center);
+                gap: 1.5rem;
+                p, h3, span {
+                    font-size: 5.2rem;
+                    color: #FF1053;
+                    font-family: $font-gothic-bold;
+                    line-height: 6.4rem;
+                }
+                .text {
+                    @include flex(flex-start, center);
+                    gap: 1.5rem;
+                }
+            }
+        
         }
-    
     }
 
     @include screenMax('tablet') {
-        padding: 0 4rem 2rem;
+        .countdown_container {
+            padding: 0 4rem 2rem;
+        }
     }
 
     @include screenMax('mobile') {
-        padding: 0 2rem 0;
-        .countdown {
-            gap: 2.4rem;
-            padding: 3.2rem 0;
-            .countdown_text {
-                h3, span, p {
-                    font-size: 1.2rem;
-                    line-height: 2rem;
-                }
-                p {
-                    color: #14361B;
-                    font-family: $font-gothic;
+        .countdown_container {
+            padding: 0 2rem 0;
+            .countdown {
+                gap: 2.4rem;
+                padding: 3.2rem 0;
+                .countdown_text {
+                    h3, span, p {
+                        font-size: 1.2rem;
+                        line-height: 2rem;
+                    }
+                    p {
+                        color: #14361B;
+                        font-family: $font-gothic;
+                    }
+                    .text {
+                        flex-direction: column;
+                    }
                 }
                 .text {
-                    flex-direction: column;
-                }
-            }
-            .text {
-                h6 {
-                    font-size: 1rem;
-                    line-height: 1.4rem;
+                    h6 {
+                        font-size: 1rem;
+                        line-height: 1.4rem;
+                    }
                 }
             }
         }

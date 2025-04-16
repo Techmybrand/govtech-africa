@@ -1,9 +1,7 @@
 @import "@/styles/imports";
 
 .hero_container {
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 100vw;
+    width: 100%;
     height: 77.2rem;
     position: relative;
     .background_image {
@@ -26,7 +24,8 @@
     .hero_content_wrapper {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
         justify-content: center;
         gap: 1.6rem;
         z-index: 2;

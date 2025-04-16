@@ -31,19 +31,21 @@ const Participation = () => {
   ]
   return (
     <section className={styles.participation_section}>
-      <h2>Who Should Participate?</h2>
-      <div className={styles.cards_container}>
-        {cardData.map((data: CardProps, index: number) =>
-          <div className={styles.card} key={index}>
-            <div className={styles.icon_wrapper}>
-              <div className={styles.icon}>
-                <Image alt='icon' fill src={data?.icon} />
+      <div className={styles.participation_details}>
+        <h2>Who Should Participate?</h2>
+        <div className={styles.cards_container}>
+          {cardData.map((data: CardProps, index: number) =>
+            <div className={styles.card} key={index}>
+              <div className={styles.icon_wrapper}>
+                <div className={styles.icon}>
+                  <Image alt='icon' fill src={data?.icon} />
+                </div>
               </div>
+              <h3>{data?.title}</h3>
+              <p>{data?.subtext}</p>
             </div>
-            <h3>{data?.title}</h3>
-            <p>{data?.subtext}</p>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </section>
   )

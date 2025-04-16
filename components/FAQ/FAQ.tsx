@@ -15,18 +15,20 @@ interface FaqProps {
 const FAQ = () => {
   return (
     <section className={styles.faq_container}>
-        <div className={styles.header}>
-            <h1>Frequently Asked</h1>
-            <h1>Questions (FAQs)</h1>
-        </div>
-        <div className={styles.divider}></div>
-        <div className={styles.faq__wrapper}>
-            {FaqLists.map((data: FaqProps, index: number) =>
-                <FaqCard key={index}
-                    QA={data?.QA}
-                    header={data?.title}
-                />
-            )}
+        <div className={styles.faq_content}>    
+            <div className={styles.header}>
+                <h1>Frequently Asked</h1>
+                <h1>Questions (FAQs)</h1>
+            </div>
+            <div className={styles.divider}></div>
+            <div className={styles.faq__wrapper}>
+                {FaqLists.map((data: FaqProps, index: number) =>
+                    <FaqCard key={index}
+                        QA={data?.QA}
+                        header={data?.title}
+                    />
+                )}
+            </div>
         </div>
     </section>
   )

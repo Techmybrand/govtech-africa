@@ -1,11 +1,11 @@
 'use client';
 import React from 'react';
-import styles from './Contact.module.scss'
 import { Button } from '@/shared';
 import { useRouter } from 'next/navigation';
+import styles from './Contact.module.scss';
 
 const Contact = () => {
-    const router = useRouter();
+  const router = useRouter();
   return (
     <section className={styles.continent_container}>
       <div className={styles.overlay}></div>

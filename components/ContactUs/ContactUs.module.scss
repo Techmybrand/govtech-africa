@@ -1,50 +1,76 @@
 @import "@/styles/imports";
 
 .contact_us_container {
-    max-width: 1440px;
-    margin: 0 auto;
     padding: 7.5rem 9rem 2rem;
     background: $col-white;
     width: 100%;
-    .header {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        gap: 10rem;
-        margin-bottom: 4rem;
-        h1 {
-            color: #3DB54A;
-            font-family: $font-gothic-bold;
-            line-height: 6.4rem;
-            font-size: 5rem;
-            width: 50%;
-        }
-        h3 {
-            color: #616161;
-            font-family: $font-gothic-bold;
-            line-height: 2.4rem;
-            font-size: 2rem;
-            width: 50%;
-        }
-    }
-    form {
-        display: flex;
-        width: 100%;
-        align-items: flex-start;
-        gap: 14rem;
-        justify-content: space-between;
-        .container {
+    .contact_us_content {
+        max-width: 1440px;
+        margin: 0 auto;
+        .header {
             display: flex;
-            flex-direction: column;
-            gap: 1.6rem;
-            width: 50%;
-            .button {
-                width: 100%;
-                height: 6.4rem;
+            align-items: center;
+            width: 100%;
+            gap: 10rem;
+            margin-bottom: 4rem;
+            h1 {
+                color: #3DB54A;
+                font-family: $font-gothic-bold;
+                line-height: 6.4rem;
+                font-size: 5rem;
+                width: 50%;
+            }
+            h3 {
+                color: #616161;
+                font-family: $font-gothic-bold;
+                line-height: 2.4rem;
+                font-size: 2rem;
+                width: 50%;
+            }
+        }
+        form {
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            gap: 14rem;
+            justify-content: space-between;
+            .container {
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+                width: 50%;
+                .button {
+                    width: 100%;
+                    height: 6.4rem;
+                    background: #14361B;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 3rem;
+                    justify-content: space-between;
+                    padding: 1.6rem 3.2rem;
+                    cursor: pointer;
+                    h3 {
+                        color: #3DB54A;
+                        font-family: $font-gothic-bold;
+                        font-size: 1.6rem;
+                        line-height: 2.4rem;
+                    }
+                    .icon {
+                        position: relative;
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        rotate: 45deg;
+                    }
+                }
+                .textarea_class {
+                    height: 14rem;
+                }
+            }
+            .button_sm {
+                display: none!important;
                 background: #14361B;
                 display: flex;
                 align-items: center;
-                margin-top: 3rem;
                 justify-content: space-between;
                 padding: 1.6rem 3.2rem;
                 cursor: pointer;
@@ -52,7 +78,7 @@
                     color: #3DB54A;
                     font-family: $font-gothic-bold;
                     font-size: 1.6rem;
-                    line-height: 2.4rem;
+                    font-size: 2rem;
                 }
                 .icon {
                     position: relative;
@@ -61,60 +87,43 @@
                     rotate: 45deg;
                 }
             }
-            .textarea_class {
-                height: 14rem;
-            }
         }
-        .button_sm {
-            display: none!important;
-            background: #14361B;
+        .call_and_mail_container {
             display: flex;
             align-items: center;
+            width: 100%;
             justify-content: space-between;
-            padding: 1.6rem 3.2rem;
-            cursor: pointer;
-            h3 {
-                color: #3DB54A;
-                font-family: $font-gothic-bold;
-                font-size: 1.6rem;
-                font-size: 2rem;
-            }
-            .icon {
-                position: relative;
-                width: 1.6rem;
-                height: 1.6rem;
-                rotate: 45deg;
-            }
-        }
-    }
-    .call_and_mail_container {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: space-between;
-        margin: 10rem 0 5rem;
-        .call_icon_wrapper {
-            display: flex;
-            align-items: center;
-            gap: 3.2rem;
-            .icon_wrapper {
-                width: 7.1rem;
-                height: 6.4rem;
-                position: relative;
-            }
-            .text {
-                h3 {
-                    font-family: $font-gothic-bold;
-                    color: #3DB54A;
-                    font-size: 3.5rem;
-                    line-height: 4.4rem;
-                    margin-bottom: 0.8rem;
+            margin: 10rem 0 5rem;
+            .call_icon_wrapper {
+                display: flex;
+                align-items: center;
+                gap: 3.2rem;
+                .icon_wrapper {
+                    width: 7.1rem;
+                    height: 6.4rem;
+                    position: relative;
                 }
-                p, a {
-                    font-family: $font-gothic;
-                    color: #616161;
-                    line-height: 2.4rem;
-                    font-size: 2rem;
+                .text {
+                    h3 {
+                        font-family: $font-gothic-bold;
+                        color: #3DB54A;
+                        font-size: 3.5rem;
+                        line-height: 4.4rem;
+                        margin-bottom: 0.8rem;
+                    }
+                    .call_numbers {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.8rem;
+                        a {
+                            p {
+                                font-family: $font-gothic;
+                                color: #616161;
+                                line-height: 2.4rem;
+                                font-size: 2rem;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -122,34 +131,40 @@
 
     @include screenMax('tablet') {
         padding: 4.5rem 4rem 0;
-        .header {
-            gap: 4rem;
-        }
-        form {
-            gap: 6rem;
-            .container {
-                .button {
-                    height: 5.6rem;
-                    margin-top: 2.5rem;
+        .contact_us_content {
+            .header {
+                gap: 4rem;
+            }
+            form {
+                gap: 6rem;
+                .container {
+                    .button {
+                        height: 5.6rem;
+                        margin-top: 2.5rem;
+                    }
                 }
             }
-        }
-        .call_and_mail_container {
-            margin: 6rem 0 3rem;
-            .call_icon_wrapper {
-                gap: 2.4rem;
-                .icon_wrapper  {
-                    width: 5rem;
-                    height: 4.5rem;
-                }
-                .text {
-                    h3 {
-                        font-size: 2.8rem;
-                        line-height: 3.2rem;
+            .call_and_mail_container {
+                margin: 6rem 0 3rem;
+                .call_icon_wrapper {
+                    gap: 2.4rem;
+                    .icon_wrapper  {
+                        width: 5rem;
+                        height: 4.5rem;
                     }
-                    p {
-                        font-size: 1.6rem;
-                        line-height: 2rem;
+                    .text {
+                        h3 {
+                            font-size: 2.8rem;
+                            line-height: 3.2rem;
+                        }
+                        .call_numbers {
+                            a {
+                                p {
+                                    font-size: 1.6rem;
+                                    line-height: 2rem;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -158,70 +173,76 @@
 
     @include screenMax('mobile') {
         padding: 4.5rem 1.6rem 0;
-        .header {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 1.6rem;
-            margin-bottom: 1.6rem;
-            h1 {
-                font-size: 2rem;
-                line-height: 2.4rem;
-                text-align: left;
-                width: 100%;
+        .contact_us_content {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.6rem;
+                margin-bottom: 1.6rem;
+                h1 {
+                    font-size: 2rem;
+                    line-height: 2.4rem;
+                    text-align: left;
+                    width: 100%;
+                }
+                h3 {
+                    text-align: left;
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                    width: 100%;
+                }
             }
-            h3 {
-                text-align: left;
-                font-size: 1.2rem;
-                line-height: 1.6rem;
+            form {
+                flex-direction: column;
                 width: 100%;
-            }
-        }
-        form {
-            flex-direction: column;
-            width: 100%;
-            gap: 1.6rem;
-            justify-content: unset;
-            .container {
-                width: 100%;
-                .button {
+                gap: 1.6rem;
+                justify-content: unset;
+                .container {
+                    width: 100%;
+                    .button {
+                        height: 4rem;
+                        padding: 1.6rem 2.4rem;
+                        margin-top: 0;
+                        display: none;
+                    }
+                }
+                .button_sm {
                     height: 4rem;
                     padding: 1.6rem 2.4rem;
                     margin-top: 0;
-                    display: none;
+                    width: 100%;
                 }
             }
-            .button_sm {
-                height: 4rem;
-                padding: 1.6rem 2.4rem;
-                margin-top: 0;
-                width: 100%;
-            }
-        }
-        .call_and_mail_container {
-            flex-direction: column;
-            justify-content: unset;
-            align-items: flex-start;
-            margin: 4rem 0 2rem;
-            gap: 1.6rem;
-            .call_icon_wrapper {
-                width: 100%;
+            .call_and_mail_container {
                 flex-direction: column;
-                gap: 1.6rem;
+                justify-content: unset;
                 align-items: flex-start;
-                .icon_wrapper {
-                    width: 4.1rem;
-                    height: 3.7rem;
-                }
-                .text {
-                    h3 {
-                        font-size: 2rem;
-                        text-align: left;
-                        line-height: 2.4rem;
+                margin: 4rem 0 2rem;
+                gap: 1.6rem;
+                .call_icon_wrapper {
+                    width: 100%;
+                    flex-direction: column;
+                    gap: 1.6rem;
+                    align-items: flex-start;
+                    .icon_wrapper {
+                        width: 4.1rem;
+                        height: 3.7rem;
                     }
-                    p, q {
-                        font-size: 1.2rem;
-                        line-height: 1.6rem;
-                        text-align: left;
+                    .text {
+                        h3 {
+                            font-size: 2rem;
+                            text-align: left;
+                            line-height: 2.4rem;
+                        }
+                        .call_numbers {
+                            a {
+                                p {
+                                    font-size: 1.2rem;
+                                    line-height: 1.6rem;
+                                    text-align: left;
+                                }
+                            }
+                        }
                     }
                 }
             }

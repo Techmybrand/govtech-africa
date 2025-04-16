@@ -1,11 +1,13 @@
 @import "@/styles/imports";
 
 .expectation_container {
-    max-width: 1440px;
-    margin: 0 auto;
+    width: 100%;
     padding: 12rem 13rem;
     background: $col-white;
     width: 100%;
+    .wrapper {
+        align-items: flex-start!important;
+    }
     .text {
         display: flex;
         flex-direction: column;
@@ -44,11 +46,14 @@
     }
 
     @include screenMax('tablet') {
-        padding: 6rem 6.5rem;
+        padding: 6rem 4rem;
+        .wrapper {
+            gap: 4rem!important;
+        }
     }
 
     @include screenMax('mobile') {
-        padding: 4rem 3.2rem 0;
+        padding: 4rem 2rem 0;
         .text {
             gap: 1.6rem;
             .text_header {

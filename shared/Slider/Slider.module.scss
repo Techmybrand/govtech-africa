@@ -1,32 +1,36 @@
 @import "@/styles/imports";
 
-.slides {
+.slides_wrapper {
+    width: 100%;
+    background: $col-white;
     padding-block: 12rem;
-    animation: scroll 10s linear infinite;
-    @include flex(flex-start, center);
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    overflow-x: hidden;
-    .slide {
-        position: relative;
-        flex-shrink: 0;
-        width: 72.8rem;
-        height: 13.6rem;
-    }
-
-    @keyframes scroll {
-        0% {
-            transform: translateX(0);
+    .slides {
+        animation: scroll 10s linear infinite;
+        @include flex(flex-start, center);
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow-x: hidden;
+        .slide {
+            position: relative;
+            flex-shrink: 0;
+            width: 72.8rem;
+            height: 13.6rem;
         }
-        100% {
-            transform: translateX(-100%);
+    
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
         }
+    
     }
-
     @include screenMax('tablet') {
         padding-block: 8rem;
     }
-
+    
     @include screenMax('mobile') {
         padding-block: 6rem;
     }
