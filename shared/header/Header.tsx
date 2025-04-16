@@ -5,7 +5,7 @@ import Link from 'next/link';
 import styles from './Header.module.scss';
 import { usePathname } from 'next/navigation';
 interface Props {
-  type: 'default' | 'new'
+  type?: 'default' | 'new'
 }
 
 const Header = ({type = 'default'}: Props) => {
