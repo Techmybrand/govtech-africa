@@ -2,6 +2,7 @@
 
 .africa {
     max-width: 1440px;
+    margin: 0 auto;
     background-color: #FFFFFF;
     padding: 9.2rem 11.4rem 39.1rem;
     position: relative;
@@ -67,6 +68,7 @@
             }
         }
         .row {
+            margin-top: 0;
             .grid {
                 @include grid(repeat(3, 1fr), 3.5rem, 4rem);
             }
@@ -74,7 +76,7 @@
     }
     
     @include screenMax('mobile') {
-        padding: 2.4rem 1.6rem 11rem;
+        padding: 2.4rem 1.6rem 8rem;
         .text {
             h1 {
                 font-size: 3.5rem;
@@ -86,7 +88,7 @@
             align-items: center;
             gap: 2.4rem;
             width: 100%;
-            margin-top: 5.5rem;
+            margin-top: 0;
             .image {
                 width: 100%;
                 height: 31rem;

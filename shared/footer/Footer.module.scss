@@ -1,12 +1,13 @@
 @import "@/styles/imports";
 
 .footer {
-	max-width: 1440px;
 	background: $col-white;
 	position: relative;
 	width: 100%;
 	padding: 6rem 10rem 0;
 	.footer_body {
+		max-width: 1440px;
+		margin: 0 auto;
 		width: 100%;
 		align-items: flex-start;
 		justify-content: space-between;

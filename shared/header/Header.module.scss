@@ -1,4 +1,3 @@
-// src/styles/Header.module.scss
 @import "@/styles/imports";
 
 .header {
@@ -18,8 +17,6 @@
 }
 
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 4rem 8rem;
   @include screenMax("tablet") {
 	  padding: 2rem;
@@ -30,7 +27,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // @include grid(repeat(3, 1fr), 0, 0);
+  max-width: 1440px;
+  margin: 0 auto;
   width: 100%;
 }
 

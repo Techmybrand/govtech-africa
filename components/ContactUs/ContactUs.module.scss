@@ -2,7 +2,8 @@
 
 .contact_us_container {
     max-width: 1440px;
-    padding: 7.5rem 9rem 12rem;
+    margin: 0 auto;
+    padding: 7.5rem 9rem 2rem;
     background: $col-white;
     width: 100%;
     .header {
@@ -91,7 +92,7 @@
         align-items: center;
         width: 100%;
         justify-content: space-between;
-        margin: 10rem 0;
+        margin: 10rem 0 5rem;
         .call_icon_wrapper {
             display: flex;
             align-items: center;
@@ -120,7 +121,7 @@
     }
 
     @include screenMax('tablet') {
-        padding: 4.5rem 4rem 8rem;
+        padding: 4.5rem 4rem 0;
         .header {
             gap: 4rem;
         }
@@ -134,7 +135,7 @@
             }
         }
         .call_and_mail_container {
-            margin: 6rem 0;
+            margin: 6rem 0 3rem;
             .call_icon_wrapper {
                 gap: 2.4rem;
                 .icon_wrapper  {
@@ -156,7 +157,7 @@
     }
 
     @include screenMax('mobile') {
-        padding: 4.5rem 1.6rem 6rem;
+        padding: 4.5rem 1.6rem 0;
         .header {
             flex-direction: column;
             align-items: flex-start;
@@ -200,7 +201,7 @@
             flex-direction: column;
             justify-content: unset;
             align-items: flex-start;
-            margin: 4rem 0 0;
+            margin: 4rem 0 2rem;
             gap: 1.6rem;
             .call_icon_wrapper {
                 width: 100%;

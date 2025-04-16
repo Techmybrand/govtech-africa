@@ -2,17 +2,20 @@
 
 .faq_container {
     max-width: 1440px;
+    margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 7.5rem 8.6rem 12rem;
+    padding: 7.5rem 8.6rem 2rem;
     background-color: $col-white;
     gap: 6rem;
-    h1 {
-        color: #3DB54A;
-        font-family: $font-gothic-bold;
-        font-size: 8rem;
-        line-height: 9.6rem;
+    .header {
+        h1 {
+            color: #3DB54A;
+            font-family: $font-gothic-bold;
+            font-size: 8rem;
+            line-height: 9.6rem;
+        }
     }
     .divider {
         display: none;
@@ -27,22 +30,27 @@
     }
 
     @include screenMax('tablet') {
-        padding: 4rem 3.2rem 8rem;
+        padding: 4rem 3.2rem 0;
         gap: 3.2rem;
-        h1 {
-            font-size: 4rem;
-            line-height: 5.6rem;
+        .header {
+            h1 {
+                font-size: 4rem;
+                line-height: 5.6rem;
+            }
         }
         .faq__wrapper {
             gap: 3.2rem;
         }
     }
+
     @include screenMax('mobile') {
-        padding: 3.2rem 2rem 6rem;
+        padding: 3.2rem 2rem 0;
         gap: 2.4rem;
-        h1 {
-            font-size: 3.2rem;
-            line-height: 4.8rem;
+        .header {
+            h1 {
+                font-size: 3.2rem;
+                line-height: 4.8rem;
+            }
         }
         .divider {
             display: block;
