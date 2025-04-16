@@ -5,7 +5,7 @@ import { CustomLink, DetailedPairDisplay } from '@/shared';
 
 const BookAStand = () => {
   return (
-    <section className={styles.container}>
+    <section id='book-a-stand' className={styles.container}>
         <DetailedPairDisplay
             className={styles.wrapper}
             image1='/images/book_a_stand.png'

@@ -1,11 +1,12 @@
+'use client';
 import React from 'react';
-import styles from './Registration.module.scss';
-import Image from 'next/image';
 import { CustomLink } from '@/shared';
+import Image from 'next/image';
+import styles from './Registration.module.scss';
 
 const Registration = () => {
   return (
-    <div className={styles.registration_container}>
+    <section id='register' className={styles.registration_container}>
       <div className={styles.content_container}>
         <div className={styles.content}>
           <div className={styles.content_text}>
@@ -16,7 +17,7 @@ const Registration = () => {
               explore cutting-edge innovations, and help shape the 
               continent's GovTech future`}
             </h3>
-            <CustomLink label='Register' href='/register'
+            <CustomLink label='Register' href='/contact'
               className={styles.custom_link_class}
             />
           </div>
@@ -25,7 +26,7 @@ const Registration = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

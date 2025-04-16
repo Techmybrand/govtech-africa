@@ -56,7 +56,7 @@ const Header = ({type = 'default'}: Props) => {
                   </Link>
               </li>
               <li className={styles.navItem}>
-                <Link href="/about" className={`${checkActive('/about') ? styles.active : ''} ${styles.navLink}`}>
+                <Link href="/about-us" className={`${checkActive('/about-us') ? styles.active : ''} ${styles.navLink}`}>
                   {type === 'default' ? 'About' : 'About AGW'}
                 </Link>
               </li>
@@ -67,7 +67,7 @@ const Header = ({type = 'default'}: Props) => {
               </li>
           </ul>
           <div className={styles.button_container_lg}>
-            <Link href="/register">
+            <Link href="#register">
               <Button className={styles.button}>Register</Button>
             </Link>
             <Link href="/contact">
@@ -83,7 +83,7 @@ const Header = ({type = 'default'}: Props) => {
                 <Link href="/" className={`${checkActive('/') ? styles.active : ''} ${styles.navLink}`}>Home</Link>
               </li>
               <li className={styles.navItem}>
-                <Link href="/about" className={`${checkActive('/about') ? styles.active : ''} ${styles.navLink}`}>
+                <Link href="/about-us" className={`${checkActive('/about-us') ? styles.active : ''} ${styles.navLink}`}>
                   {type === 'default' ? 'About' : 'About AGW'}
                 </Link>
               </li>
@@ -95,7 +95,7 @@ const Header = ({type = 'default'}: Props) => {
             </ul>
 
 		        <div className={styles.button_container}>
-              <Link href="/register">
+              <Link href="#register">
                 <Button className={styles.button}>Register</Button>
               </Link>
               <Link href="/contact">

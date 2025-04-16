@@ -5,6 +5,9 @@ import Image from 'next/image';
 const GovTechInNumbers = () => {
   return (
     <section className={styles.africa}>
+        {/* <div className={styles.container}>
+            
+        </div> */}
         <div className={styles.text}>
             <h1>Africa Govtech Week in Numbers</h1>
         </div>

@@ -1,9 +1,8 @@
 'use client';
 import React from 'react';
-import styles from './ConferenceHighlights.module.scss'
-import Image from 'next/image';
 import { CustomLink } from '@/shared';
-
+import Image from 'next/image';
+import styles from './ConferenceHighlights.module.scss'
 interface cardsProp {
   icon: string
   title: string
@@ -45,24 +44,26 @@ const ConferenceHighlights = () => {
   ]
   return (
     <section className={styles.highlights_container}>
-      <h1>Other Conference Highlights</h1>
-      <div className={styles.cards}>
-        {cardsData.map((data: cardsProp, index: number) =>
-          <div key={index} className={styles.card}>
-            <div className={styles.box}>
-              <div className={styles.icon_wrapper}>
-                <Image alt='' fill src={data?.icon} />
+      <div className={styles.highlights_content}>
+        <h1>Other Conference Highlights</h1>
+        <div className={styles.cards}>
+          {cardsData.map((data: cardsProp, index: number) =>
+            <div key={index} className={styles.card}>
+              <div className={styles.box}>
+                <div className={styles.icon_wrapper}>
+                  <Image alt='' fill src={data?.icon} />
+                </div>
+              </div>
+              <div className={styles.text}>
+                <h3>{data?.title}</h3>
+                <p>{data?.text}</p>
+                <CustomLink  color='black' label='Read more'
+                  href={data.href}
+                />
               </div>
             </div>
-            <div className={styles.text}>
-              <h3>{data?.title}</h3>
-              <p>{data?.text}</p>
-              <CustomLink  color='black' label='Read more'
-                href={data.href}
-              />
-            </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </section>
   )

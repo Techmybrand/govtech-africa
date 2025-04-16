@@ -17,6 +17,7 @@ const Expectation = () => {
     <section className={styles.expectation_container}>
       <DetailedPairDisplay reverseTopSection
         image1='/images/expect.png'
+        className={styles.wrapper}
         TextDetails1={
           <div className={styles.text}>
             <div className={styles.text_header}>

@@ -1,63 +1,69 @@
 @import "@/styles/imports";
 
 .faq_container {
-    max-width: 1440px;
-    margin: 0 auto;
     width: 100%;
-    display: flex;
-    flex-direction: column;
     padding: 7.5rem 8.6rem 2rem;
     background-color: $col-white;
-    gap: 6rem;
-    .header {
-        h1 {
-            color: #3DB54A;
-            font-family: $font-gothic-bold;
-            font-size: 8rem;
-            line-height: 9.6rem;
-        }
-    }
-    .divider {
-        display: none;
-        width: 100vw;
-        height: 0.1rem;
-        background: #000;
-    }
-    .faq__wrapper {
+    .faq_content {
         display: flex;
         flex-direction: column;
         gap: 6rem;
+        max-width: 1440px;
+        margin: 0 auto;
+        .header {
+            h1 {
+                color: #3DB54A;
+                font-family: $font-gothic-bold;
+                font-size: 8rem;
+                line-height: 9.6rem;
+            }
+        }
+        .divider {
+            display: none;
+            width: 100vw;
+            height: 0.1rem;
+            background: #000;
+        }
+        .faq__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+        }
     }
 
     @include screenMax('tablet') {
         padding: 4rem 3.2rem 0;
-        gap: 3.2rem;
-        .header {
-            h1 {
-                font-size: 4rem;
-                line-height: 5.6rem;
-            }
-        }
-        .faq__wrapper {
+        .faq_content {
             gap: 3.2rem;
+            .header {
+                h1 {
+                    font-size: 4rem;
+                    line-height: 5.6rem;
+                }
+            }
+            .faq__wrapper {
+                gap: 4.8rem;
+            }
         }
     }
 
     @include screenMax('mobile') {
         padding: 3.2rem 2rem 0;
-        gap: 2.4rem;
-        .header {
-            h1 {
-                font-size: 3.2rem;
-                line-height: 4.8rem;
+        .faq_content {
+            gap: 2.4rem;
+            .header {
+                h1 {
+                    font-size: 3.2rem;
+                    line-height: 4.8rem;
+                }
             }
-        }
-        .divider {
-            display: block;
-            margin: 0 -2rem;
-        }
-        .faq__wrapper {
-            gap: 1.6rem;
+            .divider {
+                display: block;
+                margin: 0 -2rem;
+            }
+            .faq__wrapper {
+                gap: 3.2rem;
+            }
         }
     }
 }

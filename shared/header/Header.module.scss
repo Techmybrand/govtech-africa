@@ -87,8 +87,7 @@
 .navItem {
   a {
     @extend %text-20;
-    font-weight: 400;
-    font-family: $font-gothic;
+    font-family: $font-gothic-bold;
   }
 }
 
@@ -119,7 +118,7 @@
 }
 
 .active {
-  color: $col-white;
+  color: #3DB54A;
   font-family: $font-gothic-bold;
   font-weight: 900!important;
 }
@@ -128,8 +127,8 @@
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  width: 3rem;
+  height: 2.1rem;
   cursor: pointer;
   z-index: 1002;
   
