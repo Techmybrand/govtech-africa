@@ -2,6 +2,7 @@
 
 .container {
     max-width: 1440px;
+    margin: 0 auto;
     background: #14361B;
     padding: 14rem 8.2rem 19rem;
     .wrapper {
@@ -16,11 +17,13 @@
         }
         .text_body {
             margin: 4rem 0;
+
             h3 {
                 font-family: $font-gothic;
                 color: $col-white;
                 font-size: 1.6rem;
                 line-height: 2rem;
+                margin-bottom: 1.6rem;
             }
         }
         .custom_link_class {
@@ -58,6 +61,7 @@
                     font-size: 1.2rem;
                     line-height: 1.6rem;
                     text-align: left;
+                    margin: 0;
                 }
             }
             .custom_link_class > p {

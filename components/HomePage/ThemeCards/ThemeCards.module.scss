@@ -2,8 +2,9 @@
 
 .theme_cards_container {
     max-width: 1440px;
-    padding: 0 10rem;
-    margin: 10rem 0 0;
+    padding: 10rem 10rem 0;
+    margin: 0 auto;
+    background: $col-white;
     .text_details {
         width: 100%;
         h3 {
@@ -59,8 +60,8 @@
         }
     }
 
-    @include screenMax('tablet'){
-        padding: 0 5rem;
+    @include screenMax('tablet') {
+        padding: 6rem 5rem 0;
         .text_details{
             h3 {
                 line-height: 2.4rem;
@@ -69,8 +70,7 @@
     }
 
     @include screenMax('mobile') {
-        padding: 0 2rem;
-        margin: 5rem 0 0;
+        padding: 2rem;
         .text_details {
             width: 100%;
             h3 {
