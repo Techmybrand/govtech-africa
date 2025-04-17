@@ -227,17 +227,17 @@ export const footerNavLink: NavLink[] = [
 export const socialMediaLinks = [
 	{
 		label: "twitter",
-		href: "#",
+		href: "https://x.com/africagovtechwk",
 		icon: "/svgs/twitter_dark.svg"
 	},
 	{
 		label: "instagram",
-		href: "#",
+		href: "https://www.instagram.com/africagovtechweek",
 		icon: "/svgs/instagram_dark.svg"
 	},
 	{
 		label: "linkedIn",
-		href: "#",
+		href: "https://www.linkedin.com/company/africa-govtech-week/",
 		icon: "/svgs/linkedin_dark.svg"
 	}
 ];
