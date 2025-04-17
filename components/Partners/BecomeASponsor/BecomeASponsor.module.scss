@@ -44,6 +44,9 @@
 
     @include screenMax('mobile') {
         padding: 4rem 2rem 0;
+        .wrapper {
+            flex-direction: column-reverse!important;
+        }
         .text_details {
             h1 {
                 font-size: 2rem;

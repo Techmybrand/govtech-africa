@@ -7,9 +7,17 @@
 }
 
 .input_label {
-	@extend %text-12;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
 	color: #999999;
-	font-weight: 500;
+	font-family: $font-gothic-bold;
+}
+
+.input_error {
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	color: #FC0000;
+	font-family: $font-gothic;
 }
 
 .input_wrapper {
@@ -53,7 +61,7 @@
 	min-height: 2rem;
 	&::placeholder {
 		font-size: 1.4rem;
-		line-height: 2.5rem;
+		line-height: 2rem;
 		color: #999999;
 	}
 }

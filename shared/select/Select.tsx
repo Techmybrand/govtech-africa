@@ -69,7 +69,9 @@ const Select = ({ options, onOptionChange, defaultOptionIndex = -1, className, c
 									{title ? title + ':' : ''} <span>{selectedOptionIndex === -1 ? defaultOption : shortenTitle(options[selectedOptionIndex].label, 42)}</span>
 								</p>
 							</div>
-							<div className={`${styles.select_dropDownImage}`}>{isOpen ? <SelectUpIcon /> : <SelectDownIcon />}</div>
+							<div className={`${styles.select_dropDownImage}`}>
+								{isOpen ? <SelectUpIcon /> : <SelectDownIcon />}
+							</div>
 						</div>
 					</div>
 				)}

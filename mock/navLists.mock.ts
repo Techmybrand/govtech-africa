@@ -449,6 +449,16 @@ export const FaqLists = [
 	}
 ]
 
-export const slidesArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
-	16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
-]
+export const inquiryTypes = [
+	{ label: 'Sponsorship Opportunities', value: 'sponsorship opportunities' },
+	{ label: 'Speaking Opportunities', value: 'speaking opportunities' },
+	{ label: 'Exhibition Opportunities', value: 'exhibition opportunities' },
+	{ label: 'Partnership Opportunities', value: 'partnership opportunities' },
+	{ label: 'General Inquiry', value: 'general inquiry' },
+	{ label: 'Media and Press', value: 'media and press' },
+	{ label: 'Volunteer Opportunities', value: 'volunteer opportunities' },
+	{ label: 'Technical Support', value: 'technical support' },
+	{ label: 'Event Registration Assistance', value: 'event registration assistance' },
+	{ label: 'Feedback or Suggestions', value: 'feedback or suggestions' },
+	{ label: 'Other', value: 'other' }
+];

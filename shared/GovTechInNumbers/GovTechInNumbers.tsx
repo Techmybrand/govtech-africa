@@ -1,14 +1,11 @@
 import React from 'react';
-import styles from './GovTechInNumbers.module.scss'
 import Image from 'next/image';
+import styles from './GovTechInNumbers.module.scss';
 
 const GovTechInNumbers = () => {
   return (
     <section className={styles.africa}>
-        {/* <div className={styles.container}>
-            
-        </div> */}
-        <div className={styles.text}>
+        <div className={styles.header}>
             <h1>Africa Govtech Week in Numbers</h1>
         </div>
         <div className={styles.row}>
@@ -22,7 +19,7 @@ const GovTechInNumbers = () => {
                     <p>VIP and Delegate Participants</p>
                 </div>
                 <div className={styles.text}>
-                    <h2>50+</h2>
+                    <h2>100+</h2>
                     <p>Exhibiting companies</p>
                 </div>
                 <div className={styles.text}>

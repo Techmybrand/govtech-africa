@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { Button, Logo } from '@/shared';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import styles from './Header.module.scss';
-import { usePathname } from 'next/navigation';
 interface Props {
   type?: 'default' | 'new'
 }

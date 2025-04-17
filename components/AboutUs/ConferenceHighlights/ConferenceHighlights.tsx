@@ -32,7 +32,7 @@ const ConferenceHighlights = () => {
       href: '/'
     },
     {
-      icon: '/svgs/govtech_labs.svg',
+      icon: '/svgs/govtech_alliance.svg',
       title: 'The Africa Govtech Alliance and Innovation Fund',
       text: `The Africa GovTech Alliance and Innovation Fund is a groundbreaking 
         initiative designed to be launched at Africa GovTech Week, aimed at 
@@ -48,7 +48,10 @@ const ConferenceHighlights = () => {
         <h1>Other Conference Highlights</h1>
         <div className={styles.cards}>
           {cardsData.map((data: cardsProp, index: number) =>
-            <div key={index} className={styles.card}>
+            <div key={index} className={`${styles.card} 
+              ${index === 1 && styles.second_card}
+              ${index === 2 && styles.last_card}`}
+            >
               <div className={styles.box}>
                 <div className={styles.icon_wrapper}>
                   <Image alt='' fill src={data?.icon} />
@@ -57,8 +60,9 @@ const ConferenceHighlights = () => {
               <div className={styles.text}>
                 <h3>{data?.title}</h3>
                 <p>{data?.text}</p>
-                <CustomLink  color='black' label='Read more'
-                  href={data.href}
+                <CustomLink color='black' label='Read more'
+                  href={data.href} className={styles.link_class}
+                  iconType='sm_arrow'
                 />
               </div>
             </div>

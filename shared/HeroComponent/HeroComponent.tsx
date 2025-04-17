@@ -1,12 +1,11 @@
 import React from 'react';
-import styles from './HeroComponent.module.scss'
 import Image from 'next/image';
-
+import styles from './HeroComponent.module.scss'
 interface HeroProps {
-    title?: string
-    subText: string
-    type?: 'big' | 'small'
-    backgroundImage: string
+  title?: string
+  subText: string | React.ReactNode
+  type?: 'big' | 'small'
+  backgroundImage: string
 }
 const HeroComponent = ({ title, subText, type = 'big', backgroundImage }: HeroProps) => {
   return (

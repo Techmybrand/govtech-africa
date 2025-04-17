@@ -29,4 +29,19 @@
     width: 2.4rem;
     height: 2.4rem;
   }
+
+  @include screenMax('mobile') {
+    margin-top: 1.4rem;
+    &::after {
+      top: -1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+    span {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
 }

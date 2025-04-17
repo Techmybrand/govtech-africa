@@ -13,7 +13,7 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
 const InputField = ({ name, className, error, label, ...options }: Props) => {
 	return (
 		<div className={`${styles.input} ${className}`}>
-			<label className={styles.input_field}>
+			<label className={styles.input_label}>
 				{label}
 			</label>
 			<div className={styles.input_wrapper}>
@@ -25,8 +25,7 @@ const InputField = ({ name, className, error, label, ...options }: Props) => {
 				/>
 			</div>
 			{!!error && (
-				<label className={styles.input_label}
-					style={{ color: "#FC0000" }}
+				<label className={styles.input_error}
 				>
 					{error}
 				</label>

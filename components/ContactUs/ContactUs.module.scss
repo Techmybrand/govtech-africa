@@ -69,16 +69,18 @@
             .button_sm {
                 display: none!important;
                 background: #14361B;
-                display: flex;
                 align-items: center;
                 justify-content: space-between;
                 padding: 1.6rem 3.2rem;
+                height: 4.8rem;
+                margin-top: 0;
+                width: 100%;
                 cursor: pointer;
                 h3 {
                     color: #3DB54A;
                     font-family: $font-gothic-bold;
+                    font-size: 1.2rem;
                     font-size: 1.6rem;
-                    font-size: 2rem;
                 }
                 .icon {
                     position: relative;
@@ -111,13 +113,22 @@
                         line-height: 4.4rem;
                         margin-bottom: 0.8rem;
                     }
+                    a {
+                        h6 {
+                            font-family: $font-gothic-bold;
+                            color: #616161;
+                            line-height: 2.4rem;
+                            font-size: 2rem;
+                            text-decoration: underline;
+                        }
+                    }
                     .call_numbers {
                         display: flex;
                         align-items: center;
                         gap: 0.8rem;
                         a {
                             p {
-                                font-family: $font-gothic;
+                                font-family: $font-gothic-bold;
                                 color: #616161;
                                 line-height: 2.4rem;
                                 font-size: 2rem;
@@ -207,17 +218,14 @@
                     }
                 }
                 .button_sm {
-                    height: 4rem;
-                    padding: 1.6rem 2.4rem;
-                    margin-top: 0;
-                    width: 100%;
+                    display: flex!important;
                 }
             }
             .call_and_mail_container {
                 flex-direction: column;
                 justify-content: unset;
                 align-items: flex-start;
-                margin: 4rem 0 2rem;
+                margin: 4rem 0 0;
                 gap: 1.6rem;
                 .call_icon_wrapper {
                     width: 100%;
@@ -234,11 +242,18 @@
                             text-align: left;
                             line-height: 2.4rem;
                         }
+                        a {
+                            h6 {
+                                font-size: 1.6rem;
+                                line-height: 2rem;
+                                text-align: left;
+                            }
+                        }
                         .call_numbers {
                             a {
                                 p {
-                                    font-size: 1.2rem;
-                                    line-height: 1.6rem;
+                                    font-size: 1.6rem;
+                                    line-height: 2rem;
                                     text-align: left;
                                 }
                             }

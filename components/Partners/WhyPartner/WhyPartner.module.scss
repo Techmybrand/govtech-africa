@@ -112,7 +112,7 @@
             .wrapper, .__wrapper, .wrapper_reverse {
                 padding: 0 1.6rem!important;
             }
-            .__wrapper {
+            .__wrapper, .wrapper {
                 flex-direction: column-reverse!important;
             }
             .government_details, .organisations_details, .private_sector_details {
