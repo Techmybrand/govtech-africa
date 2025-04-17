@@ -47,4 +47,16 @@
 			}
 		}
 	}
+	.textarea_label {
+		font-size: 1.2rem;
+		line-height: 1.4rem;
+		color: #999999;
+		font-family: $font-gothic-bold;
+	}
+	.textarea_error {
+		font-size: 1.2rem;
+		line-height: 1.4rem;
+		color: #FC0000;
+		font-family: $font-gothic;
+	}
 }

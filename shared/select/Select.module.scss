@@ -1,22 +1,20 @@
 @import '@/styles/imports';
 
 .select_label {
-	@extend %text-14;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	color: #999999;
+	font-family: $font-gothic-bold;
 }
 .select {
 	min-width: 7rem;
-	border-radius: 1.5rem;
-	border: 0.1rem solid $col-grey-200;
+	border: 0.1rem solid #000;
 	padding: 1.5rem 1.6rem;
 	margin: 1rem 0.8rem 0 0;
 	width: 100%;
-	color: $col-grey-500;
+	color: #999999;
 	min-height: 2rem;
 	position: relative;
-	&[data-type='true'] {
-		// background-color: $col-grey-9;
-		// border: 0.1rem solid $col-grey-6;
-	}
 	.select_header {
 		@include flex(space-between, center, row nowrap);
 		padding: 0;
@@ -41,17 +39,11 @@
 	}
 	@include screenMax('tablet') {
 		width: 100%;
-		padding: 1.5rem 1rem;
-		margin: 1rem 0.5rem 1rem 0;
+		padding: 0.8rem 1rem;
+		margin: 0.8rem 0 0;
 	}
 }
 
-.icon {
-	position: relative;
-	width: 2.4rem;
-	height: 2.4rem;
-	margin-right: 0.4rem;
-}
 
 .flex {
 	@include flex(flex-start, center);
@@ -60,16 +52,15 @@
 .select_body {
 	min-width: 7rem;
 	width: 100%;
-	border-radius: 1.5rem;
 	padding: 1rem 1.3rem;
 	position: absolute;
 	top: 6rem;
 	right: 0;
-	background-color: #FFFAF1;
+	background-color: #FFF;
 	z-index: 2;
 	max-height: 17rem;
 	overflow-y: scroll;
-	border: 1px solid $col-grey-200;
+	border: 0.1rem solid #E3E3E3;
 	@include noScrollBar;
 	@include screenMax('tablet') {
 		max-height: 23rem;
@@ -77,9 +68,9 @@
 }
 
 .select_listItem {
-	border-bottom: 0.1rem solid $col-grey-200;
+	border-bottom: 0.1rem solid #E3E3E3;
 	cursor: pointer;
-	color: $col-grey-900;
+	color: #0B0A0A;
 }
 
 .select_row {
@@ -94,34 +85,16 @@
 	}
 }
 
-.select_tokenImage {
-	position: relative;
-	width: 2.4rem;
-	height: 2.4rem;
-	margin-right: 0.8rem;
-	@include screenMax('tablet') {
-		margin-right: 0 !important;
-		width: 4rem;
-		height: 4rem;
-	}
-}
-
-.select_dropDown_tokenImage {
-	position: relative;
-	width: 1.1rem;
-	height: 0.7rem;
-	@include screenMax('tablet') {
-		// margin-right: 0 !important;
-		width: 2.4rem;
-		height: 2.4rem;
-	}
-}
 
 .select_dropDownImage {
 	width: 2rem;
 	height: 2rem;
 	position: relative;
 	margin-right: 0 !important;
+	@include screenMax('mobile') {
+		width: 1.6rem;
+		height: 1.6rem;
+	}
 }
 
 .select_dropDown {

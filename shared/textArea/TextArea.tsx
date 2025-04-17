@@ -29,7 +29,7 @@ const TextArea = forwardRef<HTMLTextAreaElement, Props>(
 					/>
 				</div>
 				{!!error && (
-					<label className={styles.textarea_label} style={{ color: "#FC0000" }}>
+					<label className={styles.textarea_error} style={{ color: "#FC0000" }}>
 						{error}
 					</label>
 				)}

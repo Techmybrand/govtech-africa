@@ -23,7 +23,7 @@
             .card {
                 width: 100%;
                 display: flex;
-                align-items: flex-end;
+                align-items: flex-start;
                 gap: 50rem;
                 justify-content: center;
                 .box {
@@ -55,6 +55,24 @@
                         font-size: 2rem;
                         line-height: 2.4rem;
                         font-family: $font-gothic;
+                    }
+                }
+            }
+            .second_card {
+                .box {
+                    .icon_wrapper {
+                        position: relative;
+                        height: 9.1rem;
+                        width: 26.8rem;
+                    }
+                }
+            }
+            .last_card {
+                .box {
+                    .icon_wrapper {
+                        position: relative;
+                        height: 16.2rem;
+                        width: 28rem;
                     }
                 }
             }
@@ -116,6 +134,31 @@
                             text-align: left;
                             font-size: 1.2rem;
                             line-height: 1.6rem;
+                        }
+                        .link_class {
+                            width: max-content!important;
+                            gap: 1rem!important;
+                            & span {
+                                margin: 0 0 -0.4rem!important;
+                            }
+                        }
+                    }
+                }
+                .second_card {
+                    .box {
+                        .icon_wrapper {
+                            position: relative;
+                            height: 5.4rem;
+                            width: 15.9rem;
+                        }
+                    }
+                }
+                .last_card {
+                    .box {
+                        .icon_wrapper {
+                            position: relative;
+                            height: 9rem;
+                            width: 15.3rem;
                         }
                     }
                 }

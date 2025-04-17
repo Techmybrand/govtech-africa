@@ -44,7 +44,7 @@ const Partners = () => {
                 driving force in Africa’s digital future.
               </h3>
             </div>
-            <CustomLink label='Explore' href='/explore' />
+            <CustomLink className={styles.link_class} label='Explore' href='/explore' />
           </div>
         }
       />

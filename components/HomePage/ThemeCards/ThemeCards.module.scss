@@ -76,10 +76,11 @@
             h3 {
                 font-size: 1.2rem;
                 line-height: 1.6rem;
+                text-align: left;
             }
         }
         .theme_details {
-            gap: 1.6rem;
+            gap: 0.8rem;
             margin: 0 auto;
             width: 100%;
             .green_line {
@@ -93,10 +94,19 @@
                 display: none;
             }
             .theme_details_text {
-                gap: 1.6rem;
+                gap: 0.8rem;
+                margin-bottom: 2.4rem;
                 h4 {
-                    font-size: 2rem;
+                    font-size: 1.6rem;
                     line-height: 2.4rem;
+                    width: 65%;
+                    margin: 0 auto;
+                }
+                p {
+                    width: 70%;
+                    margin: 0 auto;
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
                 }
             }
             .link_container {

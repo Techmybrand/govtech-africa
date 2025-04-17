@@ -1,11 +1,16 @@
 'use client';
-import React from 'react';
-import { InputField, TextArea } from '@/shared';
-import styles from './ContactUs.module.scss'
-import Image from 'next/image';
+import React, { useState } from 'react';
+import { InputField, Select, TextArea } from '@/shared';
+import { inquiryTypes } from '@/mock/navLists.mock';
 import Link from 'next/link';
+import Image from 'next/image';
+import styles from './ContactUs.module.scss';
 
 const ContactUs = () => {
+    const [selectInquiry, setSelectInquiry] = useState<string>('');
+    const handleSelectInquiry = (value: string) => {
+        setSelectInquiry(value);
+    };
   return (
     <section className={styles.contact_us_container}>
         <div className={styles.contact_us_content}>
@@ -32,11 +37,14 @@ const ContactUs = () => {
                 </div>
                 <div className={styles.container}>
                     <InputField label='Company Name' placeholder='Company Name' />
-                    <InputField label='Inquiry type' placeholder='Last Name' />
+                    <Select options={inquiryTypes} label='Inquiry type'
+                        defaultOption='Inquiry type'
+                        onOptionChange={handleSelectInquiry}
+                    />
                     <TextArea textClassName={styles.textarea_class} label='Message' placeholder='Message' />
                 </div>
                 <div className={styles.button_sm}>
-                    <h3>Register</h3>
+                    <h3>Submit</h3>
                     <div className={styles.icon}>
                         <Image alt='' fill src='/svgs/button_arrow_icon.svg' />
                     </div>
@@ -50,7 +58,7 @@ const ContactUs = () => {
                     <div className={styles.text}>
                         <h3>Send us a email</h3>
                         <Link href='mailto:info@africagovtechweek.com '>
-                            info@africagovtechweek.com
+                            <h6>info@africagovtechweek.com</h6>
                         </Link>
                     </div>
                 </div>
