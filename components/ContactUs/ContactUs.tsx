@@ -7,10 +7,6 @@ import Image from 'next/image';
 import styles from './ContactUs.module.scss';
 
 const ContactUs = () => {
-    // const [selectInquiry, setSelectInquiry] = useState<string>('');
-    // const handleSelectInquiry = (value: string) => {
-    //     setSelectInquiry(value);
-    // };
   return (
     <section className={styles.contact_us_container}>
         <div className={styles.contact_us_content}>
@@ -39,7 +35,6 @@ const ContactUs = () => {
                     <InputField label='Company Name' placeholder='Company Name' />
                     <Select options={inquiryTypes} label='Inquiry type'
                         defaultOption='Inquiry type'
-                        // onOptionChange={handleSelectInquiry}
                     />
                     <TextArea textClassName={styles.textarea_class} label='Message' placeholder='Message' />
                 </div>
