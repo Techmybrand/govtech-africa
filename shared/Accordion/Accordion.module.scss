@@ -4,7 +4,8 @@
 	width: 100%;
 	min-height: 6rem;
 	padding: 1.4rem 3.2rem 1.4rem 0;
-	border-bottom: 0.1rem solid #14361B;
+	border-bottom: 0.1rem solid rgba(20, 54, 27, 0.4);
+	// border-color: #14361B;
 	.accordion_header_container {
 		width: 100%;
 		display: flex;
@@ -54,6 +55,7 @@
 		min-height: 8rem;
 		transition: $all-transition;
 		.accordion_header_container {
+			margin-bottom: 2.4rem;
 			.accordion_icon {
 				h3 {
 					margin-bottom: 0.25rem;
@@ -69,14 +71,19 @@
 	}
 
 	@include screenMax('mobile') {
-		padding: 0 1.6rem;
-		min-height: 5.4rem;
+		padding: 0;
+		min-height: 5rem;
 		.accordion_header_container {
 			.accordion_header {
 				h3, h1 {
 					font-size: 1.2rem;
 					line-height: 1.4rem;
 				}
+			}
+		}
+		&[data-active='true'] {
+			.accordion_header_container {
+				margin-bottom: 0.8rem;
 			}
 		}
 	}

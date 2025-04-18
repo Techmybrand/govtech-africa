@@ -56,8 +56,8 @@ const ContactUs = () => {
                         <Image alt='' fill src='/svgs/mail_icon.svg' />
                     </div>
                     <div className={styles.text}>
-                        <h3>Send us a email</h3>
-                        <Link href='mailto:info@africagovtechweek.com '>
+                        <h3>Send us an email</h3>
+                        <Link href='mailto:info@africagovtechweek.com'>
                             <h6>info@africagovtechweek.com</h6>
                         </Link>
                     </div>

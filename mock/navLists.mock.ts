@@ -327,7 +327,7 @@ export const FaqLists = [
 				answer: 'To request a refund, please submit a cancellation request to info@africagovtechweek.com with your registration details. Eligible refunds will be processed within 10 business days of receipt of the cancellation request.'
 			},
 			{
-				question: 'Can I transfer my registration instead of canceling?',
+				question: 'Can I transfer my registration instead of cancelling?',
 				answer: 'Yes! If you are unable to attend, you may transfer your registration to a colleague or another eligible participant at no extra cost at least seven days before the date of the event. Any application for transfer of registration to another person received later than seven days to before the date of the event will only be considered at additional but minimal costs.'
 			},
 			{
