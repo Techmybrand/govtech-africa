@@ -21,14 +21,15 @@
         display: flex;
         align-items: flex-start;
         gap: 0.4rem;
+        margin-bottom: 1.6rem;
         h6, p {
-            font-family: $font-gothic;
-            font-size: 1.4rem;
-            line-height: 2rem;
-            color: #000;
+            font-family: $font-gothic-bold;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: #14361B;
         }
         h6 {
-            font-family: $font-gothic-bold;
+            color: #3DB54A;;
         }
     }
 
@@ -38,12 +39,6 @@
         gap: 1.6rem;
         .q_and_a_wrapper {
             width: 100%;
-        }
-        .answers_container {
-            h6, p {
-                font-size: 1.2rem;
-                line-height: 1.4rem;
-            }
         }
     }
 
@@ -58,9 +53,10 @@
             width: 100%;
         }
         .answers_container {
+            margin-bottom: 0.8rem;
             h6, p {
-                font-size: 0.9rem;
-                line-height: 1.2rem;
+                font-size: 1.2rem;
+                line-height: 1.4rem;
             }
         }
     }

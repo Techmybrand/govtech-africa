@@ -20,9 +20,9 @@ const Footer = () => {
 						<h3>Questions?</h3>
 						<p>
 							For more information on conference programme or 
-							registration, please visit the 
-							<span onClick={() => router.push('/faq')}> FAQ page </span> 
-							or <span onClick={() => router.push('/contact')}> contact us </span>
+							registration, please visit the {" "}
+							<span onClick={() => router.push('/faq')}>FAQ page</span> {' '}
+							or <span onClick={() => router.push('/contact')}>contact us </span>
 						</p>
 					</div>
 					<div className={styles.copy_write}>
@@ -67,8 +67,11 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className={styles.image_background__container}>
-				<div className={styles.image_background}>
+				<div className={`${styles.footer_bg_image_lg} ${styles.image_background}`}>
 					<Image src="/images/africa-background.png" fill alt="" />
+				</div>
+				<div className={`${styles.footer_bg_image_sm} ${styles.image_background}`}>
+					<Image src="/images/africa-background_2.png" fill alt="" />
 				</div>
         	</div>
 		</footer>
