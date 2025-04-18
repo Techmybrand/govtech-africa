@@ -29,7 +29,7 @@ const ContactUs = () => {
                     <InputField label='Email' placeholder='Email' />
                     <InputField label='Phone Number' placeholder='Phone Number' />
                     <div className={styles.button}>
-                        <h3>Register</h3>
+                        <h3>Submit</h3>
                         <div className={styles.icon}>
                             <Image alt='' fill src='/svgs/button_arrow_icon.svg' />
                         </div>

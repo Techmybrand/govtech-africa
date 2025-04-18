@@ -74,6 +74,9 @@
             }
             .link_class {
                 width: max-content!important;
+                &::after {
+                    width: 140%!important;
+                }
             }
         }
     }

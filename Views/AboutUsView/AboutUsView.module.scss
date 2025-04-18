@@ -1,0 +1,39 @@
+@import "@/styles/imports";
+
+.header_title_class {
+    width: 67rem!important;
+}
+
+.header_subtext_class > .hero_subtext {
+    width: 100%!important;
+    color: $col-white!important;
+    font-family: $font-gothic;
+    .subtext_mobile {
+        display: none;
+    }
+    .subtext_lg {
+        display: block;
+    }
+}
+
+@include screenMax('tablet') {
+    .header_title_class {
+        width: 55rem!important;
+    }
+}
+
+@include screenMax('mobile') {
+    .header_subtext_class {
+        width: 30rem!important;
+        .subtext_mobile {
+            display: block!important;
+        }
+        .subtext_lg {
+            display: none!important;
+        }
+    }
+    .header_title_class {
+        width: 100%!important;
+    }
+}
+

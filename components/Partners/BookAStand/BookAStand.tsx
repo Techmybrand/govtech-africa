@@ -53,6 +53,7 @@ const BookAStand = () => {
                     <CustomLink href=''
                         label='Request sponsorship packages'
                         color='black'
+                        subType='black'
                         className={styles.custom_link_class}
                     />
                 </div>

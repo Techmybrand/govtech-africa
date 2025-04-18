@@ -29,7 +29,27 @@ export const metadata: Metadata = {
       'Africa GovTech policy forum',
       'AI in public sector Africa',
       'Digital ID and infrastructure in African governance',
-    ]
+    ],
+    openGraph: {
+      title: `Africa Govtech Week 2025 | Powering Africa's Public Sector Digitisation`,
+      description: `Join top government leaders, tech innovators, and development 
+        partners at Africa Govtech Week 2025—a premier conference and exhibition 
+        focused on  digitising Africa's public sector. Be part of Africa's most 
+        influential  gathering of government technology stakeholders. 
+        Discover innovations, forge partnerships, and shape the future of digital 
+        governance across the continent.`,
+      // url: 'https://africagovtechweek.com',
+      type: 'website',
+      siteName: 'Africa Govtech Week 2025',
+      images: [
+        {
+          url: '/images/social_card.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'Africa Govtech Week 2025',
+        },
+      ],
+    }
   };
 
 export default function RootLayout({
