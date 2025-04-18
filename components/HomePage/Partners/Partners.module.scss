@@ -46,15 +46,15 @@
     }
 
     @include screenMax('mobile') {
-        padding: 4rem 1.6rem 0;
+        padding: 2rem 1.6rem 0;
         .wrapper_class {
             flex-direction: column-reverse!important;
         }
         .text {
-            gap: 3.2rem;
+            gap: 2.4rem;
             h2 {
-                font-size: 2rem;
-                line-height: 2.4rem;
+                font-size: 1.6rem;
+                line-height: 2rem;
             }
             .text_body {
                 display: flex;

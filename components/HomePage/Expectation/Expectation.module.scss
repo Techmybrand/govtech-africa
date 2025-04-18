@@ -75,6 +75,11 @@
                 line-height: 1.6rem;
                 text-align: left;
             }
+            .text_btn {
+                .text_btn_link {
+                    width: max-content!important;
+                }
+            }
         }
     }
 }

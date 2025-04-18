@@ -20,9 +20,9 @@ const Footer = () => {
 						<h3>Questions?</h3>
 						<p>
 							For more information on conference programme or 
-							registration, please visit the 
-							<span onClick={() => router.push('/faq')}> FAQ page </span> 
-							or <span onClick={() => router.push('/contact')}> contact us </span>
+							registration, please visit the {" "}
+							<span onClick={() => router.push('/faq')}>FAQ page</span> {' '}
+							or <span onClick={() => router.push('/contact')}>contact us </span>
 						</p>
 					</div>
 					<div className={styles.copy_write}>

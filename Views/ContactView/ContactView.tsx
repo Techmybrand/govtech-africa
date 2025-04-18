@@ -1,12 +1,12 @@
-import { ContactUs, Registration } from '@/components'
-import { HeroComponent } from '@/shared'
-import React from 'react'
+import React from 'react';
+import { HeroComponent } from '@/shared';
+import { ContactUs, Registration } from '@/components';
 
 const ContactView = () => {
   return (
     <>
-      <HeroComponent subText='' 
-        title='Reach out to us today!' 
+      <HeroComponent subText=''
+        title='Get in touch today!'
         type='small'
         backgroundImage='/images/hero-3.jpeg'
       />

@@ -45,18 +45,22 @@
         }
     }
 
+    @include screenMax('tablet') {
+        background-size: cover;
+    }
+
     @include screenMax('mobile') {
         height: 29.3rem;
         background-size: cover;
         .continent_details {
             gap: 1.6rem;
             h3 {
-                font-size: 2rem;
-                line-height: 2.4rem;
+                font-size: 1.6rem;
+                line-height: 2rem;
             }
             p {
                 font-size: 1.2rem;
-                line-height: 1.6rem;
+                line-height: 1.4rem;
                 width: 28rem;
             }
         }
