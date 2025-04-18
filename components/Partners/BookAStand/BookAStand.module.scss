@@ -37,6 +37,9 @@
             line-height: 2.4rem!important;
             color: #14361B!important;
         }
+        .custom_link_class::after {
+            display: none!important;
+        }
     }
 
     @include screenMax('tablet') {
@@ -76,10 +79,14 @@
                 font-size: 1.2rem!important;
                 line-height: 1.6rem!important;
             }
+            .custom_link_class::after {
+                display: block!important;
+            }
             .custom_link_class {
                 margin-top: 0!important;
                 &::after {
                     top: -0.4rem!important;
+                    width: 50%!important;
                 }
             }
         }
