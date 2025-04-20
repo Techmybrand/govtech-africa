@@ -85,9 +85,14 @@
 }
 
 .navItem {
-  a {
+  .navLink {
     @extend %text-20;
     font-family: $font-gothic-bold;
+
+    @include screenMax('mobile') {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+    }
   }
 }
 
@@ -99,7 +104,6 @@
   
   &:hover {
     color: $secondary-green;
-    
     &::after {
       width: 100%;
     }
@@ -121,6 +125,13 @@
   color: #3DB54A;
   font-family: $font-gothic-bold;
   font-weight: 900!important;
+  @extend %text-20;
+
+  @include screenMax('mobile') {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  
 }
 
 .mobileMenuToggle {
@@ -151,12 +162,15 @@
 	flex-wrap: nowrap;
 	margin-left: 3rem;
   display: none;
+
 	@include screenMax("tablet") {
     @include flex();
     display: flex;
 		flex-wrap: wrap;
 		.button{
 			width: 100%;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
 		}
 	}
 }
@@ -166,6 +180,7 @@
   left: 20rem;
   margin: 0;
   @include flex();
+
   @include screenMax("tablet") {
     display: none;
 	}

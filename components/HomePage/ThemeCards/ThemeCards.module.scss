@@ -8,8 +8,10 @@
     .text_details {
         width: 100%;
         h3 {
-            font-size: 2rem;
-            line-height: 2.8rem;
+            font-size: 2.8rem;
+            line-height: 3.2rem;
+            letter-spacing: 0.01rem;
+            text-align: justify;
             color: #616161;
             font-family: $font-gothic;
         }
@@ -29,14 +31,14 @@
         h3 {
             font-family: $font-gothic-bold;
             color: #3DB54A;
-            font-size: 3.5rem;
-            line-height: 4.4rem;
+            font-size: 4.4rem;
+            line-height: 5.6rem;
         }
         h6 {
             font-family: $font-gothic;
             color: #14361B;
-            font-size: 1.6rem;
-            line-height: 2.4rem;
+            font-size: 2.7rem;
+            line-height: 3.2rem;
         }
         .theme_details_text {
             display: flex;
@@ -45,14 +47,14 @@
             h4 {
                 color: #14361B;
                 font-family: $font-gothic-bold;
-                font-size: 3.5rem;
-                line-height: 4.4rem;
+                font-size: 4.4rem;
+                line-height: 5.6rem;
             }
             p {
                 font-family: $font-gothic;
                 color: #14361B;
-                font-size: 1.6rem;
-                line-height: 2rem;
+                font-size: 2.7rem;
+                line-height: 3.2rem;
             }
         }
         .link_container {
@@ -64,7 +66,29 @@
         padding: 6rem 5rem 0;
         .text_details{
             h3 {
+                font-size: 2rem;
                 line-height: 2.4rem;
+            }
+        }
+        .theme_details {
+            gap: 2rem;
+            h3 {
+                font-size: 3.2rem;
+                line-height: 4rem;
+            }
+            h6 {
+                font-size: 2rem;
+                line-height: 2.4rem;
+            }
+            .theme_details_text {
+                h4 {
+                    font-size: 3.2rem;
+                    line-height: 4rem;
+                }
+                p {
+                    font-size: 2rem;
+                    line-height: 2.4rem;
+                }
             }
         }
     }
@@ -74,9 +98,9 @@
         .text_details {
             width: 100%;
             h3 {
-                font-size: 1.2rem;
-                line-height: 1.6rem;
-                text-align: left;
+                font-size: 1.6rem;
+                line-height: 2rem;
+                text-align: justify;
             }
         }
         .theme_details {
@@ -87,26 +111,26 @@
                 display: block;
             }
             h3 {
-                font-size: 2rem;
-                line-height: 2.4rem;
+                font-size: 2.4rem;
+                line-height: 2.8rem;
             }
             h6 {
                 display: none;
             }
             .theme_details_text {
                 gap: 0.8rem;
-                margin-bottom: 2.4rem;
+                margin-bottom: 0.8rem;
                 h4 {
-                    font-size: 1.6rem;
-                    line-height: 2.4rem;
-                    width: 65%;
+                    font-size: 2.4rem;
+                    line-height: 2.8rem;
+                    width: 75%;
                     margin: 0 auto;
                 }
                 p {
-                    width: 70%;
+                    width: 95%;
                     margin: 0 auto;
-                    font-size: 1.2rem;
-                    line-height: 1.6rem;
+                    font-size: 1.6rem;
+                    line-height: 2rem;
                 }
             }
             .link_container {

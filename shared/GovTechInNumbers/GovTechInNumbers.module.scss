@@ -5,14 +5,14 @@
     position: relative;
     width: 100%;
     position: relative;
-    padding: 9.2rem 11.4rem 39.1rem;
+    padding: 9.2rem 11.4rem 21rem;
     .header {
         max-width: 1440px;
         margin: 0 auto;
         h1 {
-            font-size: 6rem;
+            font-size: 7.4rem;
             font-family: $font-gothic-bold;
-            line-height: 6.4rem;
+            line-height: 8rem;
             color: #3DB54A;
         }
     }
@@ -66,20 +66,26 @@
         padding: 4.6rem 5.7rem 20rem;
         .header {
             h1 {
-                font-size: 4rem;
+                font-size: 4.4rem;
                 line-height: 5.6rem;
             }
         }
         .row {
             margin-top: 0;
             .grid {
-                @include grid(repeat(3, 1fr), 3.5rem, 4rem);
+                @include grid(repeat(3, 1fr), 2rem, 4rem);
+                .text {
+                    h2 {
+                        font-size: 4rem;
+                        line-height: 5.2rem;
+                    }
+                }
             }
         }
     }
     
     @include screenMax('mobile') {
-        padding: 2.4rem 1.6rem 8rem;
+        padding: 2.4rem 1.6rem 6rem;
         .header {
             h1 {
                 font-size: 3.5rem;
@@ -104,11 +110,11 @@
                 padding-left: 1.4rem;
                 height: max-content;
                 h2 {
-                    font-size: 2rem;
-                    line-height: 2.4rem;
+                    font-size: 3.2rem;
+                    line-height: 4rem;
                 }
                 p {
-                    font-size: 1.2rem;
+                    font-size: 1.3rem;
                     line-height: 1.6rem;
                 }
             }

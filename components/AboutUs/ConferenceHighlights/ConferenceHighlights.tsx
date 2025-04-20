@@ -19,7 +19,7 @@ const ConferenceHighlights = () => {
        designed to run simultaneously with Africa GovTech Week, providing a 
        dynamic platform for developers, tech entrepreneurs, and innovators 
        to create cutting-edge digital solutions tailored to the public sector`,
-      href: '/'
+      href: '/highlights'
 
     },
     {
@@ -29,7 +29,7 @@ const ConferenceHighlights = () => {
         and policy development initiative within the Africa GovTech Week, 
         designed to bring together key stakeholders to collaboratively 
         develop a Continental GovTech Action Plan.`,
-      href: '/'
+      href: '/highlights'
     },
     {
       icon: '/svgs/govtech_alliance.svg',
@@ -39,7 +39,7 @@ const ConferenceHighlights = () => {
         accelerating the adoption of technology in governance, fostering 
         cross-border collaboration, and funding scalable digital solutions 
         for public sector transformation across the continent`,
-      href: '/'
+      href: '/highlights'
     }
   ]
   return (

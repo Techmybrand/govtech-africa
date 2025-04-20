@@ -5,7 +5,7 @@ import { Continent, Expectation, Participation, Partners, Registration, ThemeCar
 const HomeView = () => {
   return (
     <>
-      <HeroComponent title='Africa GovTech Week'
+      <HeroComponent title='Africa Govtech Week'
         subText={`Powering Africa's public sector digitisation`}
         backgroundImage='/images/hero-1.jpeg'
       />

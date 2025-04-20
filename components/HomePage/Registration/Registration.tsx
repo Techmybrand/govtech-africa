@@ -15,9 +15,10 @@ const Registration = () => {
               {`Be part of Africa's most transformative digital governance 
               experience—connect with government leaders & changemakers, 
               explore cutting-edge innovations, and help shape the 
-              continent's GovTech future`}
+              continent's Govtech future`}
             </h3>
-            <CustomLink label='Register' href='/contact'
+            <div className={styles.divider}></div>
+            <CustomLink label='Register' href='/contact' subType='black'
               className={styles.custom_link_class}
             />
           </div>

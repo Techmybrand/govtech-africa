@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { Button, Logo } from '@/shared';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import styles from './Header.module.scss';
 interface Props {
@@ -9,6 +9,7 @@ interface Props {
 }
 
 const Header = ({type = 'default'}: Props) => {
+  const router = useRouter();
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -49,22 +50,22 @@ const Header = ({type = 'default'}: Props) => {
           </div>
 
           <ul className={styles.navList_lg}>
-              <li className={styles.navItem}>
-                <Link href="/" 
-                  className={`${checkActive('/') ? styles.active : ''} ${styles.navLink}`}>
-                    Home
-                  </Link>
-              </li>
-              <li className={styles.navItem}>
-                <Link href="/about-us" className={`${checkActive('/about-us') ? styles.active : ''} ${styles.navLink}`}>
-                  {type === 'default' ? 'About' : 'About AGW'}
+            <li className={styles.navItem}>
+              <Link href="/" 
+                className={`${checkActive('/') ? styles.active : ''} ${styles.navLink}`}>
+                  Home
                 </Link>
-              </li>
-              <li className={styles.navItem}>
-                <Link href="/partner" className={`${checkActive('/partner') ? styles.active : ''} ${styles.navLink}`}>
-                  {type === 'default' ? 'Partner' : 'Partner/sponsor'}
-                </Link>
-              </li>
+            </li>
+            <li className={styles.navItem}>
+              <Link href="/about-us" className={`${checkActive('/about-us') ? styles.active : ''} ${styles.navLink}`}>
+                {type === 'default' ? 'About' : 'About AGW'}
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href="/partner" className={`${checkActive('/partner') ? styles.active : ''} ${styles.navLink}`}>
+                {type === 'default' ? 'Partner' : 'Partner/sponsor'}
+              </Link>
+            </li>
           </ul>
           <div className={styles.button_container_lg}>
             <Link href="#register">
@@ -79,18 +80,31 @@ const Header = ({type = 'default'}: Props) => {
 
           <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
             <ul className={styles.navList}>
-              <li className={styles.navItem}>
-                <Link href="/" className={`${checkActive('/') ? styles.active : ''} ${styles.navLink}`}>Home</Link>
+              <li className={styles.navItem} onClick={() => {
+                router.push('/');
+                setIsMobileMenuOpen(false);
+              }}>
+                <div className={`${checkActive('/') ? styles.active : ''} ${styles.navLink}`}>
+                  Home
+                </div>
               </li>
-              <li className={styles.navItem}>
-                <Link href="/about-us" className={`${checkActive('/about-us') ? styles.active : ''} ${styles.navLink}`}>
+              <li className={styles.navItem} onClick={() => {
+                  router.push('/about-us');
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                <div className={`${checkActive('/about-us') ? styles.active : ''} ${styles.navLink}`}>
                   {type === 'default' ? 'About' : 'About AGW'}
-                </Link>
+                </div>
               </li>
-              <li className={styles.navItem}>
-                <Link href="/partner" className={`${checkActive('/partner') ? styles.active : ''} ${styles.navLink}`}>
+              <li className={styles.navItem} onClick={() => {
+                  router.push('/partner');
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                <div className={`${checkActive('/partner') ? styles.active : ''} ${styles.navLink}`}>
                   {type === 'default' ? 'Partner' : 'Partner/sponsor'}
-                </Link>
+                </div>
               </li>
             </ul>
 
