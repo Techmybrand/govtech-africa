@@ -90,8 +90,8 @@
     font-family: $font-gothic-bold;
 
     @include screenMax('mobile') {
-      font-size: 1.6rem;
-      line-height: 2.4rem;
+      font-size: 1.4rem;
+      line-height: 2rem;
     }
   }
 }
@@ -128,8 +128,8 @@
   @extend %text-20;
 
   @include screenMax('mobile') {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
   
 }
@@ -199,8 +199,8 @@
 		.button{
 			width: 100%;
       h3 {
-        font-size: 1.6rem;
-        line-height: 2.4rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
       }
 		}
 	}

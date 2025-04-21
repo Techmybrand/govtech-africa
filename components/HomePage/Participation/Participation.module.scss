@@ -91,8 +91,8 @@
         .participation_details {
             gap: 3.2rem;
             h2 {
-                font-size: 3.6rem;
-                line-height: 4.8rem;
+                font-size: 3.2rem;
+                line-height: 4rem;
             }
             .cards_container {
                 @include grid(repeat(1, 1fr), 1rem, 3.2rem);
@@ -105,14 +105,14 @@
                         padding: 0.8rem;
                     }
                     h3 {
-                        font-size: 2.4rem;
+                        font-size: 2.2rem;
                         line-height: 2.8rem;
                         width: 90%;
                     }
                     p {
                         opacity: 1;
-                        font-size: 1.8rem;
-                        line-height: 2.4rem;
+                        font-size: 1.4rem;
+                        line-height: 2rem;
                     }
                 }
             }
