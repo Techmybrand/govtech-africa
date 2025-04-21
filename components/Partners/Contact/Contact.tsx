@@ -11,11 +11,12 @@ const Contact = () => {
       <div className={styles.overlay}></div>
       <div className={styles.continent_details}>
         <h3>
-          With over 60% of Africa’s h3opulation under 25, the demand 
-          for efficient, transparent, and digital-first governance 
-          has never been greater. Governments are turning to 
-          technology not just to modernize but to build trust, 
-          enhance service delivery, and drive economic transformation.
+          The Africa Govtech Week is not just a conference—it is a movement 
+          to redefine governance in the digital era. Partnering with this 
+          event means contributing to a future where technology empowers 
+          governments, businesses, and citizens alike. Whether through policy 
+          influence, innovation, or funding, your organization can play a 
+          transformative role in shaping Africa’s digital governance landscape.
         </h3>
         <Button buttonType='transparent' onClick={() => router.push('/contact')} 
             className={styles.contact_btn}

@@ -1,12 +1,10 @@
 import React from 'react';
-import styles from './FaqCard.module.scss'
 import { Accordion } from '@/shared';
-
+import styles from './FaqCard.module.scss';
 interface QAProps {
   question: string
   answer: string
 }
-
 interface FaqCardProps {
   header: string
   QA: QAProps[]
@@ -20,7 +18,6 @@ const FaqCard = ({ header, QA }: FaqCardProps) => {
         {QA.map((data: QAProps, index: number) =>
           <Accordion key={index} title={data?.question}>
             <div className={styles.answers_container}>
-              <h6>A: </h6>
               <p>{data?.answer}</p>
             </div>
           </Accordion>

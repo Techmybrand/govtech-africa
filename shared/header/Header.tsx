@@ -110,11 +110,13 @@ const Header = ({type = 'default'}: Props) => {
 
 		        <div className={styles.button_container}>
               <Link href="#register">
-                <Button className={styles.button}>Register</Button>
+                <Button className={styles.button}>
+                  <h3>Register</h3>
+                </Button>
               </Link>
               <Link href="/contact">
                 <Button buttonType='secondary' className={styles.button}>
-                  Contact Us
+                  <h3>Contact Us</h3>
                 </Button>
               </Link>
 		        </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from './Slider.module.scss'
+import styles from './Slider.module.scss';
 
 const Slider = () => {
   
@@ -8,6 +8,158 @@ const Slider = () => {
     <div className={styles.slides_wrapper}>
       <div className={styles.slides}>
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item: number) => (
+          <React.Fragment key={item}>
+            <div className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+          </React.Fragment>
+        ))}
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item: number) => (
+          <React.Fragment key={item}>
+            <div className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+              quality={100}
+              priority
+              src="/svgs/slider.svg"
+              alt="Govtech"
+              fill
+             />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+            <div key={item} className={styles.slide}>
+              <Image
+                quality={100}
+                priority
+                src="/svgs/slider.svg"
+                alt="Govtech"
+                fill
+              />
+            </div>
+          </React.Fragment>
+        ))}
+        {/* {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item: number) => (
           <div key={item} className={styles.slide}>
             <Image
               quality={100}
@@ -28,29 +180,7 @@ const Slider = () => {
               fill
             />
           </div>
-        ))}
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item: number) => (
-          <div key={item} className={styles.slide}>
-            <Image
-              quality={100}
-              priority
-              src="/images/slide.png"
-              alt="Govtech"
-              fill
-            />
-          </div>
-        ))}
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item: number) => (
-          <div key={item} className={styles.slide}>
-            <Image
-              quality={100}
-              priority
-              src="/images/slide.png"
-              alt="Govtech"
-              fill
-            />
-          </div>
-        ))}
+        ))} */}
       </div>
     </div>
   )

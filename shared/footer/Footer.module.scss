@@ -24,13 +24,13 @@
 					line-height: 5.6rem;
 				}
 				p {
-					font-size: 2.8rem;
+					font-size: 2.4rem;
 					line-height: 3.2rem;
 					font-family: $font-gothic;
 					color: #000;
 					width: 125%;
 					span {
-						font-size: 2.8rem;
+						font-size: 2.4rem;
 						line-height: 3.2rem;
 						font-family: $font-gothic;
 						color: #000;
@@ -47,7 +47,7 @@
 				border-top: 0.1rem solid #000;
 				width: fit-content;
 				h3 {
-					font-size: 2.8rem;
+					font-size: 2.4rem;
 					line-height: 3.2rem;
 					color: #000;
 					font-family: $font-gothic;
@@ -64,7 +64,7 @@
 				li {
 					color: #14361B;
 					font-family: $font-gothic;
-					font-size: 2.8rem;
+					font-size: 2.4rem;
 					text-decoration: underline;
 					line-height: 3.2rem;
 					&:hover {
@@ -94,8 +94,8 @@
 			.footer_logo {
 				h3 {
 					color: #14361B;
-					font-size: 2rem;
-					line-height: 2.4rem;
+					font-size: 2.4rem;
+					line-height: 3.2rem;
 					font-family: $font-gothic-bold;
 					margin-bottom: 0.8rem;
 				}
@@ -143,18 +143,18 @@
 					}
 					p {
 						font-size: 2rem;
-						line-height: 2.4rem;
+						line-height: 2.8rem;
 						width: 90%;
 						span {
 							font-size: 2rem;
-							line-height: 2.4rem;
+							line-height: 2.8rem;
 						}
 					}
 				}
 				.copy_write {
 					h3 {
 						font-size: 2rem;
-						line-height: 2.4rem;
+						line-height: 2.8rem;
 					}
 				}
 			}
@@ -163,7 +163,7 @@
 				a {
 					li {
 						font-size: 2rem;
-						line-height: 2.4rem;
+						line-height: 2.8rem;
 					}
 				}
 			}
@@ -174,7 +174,7 @@
     }
     
     @include screenMax('mobile') {
-		padding: 0 2rem;
+		padding: 2.4rem 2rem 0;
 		.footer_body {
 			flex-direction: column;
 			.questions_container {
@@ -183,15 +183,15 @@
 					margin-bottom: 0;
 					h3 {
 						font-size: 2.4rem;
-						line-height: 2.8rem;
+						line-height: 3.2rem;
 						margin-bottom: 0.8rem;
 					}
 					p {
-						font-size: 1.8rem;
+						font-size: 1.6rem;
 						line-height: 2.4rem;
 						width: 100%;
 						span {
-							font-size: 1.8rem;
+							font-size: 1.6rem;
 							line-height: 2.4rem;
 						}
 					}
@@ -199,7 +199,7 @@
 				.copy_write {
 					display: none;
 					h3 {
-						font-size: 1.8rem;
+						font-size: 1.6rem;
 						line-height: 2.4rem;
 						margin-top: 0.8rem;
 					}
@@ -209,7 +209,7 @@
 				margin: 2.4rem 0;
 				a {
 					li {
-						font-size: 1.8rem;
+						font-size: 1.6rem;
 						line-height: 2.4rem;
 					}
 				}
@@ -221,7 +221,7 @@
 				background: #DEDEDE;
 				display: block;
 				h3 {
-					font-size: 1.8rem;
+					font-size: 1.6rem;
 					line-height: 2.4rem;
 					margin-top: 1.6rem;
 				}
@@ -239,8 +239,8 @@
 				}
 				.footer_logo {
 					h3 {
-						font-size: 1.8rem;
-						line-height: 2.4rem;
+						font-size: 1.4rem;
+						line-height: 2rem;
 					}
 					a {
 						.logo {

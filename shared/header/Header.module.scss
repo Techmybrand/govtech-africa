@@ -90,7 +90,7 @@
     font-family: $font-gothic-bold;
 
     @include screenMax('mobile') {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       line-height: 2.4rem;
     }
   }
@@ -128,7 +128,7 @@
   @extend %text-20;
 
   @include screenMax('mobile') {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 2.4rem;
   }
   
@@ -138,8 +138,8 @@
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 1.7rem;
-  height: 1rem;
+  width: 3rem;
+  height: 2rem;
   cursor: pointer;
   z-index: 1002;
   
@@ -149,12 +149,22 @@
   
   span {
     display: block;
-    height: 2px;
+    height: 3px;
     width: 100%;
     background-color: $white;
     border-radius: 3px;
     transition: all 0.3s ease;
   }
+
+  @include screenMax("mobile") {
+    display: flex;
+    width: 1.7rem;
+    height: 1rem;
+    span {
+      height: 2px;
+    }
+  }
+
 }
 
 .button_container, .button_container_lg {
@@ -162,6 +172,12 @@
 	flex-wrap: nowrap;
 	margin-left: 3rem;
   display: none;
+  .button {
+    h3 {
+      font-size: 2.4rem;
+      line-height: 3.2rem
+    }
+  }
 
 	@include screenMax("tablet") {
     @include flex();
@@ -169,8 +185,23 @@
 		flex-wrap: wrap;
 		.button{
 			width: 100%;
-      font-size: 1.8rem;
-      line-height: 2.4rem;
+      h3 {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+      }
+		}
+	}
+
+  @include screenMax("mobile") {
+    @include flex();
+    display: flex;
+		flex-wrap: wrap;
+		.button{
+			width: 100%;
+      h3 {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
 		}
 	}
 }

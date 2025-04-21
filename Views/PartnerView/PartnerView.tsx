@@ -14,6 +14,7 @@ const PartnerView = () => {
       <WhyPartner />
       <Contact />
       <BecomeASponsor />
+      <Slider />
       <BookAStand />
       <Slider />
       <Registration />

@@ -18,7 +18,7 @@
         width: 100%;
         height: 100%;
         background-color: #0F3D25;
-        opacity: 0.9;
+        opacity: 0.95;
         z-index: 1;
         
     }
@@ -37,32 +37,36 @@
         h3 {
             text-align: center;
             font-family: $font-gothic;
-            font-size: 3.5rem;
+            font-size: 4.4rem;
             color: $col-white;
-            line-height: 4.4rem;
+            line-height: 5.6rem;
         }
     }
 
     @include screenMax('tablet') {
         background-size: cover;
-        height: 94vh;
+        height: 91.5vh;
         .details {
             .image {
                 height: 45rem;
+            }
+            h3 {
+                font-size: 3.2rem;
+                line-height: 4.4rem;
             }
         }
     }
 
     @include screenMax('mobile') {
-        height: 90vh;
+        height: 60vh;
         .details {
             .image {
                 width: 22.7rem;
                 height: 14.3rem;
             }
             h3 {
-                font-size: 1.6rem;
-                line-height: 2.4rem;
+                font-size: 2.4rem;
+                line-height: 3.2rem;
             }
         }
     }
