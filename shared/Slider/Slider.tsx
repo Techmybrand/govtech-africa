@@ -18,61 +18,7 @@ const Slider = () => {
                 fill
               />
             </div>
-            <div key={item} className={styles.slide}>
-              <Image
-                quality={100}
-                priority
-                src="/svgs/slider.svg"
-                alt="Govtech"
-                fill
-              />
-            </div>
-            <div key={item} className={styles.slide}>
-              <Image
-                quality={100}
-                priority
-                src="/svgs/slider.svg"
-                alt="Govtech"
-                fill
-              />
-            </div>
-            <div key={item} className={styles.slide}>
-              <Image
-                quality={100}
-                priority
-                src="/svgs/slider.svg"
-                alt="Govtech"
-                fill
-              />
-            </div>
-            <div key={item} className={styles.slide}>
-              <Image
-                quality={100}
-                priority
-                src="/svgs/slider.svg"
-                alt="Govtech"
-                fill
-              />
-            </div>
-            <div key={item} className={styles.slide}>
-              <Image
-                quality={100}
-                priority
-                src="/svgs/slider.svg"
-                alt="Govtech"
-                fill
-              />
-            </div>
-            <div key={item} className={styles.slide}>
-              <Image
-                quality={100}
-                priority
-                src="/svgs/slider.svg"
-                alt="Govtech"
-                fill
-              />
-            </div>
-            <div key={item} className={styles.slide}>
+            <div className={styles.slide}>
               <Image
                 quality={100}
                 priority
