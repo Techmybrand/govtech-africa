@@ -12,7 +12,6 @@
 		align-items: flex-start;
 		justify-content: space-between;
 		display: flex;
-		padding-bottom: 6rem;
 		.questions_container {
 			.questions {
 				width: 44rem;
@@ -114,10 +113,10 @@
 	}
 	.image_background__container {
         position: absolute;
-        bottom: -25rem;
+        bottom: -30rem;
         left: 0;
         width: 100%;
-        height: 25rem;
+        height: 30rem;
 		background: $col-white;
         .image_background {
             position: relative;
@@ -132,7 +131,6 @@
 	@include screenMax('tablet') {
 		padding: 4rem 4rem 0;
 		.footer_body {
-			padding-bottom: 4rem;
 			.questions_container {
 				width: 100%;
 				.questions {
@@ -170,6 +168,10 @@
 			.socials_and_logo {
 				width: 100%;
 			}
+		}
+		.image_background__container {
+			bottom: -15rem;
+			height: 15rem;
 		}
     }
     
@@ -216,7 +218,7 @@
 			}
 			.divider {
 				width: 100%;
-				margin: 2.4rem 0 1.6rem;
+				margin: 2.4rem 0 4rem;
 				height: 0.2rem;
 				background: #DEDEDE;
 				display: block;
@@ -252,14 +254,14 @@
 			}
 		}
         .image_background__container {
-            bottom: -9rem;
-			height: 9rem;
-			.footer_bg_image_sm {
-				display: block;
-			}
-			.footer_bg_image_lg {
-				display: none;
-			}
+            bottom: -8.5rem;
+			height: 8.5rem;
+			// .footer_bg_image_sm {
+			// 	display: block;
+			// }
+			// .footer_bg_image_lg {
+			// 	display: none;
+			// }
 		}
 	}
 }

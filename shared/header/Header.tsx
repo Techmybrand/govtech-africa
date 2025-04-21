@@ -110,12 +110,12 @@ const Header = ({type = 'default'}: Props) => {
 
 		        <div className={styles.button_container}>
               <Link href="#register">
-                <Button className={styles.button}>
+                <Button onClick={() => setIsMobileMenuOpen(false)} className={styles.button}>
                   <h3>Register</h3>
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button buttonType='secondary' className={styles.button}>
+                <Button onClick={() => setIsMobileMenuOpen(false)} buttonType='secondary' className={styles.button}>
                   <h3>Contact Us</h3>
                 </Button>
               </Link>
