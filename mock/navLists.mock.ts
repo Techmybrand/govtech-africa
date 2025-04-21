@@ -450,15 +450,8 @@ export const FaqLists = [
 ]
 
 export const inquiryTypes = [
-	{ label: 'Sponsorship Opportunities', value: 'sponsorship opportunities' },
+	{ label: 'Sponsorship/Opportunities/Exhibibition', value: 'sponsorship/opportunities/exhibition' },
 	{ label: 'Speaking Opportunities', value: 'speaking opportunities' },
-	{ label: 'Exhibition Opportunities', value: 'exhibition opportunities' },
-	{ label: 'Partnership Opportunities', value: 'partnership opportunities' },
 	{ label: 'General Inquiry', value: 'general inquiry' },
 	{ label: 'Media and Press', value: 'media and press' },
-	{ label: 'Volunteer Opportunities', value: 'volunteer opportunities' },
-	{ label: 'Technical Support', value: 'technical support' },
-	{ label: 'Event Registration Assistance', value: 'event registration assistance' },
-	{ label: 'Feedback or Suggestions', value: 'feedback or suggestions' },
-	{ label: 'Other', value: 'other' }
 ];
