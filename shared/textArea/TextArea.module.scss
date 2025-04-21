@@ -29,8 +29,9 @@
 			white-space: pre-wrap;
 			overflow-wrap: break-word;
 			&::placeholder {
-				font-size: 1.4rem;
-				line-height: 2.5rem;
+				font-size: 1.6rem;
+				line-height: 2.6rem;
+				font-family: $font-gothic;
 				color: rgba($col-white, 0.6);
 			}
 		}
@@ -48,15 +49,30 @@
 		}
 	}
 	.textarea_label {
-		font-size: 1.2rem;
-		line-height: 1.4rem;
+		font-size: 1.6rem;
+		line-height: 2.4rem;
 		color: #999999;
-		font-family: $font-gothic-bold;
+		font-family: $font-gothic;
 	}
 	.textarea_error {
 		font-size: 1.2rem;
 		line-height: 1.4rem;
 		color: #FC0000;
 		font-family: $font-gothic;
+	}
+
+	@include screenMax('mobile') {
+		.textarea_label {
+			font-size: 1.4rem;
+			line-height: 2rem;
+		}
+		.textarea_wrapper {
+			.textarea_field {
+				&::placeholder {
+					font-size: 1.4rem;
+					line-height: 2rem;
+				}
+			}
+		}
 	}
 }

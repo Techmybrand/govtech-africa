@@ -4,7 +4,7 @@
   @include flex(flex-start, center);
   margin-top: 1.8rem;
   position: relative;
-  max-width: 15rem;
+  max-width: 21rem;
   &::after {
     content: '';
     position: absolute;
@@ -23,6 +23,8 @@
   p{
     color: $secondary-green;
     font-family: $font-gothic-bold;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
   }
   span{
     position: relative;
@@ -37,7 +39,7 @@
     }
     p {
       font-size: 1.2rem;
-      line-height: 1.6rem;
+      line-height: 2rem;
     }
     span {
       width: 1.6rem;

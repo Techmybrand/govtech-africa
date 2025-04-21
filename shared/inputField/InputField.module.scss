@@ -7,10 +7,14 @@
 }
 
 .input_label {
-	font-size: 1.2rem;
-	line-height: 1.4rem;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
 	color: #999999;
-	font-family: $font-gothic-bold;
+	font-family: $font-gothic;
+	@include screenMax('mobile') {
+		font-size: 1.4rem;
+		line-height: 2rem;
+	}
 }
 
 .input_error {
@@ -35,9 +39,11 @@
 	&:focus-within {
 		transition: all 0.3s linear;
 	}
+	@include screenMax('tablet') {
+		height: auto;
+	}
 	@include screenMax('mobile') {
-		height: 4rem;
-		padding: 1.6rem 2rem;
+		padding: 0.8rem 1.6rem;
 	}
 }
 
@@ -62,7 +68,14 @@
 	&::placeholder {
 		font-size: 1.4rem;
 		line-height: 2rem;
+		font-family: $font-gothic;
 		color: #999999;
+	}
+	@include screenMax('mobile') {
+		&::placeholder {
+			font-size: 1.4rem;
+			line-height: 2rem;
+		}
 	}
 }
 

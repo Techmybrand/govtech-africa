@@ -18,7 +18,6 @@ const Accordion = ({ title, children }: AccordionProps) => {
         <div data-active={isOpen} onClick={OpenAccordion} className={styles.accordion_container}>
             <div className={styles.accordion_header_container}>
                 <div className={styles.accordion_header}>
-                    <h3>Q: </h3>
                     <h1 className={styles.accordion_title}>
                         {title}
                     </h1>

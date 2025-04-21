@@ -12,25 +12,25 @@
 		align-items: flex-start;
 		justify-content: space-between;
 		display: flex;
-		padding-bottom: 6rem;
 		.questions_container {
 			.questions {
 				width: 44rem;
 				margin-bottom: 8.6rem;
 				h3 {
 					color: #3DB54A;
-					font-size: 3.5rem;
+					font-size: 4.4rem;
 					font-family: $font-gothic-bold;
-					line-height: 4.4rem;
+					line-height: 5.6rem;
 				}
 				p {
-					font-size: 1.6rem;
-					line-height: 2rem;
+					font-size: 2.4rem;
+					line-height: 3.2rem;
 					font-family: $font-gothic;
 					color: #000;
+					width: 125%;
 					span {
-						font-size: 1.6rem;
-						line-height: 2rem;
+						font-size: 2.4rem;
+						line-height: 3.2rem;
 						font-family: $font-gothic;
 						color: #000;
 						cursor: pointer;
@@ -46,8 +46,8 @@
 				border-top: 0.1rem solid #000;
 				width: fit-content;
 				h3 {
-					font-size: 1.6rem;
-					line-height: 2.4rem;
+					font-size: 2.4rem;
+					line-height: 3.2rem;
 					color: #000;
 					font-family: $font-gothic;
 					margin-top: 2rem;
@@ -59,11 +59,17 @@
 			flex-direction: column;
 			gap: 1.6rem;
 			a {
+				transition: all 300ms ease-in-out;
 				li {
 					color: #14361B;
-					font-family: $font-gothic-bold;
-					font-size: 2rem;
-					line-height: 2.4rem;
+					font-family: $font-gothic;
+					font-size: 2.4rem;
+					text-decoration: underline;
+					line-height: 3.2rem;
+					&:hover {
+						color: #3DB54A;
+						transition: all 300ms ease-in-out;
+					}
 				}
 			}
 		}
@@ -87,8 +93,8 @@
 			.footer_logo {
 				h3 {
 					color: #14361B;
-					font-size: 2rem;
-					line-height: 2.4rem;
+					font-size: 2.4rem;
+					line-height: 3.2rem;
 					font-family: $font-gothic-bold;
 					margin-bottom: 0.8rem;
 				}
@@ -107,10 +113,10 @@
 	}
 	.image_background__container {
         position: absolute;
-        bottom: -25rem;
+        bottom: -30rem;
         left: 0;
         width: 100%;
-        height: 25rem;
+        height: 30rem;
 		background: $col-white;
         .image_background {
             position: relative;
@@ -125,17 +131,52 @@
 	@include screenMax('tablet') {
 		padding: 4rem 4rem 0;
 		.footer_body {
-			padding-bottom: 4rem;
 			.questions_container {
+				width: 100%;
 				.questions {
 					margin-bottom: 5rem;
+					h3 {
+						font-size: 3.2rem;
+						line-height: 4rem;
+					}
+					p {
+						font-size: 2rem;
+						line-height: 2.8rem;
+						width: 90%;
+						span {
+							font-size: 2rem;
+							line-height: 2.8rem;
+						}
+					}
+				}
+				.copy_write {
+					h3 {
+						font-size: 2rem;
+						line-height: 2.8rem;
+					}
 				}
 			}
+			.nav_list {
+				width: 100%;
+				a {
+					li {
+						font-size: 2rem;
+						line-height: 2.8rem;
+					}
+				}
+			}
+			.socials_and_logo {
+				width: 100%;
+			}
+		}
+		.image_background__container {
+			bottom: -15rem;
+			height: 15rem;
 		}
     }
     
     @include screenMax('mobile') {
-		padding: 0 2rem;
+		padding: 2.4rem 2rem 0;
 		.footer_body {
 			flex-direction: column;
 			.questions_container {
@@ -143,24 +184,25 @@
 					width: 100%;
 					margin-bottom: 0;
 					h3 {
-						font-size: 2rem;
-						line-height: 2.4rem;
+						font-size: 2.4rem;
+						line-height: 3.2rem;
 						margin-bottom: 0.8rem;
 					}
 					p {
-						font-size: 1.2rem;
-						line-height: 1.6rem;
+						font-size: 1.6rem;
+						line-height: 2.4rem;
+						width: 100%;
 						span {
-							font-size: 1.2rem;
-							line-height: 1.6rem;
+							font-size: 1.6rem;
+							line-height: 2.4rem;
 						}
 					}
 				}
 				.copy_write {
 					display: none;
 					h3 {
-						font-size: 1.2rem;
-						line-height: 1.6rem;
+						font-size: 1.6rem;
+						line-height: 2.4rem;
 						margin-top: 0.8rem;
 					}
 				}
@@ -169,20 +211,20 @@
 				margin: 2.4rem 0;
 				a {
 					li {
-						font-size: 1.2rem;
-						line-height: 1.6rem;
+						font-size: 1.6rem;
+						line-height: 2.4rem;
 					}
 				}
 			}
 			.divider {
 				width: 100%;
-				margin: 2.4rem 0 1.6rem;
+				margin: 2.4rem 0 4rem;
 				height: 0.2rem;
 				background: #DEDEDE;
 				display: block;
 				h3 {
-					font-size: 1.2rem;
-					line-height: 1.6rem;
+					font-size: 1.6rem;
+					line-height: 2.4rem;
 					margin-top: 1.6rem;
 				}
 			}
@@ -199,8 +241,8 @@
 				}
 				.footer_logo {
 					h3 {
-						font-size: 1.2rem;
-						line-height: 1.6rem;
+						font-size: 1.4rem;
+						line-height: 2rem;
 					}
 					a {
 						.logo {
@@ -212,14 +254,14 @@
 			}
 		}
         .image_background__container {
-            bottom: -9rem;
-			height: 9rem;
-			.footer_bg_image_sm {
-				display: block;
-			}
-			.footer_bg_image_lg {
-				display: none;
-			}
+            bottom: -8.5rem;
+			height: 8.5rem;
+			// .footer_bg_image_sm {
+			// 	display: block;
+			// }
+			// .footer_bg_image_lg {
+			// 	display: none;
+			// }
 		}
 	}
 }

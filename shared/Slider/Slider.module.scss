@@ -10,11 +10,13 @@
         flex-wrap: nowrap;
         white-space: nowrap;
         overflow-x: hidden;
+        width: 100%;
         .slide {
             position: relative;
             flex-shrink: 0;
             width: 72.8rem;
             height: 13.6rem;
+            margin-right: 1.6rem;
         }
     
         @keyframes scroll {
@@ -28,10 +30,17 @@
     
     }
     @include screenMax('tablet') {
-        padding-block: 8rem;
+        padding-block: 6rem;
     }
     
     @include screenMax('mobile') {
-        padding-block: 4rem;
+        padding-block: 3.2rem;
+        .slides {
+            .slide {
+                width: 16.5rem;
+                height: 3rem;
+                margin-right: 0.8;
+            }
+        }
     }
 }

@@ -44,7 +44,7 @@ const GovTechInNumbers = () => {
         </div>
         <div className={styles.image_background__container}>
             <div className={styles.image_background}>
-                <Image src="/images/africa-background.png" fill alt="" />
+                <Image src="/svgs/footer_bg_lg.svg" fill alt="" />
             </div>
         </div>
     </section>

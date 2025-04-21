@@ -68,11 +68,11 @@ const Footer = () => {
 			</div>
 			<div className={styles.image_background__container}>
 				<div className={`${styles.footer_bg_image_lg} ${styles.image_background}`}>
-					<Image src="/images/africa-background.png" fill alt="" />
+					<Image src="/svgs/footer_bg_lg.svg" fill alt="" />
 				</div>
-				<div className={`${styles.footer_bg_image_sm} ${styles.image_background}`}>
+				{/* <div className={`${styles.footer_bg_image_sm} ${styles.image_background}`}>
 					<Image src="/images/africa-background_2.png" fill alt="" />
-				</div>
+				</div> */}
         	</div>
 		</footer>
 	);

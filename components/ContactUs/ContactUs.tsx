@@ -65,10 +65,10 @@ const ContactUs = () => {
                         <h3>Or Call us</h3>
                         <div className={styles.call_numbers}>
                             <Link href='tel:+234 810 287 5064'>
-                                <p>+234 810 287 5064; </p>
+                                <p>+234 810 287 5064, </p>
                             </Link>
                             <Link href='tel:+234 906 049 0067'>
-                                <p>+234 906 049 0067;</p>
+                                <p>+234 906 049 0067</p>
                             </Link>
                         </div>
                     </div>

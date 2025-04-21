@@ -24,8 +24,8 @@
 			h1 {
 				color: #14361B;
 				font-family: $font-gothic-bold;
-				font-size: 1.6rem;
-				line-height: 2.4rem;
+				font-size: 2.4rem;
+				line-height: 3.2rem;
 			}
 		}
 		.accordion_icon {
@@ -70,14 +70,25 @@
 		}
 	}
 
+	@include screenMax('tablet') {
+		.accordion_header_container {
+			.accordion_header {
+				h3, h1 {
+					font-size: 2.2rem;
+					line-height: 2.8rem;
+				}
+			}
+		}
+	}
+
 	@include screenMax('mobile') {
 		padding: 0;
 		min-height: 5rem;
 		.accordion_header_container {
 			.accordion_header {
 				h3, h1 {
-					font-size: 1.2rem;
-					line-height: 1.4rem;
+					font-size: 1.6rem;
+					line-height: 2.4rem;
 				}
 			}
 		}

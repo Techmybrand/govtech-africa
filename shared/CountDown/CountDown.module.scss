@@ -16,19 +16,19 @@
             .text {
                 h6 {
                     color: #FF1053;
-                    font-size: 2rem;
-                    line-height: 3rem;
-                    letter-spacing: 165%;
+                    font-size: 2.8rem;
+                    line-height: 3.2rem;
+                    letter-spacing: 1.65rem;
                 }
             }
             .countdown_text {
                 @include flex(center);
                 gap: 1.5rem;
                 p, h3, span {
-                    font-size: 5.2rem;
+                    font-size: 6.4rem;
                     color: #FF1053;
                     font-family: $font-gothic-bold;
-                    line-height: 6.4rem;
+                    line-height: 7.2rem;
                 }
                 .text {
                     @include flex(flex-start, center);
@@ -42,6 +42,15 @@
     @include screenMax('tablet') {
         .countdown_container {
             padding: 0 4rem 2rem;
+            .countdown {
+                .countdown_text {
+                    gap: 0.8rem;
+                    p, h3, span {
+                        font-size: 4rem;
+                        line-height: 5.2rem;
+                    }
+                }
+            }
         }
     }
 
@@ -52,16 +61,19 @@
                 gap: 2.4rem;
                 padding: 3.2rem 0;
                 .countdown_text {
-                    h3, span, p {
-                        font-size: 1.4rem;
-                        line-height: 2rem;
+                    h3, span {
+                        font-size: 3.2rem;
+                        line-height: 4rem;
                     }
                     p {
                         color: #14361B;
                         font-family: $font-gothic;
+                        line-height: 2rem;
+                        font-size: 1.4rem;
                     }
                     .text {
                         flex-direction: column;
+                        gap: 0;
                     }
                 }
                 .text {
