@@ -9,12 +9,12 @@
         margin: 0 auto;
         .header {
             margin: 0 auto 12rem;
-            width: 60rem;
+            width: 85rem;
             h1 {
                 color: #3DB54A;
                 font-family: $font-gothic-bold;
-                font-size: 3.5rem;
-                line-height: 4.4rem;
+                font-size: 4.4rem;
+                line-height: 5.6rem;
                 text-align: center;
                 margin-bottom: 2rem;
             }
@@ -25,9 +25,9 @@
                 h3 {
                     font-family: $font-gothic;
                     color: #616161;
-                    line-height: 2.4rem;
+                    line-height: 3.6rem;
                     text-align: center;
-                    font-size: 1.6rem;
+                    font-size: 2.8rem;
                 }
             }
         }
@@ -80,8 +80,19 @@
     @include screenMax('tablet') {
         .why_partner_wrapper {
             .header {
-                width: 50rem;
+                width: 80rem;
                 margin: 0 auto 6rem;
+                h1 {
+                    font-size: 3.2rem;
+                    line-height: 4.4rem;
+                    margin-bottom: 1.4rem;
+                }
+                .header_subtext {
+                    h3 {
+                        font-size: 2.2rem;
+                        line-height: 2.8rem;
+                    }
+                }
             }
             .wrapper, .__wrapper, .wrapper_reverse {
                 padding: 0 2.4rem!important;
@@ -117,6 +128,7 @@
                 h1 {
                     font-size: 2.4rem;
                     line-height: 3.2rem;
+                    margin-bottom: 0.8rem;
                 }
                 .header_subtext {
                     gap: 0;
@@ -125,6 +137,7 @@
                         line-height: 2rem;
                     }
                 }
+
             }
             .wrapper, .__wrapper, .wrapper_reverse {
                 padding: 0 1.6rem!important;
@@ -140,11 +153,12 @@
                     text-align: left;
                     line-height: 2.4rem;
                     margin-bottom: 1.6rem;
+                    font-size: 2rem;
                 }
                 h3 {
                     font-size: 1.4rem;
                     line-height: 2rem;
-                    text-align: left;
+                    text-align: justify;
                     margin-bottom: 1.6rem;
                 }
                 ul {

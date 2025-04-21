@@ -1,8 +1,15 @@
 import React from 'react';
-import { BecomeASponsor, BookAStand, Contact, Registration, WhyPartner } from '@/components'
-import { BookATicket, HeroComponent, Slider } from '@/shared'
+import { BecomeASponsor, BookAStand, Contact, Registration, WhyPartner } from '@/components';
+import { BookATicket, Carousel, HeroComponent } from '@/shared';
 
 const PartnerView = () => {
+  const items = ['/svgs/slider.svg',
+    '/svgs/slider.svg',
+    '/svgs/slider.svg',
+    '/svgs/slider.svg',
+    '/svgs/slider.svg',
+    '/svgs/slider.svg',
+  ]
   return (
     <>
       <HeroComponent title='A New Era for African governance'
@@ -14,9 +21,9 @@ const PartnerView = () => {
       <WhyPartner />
       <Contact />
       <BecomeASponsor />
-      <Slider />
+      <Carousel items={items} direction='left' speed='slow' />
       <BookAStand />
-      <Slider />
+      <Carousel items={items} direction='left' speed='slow' />
       <Registration />
     </>
   )
