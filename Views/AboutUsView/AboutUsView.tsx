@@ -1,9 +1,16 @@
 import React from 'react';
 import { ConferenceHighlights, CrossRoads, Participation, Partners, Registration } from '@/components';
-import { BookATicket, HeroComponent, Slider } from '@/shared';
+import { BookATicket, Carousel, HeroComponent } from '@/shared';
 import styles from './AboutUsView.module.scss';
 
 const AboutUsView = () => {
+  const items = ['/svgs/slider.svg',
+    '/svgs/slider.svg',
+    '/svgs/slider.svg',
+    '/svgs/slider.svg',
+    '/svgs/slider.svg',
+    '/svgs/slider.svg',
+  ]
   return (
     <>
       <HeroComponent title={`Hosted for Africa, by Africans`}
@@ -33,7 +40,8 @@ const AboutUsView = () => {
       <CrossRoads />
       <Participation />
       <ConferenceHighlights />
-      <Slider />
+      {/* <Slider /> */}
+      <Carousel items={items} direction='left' speed='slow' />
       <Partners />
       <Registration />
     </>

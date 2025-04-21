@@ -1,8 +1,15 @@
 import React from 'react';
-import { BookATicket, CountDown, GovTechInNumbers, HeroComponent, Slider } from '@/shared'
+import { BookATicket, Carousel, CountDown, GovTechInNumbers, HeroComponent } from '@/shared'
 import { Continent, Expectation, Participation, Partners, Registration, ThemeCards } from '@/components';
 
 const HomeView = () => {
+  const items = ['/svgs/slider.svg',
+    '/svgs/slider.svg',
+    '/svgs/slider.svg',
+    '/svgs/slider.svg',
+    '/svgs/slider.svg',
+    '/svgs/slider.svg',
+  ]
   return (
     <>
       <HeroComponent title='Africa Govtech Week'
@@ -16,7 +23,8 @@ const HomeView = () => {
       <Continent />
       <Expectation />
       <Participation />
-      <Slider />
+      {/* <Slider /> */}
+      <Carousel items={items} direction='left' speed='slow' />
       <Partners />
       <Registration />
     </>
