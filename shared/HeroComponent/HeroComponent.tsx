@@ -17,7 +17,6 @@ const HeroComponent = ({ title, subText, type = 'big', backgroundImage,
 }: HeroProps) => {
   const pathname = usePathname();
   const isPath = pathname === '/about-us'
-  console.log(pathname, isPath);
   
   return (
     <div data-type={type} className={styles.hero_container}>
