@@ -68,7 +68,7 @@ const WhyPartner = () => {
                 className2={styles.wrapper_reverse}
                 TextDetails1={
                     <div className={styles.private_sector_details}>
-                        <h2>2. For Private Sector</h2>
+                        <h2>For Private Sector</h2>
                         <h3>
                             The private sector plays a pivotal role in shaping 
                             the digital future of governance, offering the 
