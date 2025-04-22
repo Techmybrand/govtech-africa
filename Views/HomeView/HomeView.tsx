@@ -1,6 +1,7 @@
 import React from 'react';
 import { BookATicket, Carousel, CountDown, GovTechInNumbers, HeroComponent } from '@/shared'
 import { Continent, Expectation, Participation, Partners, Registration, ThemeCards } from '@/components';
+import styles from './HomeView.module.scss'
 
 const HomeView = () => {
   const items = ['/svgs/slider.svg',
@@ -15,6 +16,7 @@ const HomeView = () => {
       <HeroComponent title='Africa Govtech Week'
         subText={`Powering Africa's public sector digitisation`}
         backgroundImage='/images/hero-1.jpeg'
+        headerTitleClass={styles.header_title_class}
       />
       <BookATicket />
       <ThemeCards />

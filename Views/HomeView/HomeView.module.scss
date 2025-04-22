@@ -1,0 +1,7 @@
+@import "@/styles/imports";
+
+@include screenMax('mobile') {
+    .header_title_class {
+        width: 30rem!important;
+    }
+}

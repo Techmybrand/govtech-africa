@@ -1,0 +1,7 @@
+@import "@/styles/imports";
+
+@include screenMax('mobile') {
+    .header_subtext_class {
+        width: 35rem!important;
+    }
+}
