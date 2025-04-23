@@ -8,6 +8,10 @@ const CrossRoads = () => {
       <div className={styles.cards_container_wrapper}>
         <div className={styles.first_container}>
           <DetailedPairDisplay reverseBottomSection divider
+            classId='cross'
+            classId2='roads'
+            trigger='cross_trigger'
+            trigger2='roads_trigger'
             image1='/images/crossroads1.png'
             image2='/images/crossroads2.png'
             className={styles.wrapper_class}
@@ -92,6 +96,10 @@ const CrossRoads = () => {
         <div className={styles.event_details}>
           <DetailedPairDisplay reverseBottomSection divider
             image1='/images/event_details.png'
+            classId='event'
+            classId2='e'
+            trigger2='et'
+            trigger='event_trigger'
             className={styles.wrapper_class}
             TextDetails1={
               <div className={styles.event_details_text}>

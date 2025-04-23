@@ -64,6 +64,10 @@
       right: 0;
     }
   }
+
+  @include screenMax('mobile') {
+    max-width: 22.5rem;
+  }
 }
 
 .navList, .navList_lg {

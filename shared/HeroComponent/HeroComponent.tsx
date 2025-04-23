@@ -26,7 +26,7 @@ const HeroComponent = ({ title, subText, type = 'big', backgroundImage,
       <div className={styles.background_image_wrapper}></div>
       <div data-path={isPath} className={styles.hero_content_wrapper}>
         <h3 className={`${headerTitleClass}`}>{title}</h3>
-        <p className={`${headerSubtextClass}`}>{subText}</p>
+        <div className={`${headerSubtextClass} ${styles.text}`}>{subText}</div>
       </div>
     </div>
   )

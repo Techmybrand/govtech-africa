@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { CustomLink, DetailedPairDisplay } from '@/shared';
-import styles from './Expectation.module.scss'
+import styles from './Expectation.module.scss';
 
 const Expectation = () => {
   const arrayOfTexts: string[] = [

@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Participation.module.scss'
 import Image from 'next/image';
+import styles from './Participation.module.scss';
 
 interface CardProps {
   icon: string

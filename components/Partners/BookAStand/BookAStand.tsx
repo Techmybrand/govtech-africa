@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
-import styles from './BookAStand.module.scss';
 import { CustomLink, DetailedPairDisplay } from '@/shared';
+import styles from './BookAStand.module.scss';
 
 const BookAStand = () => {
   return (

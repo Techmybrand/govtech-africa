@@ -37,3 +37,7 @@ export interface socialsProps {
 	href: string
 	icon: string
 }
+export interface StatItem {
+    value: number;
+    label: string;
+}

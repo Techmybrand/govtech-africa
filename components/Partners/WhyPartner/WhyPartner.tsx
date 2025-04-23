@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './WhyPartner.module.scss'
 import { DetailedPairDisplay } from '@/shared';
+import styles from './WhyPartner.module.scss';
 
 const WhyPartner = () => {
     const govtDetails: string[] = [
@@ -42,7 +42,7 @@ const WhyPartner = () => {
                 </div>
             </div>
             <DetailedPairDisplay image1='/images/government.png'
-            className={styles.__wrapper}
+                className={styles.__wrapper}
                 TextDetails1={
                     <div className={styles.government_details}>
                         <h2>For African Governments -</h2>
