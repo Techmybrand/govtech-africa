@@ -30,9 +30,9 @@ const Expectation = () => {
               )}
             </ul>
             <h3>
-              Through thought-provoking discussions, hands-on innovation, 
+              {`Through thought-provoking discussions, hands-on innovation, 
               high-impact engagements and collaborations, this event will 
-              define Africa’s trajectory in digital governance.
+              define Africa's trajectory in digital governance.`}
             </h3>
             <div className={styles.text_btn}>
               <CustomLink label='Learn more' href='/learn-more'
