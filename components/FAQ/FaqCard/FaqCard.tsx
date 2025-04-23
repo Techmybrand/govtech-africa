@@ -1,6 +1,7 @@
 import React from 'react';
 import { Accordion } from '@/shared';
 import styles from './FaqCard.module.scss';
+
 interface QAProps {
   question: string
   answer: string
