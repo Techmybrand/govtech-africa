@@ -18,7 +18,7 @@ const GovTechInNumbers = () => {
                     const counters = sectionRef.current?.querySelectorAll('[data-count]');
                     counters?.forEach((counter) => {
                         const target = parseInt(counter.getAttribute('data-count') || '0');
-                            animateCounter(counter as HTMLElement, 0, target, 3000); // 2 seconds
+                            animateCounter(counter as HTMLElement, 0, target, 2000); // 2 seconds
                         }
                     );
                     hasAnimated.current = true;
