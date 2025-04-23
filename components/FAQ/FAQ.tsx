@@ -2,7 +2,6 @@ import React from 'react';
 import { FaqLists } from '@/mock/navLists.mock';
 import FaqCard from './FaqCard/FaqCard';
 import styles from './FAQ.module.scss';
-
 interface QAProps {
     question: string
     answer: string
