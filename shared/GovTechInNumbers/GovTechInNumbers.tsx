@@ -10,6 +10,7 @@ const GovTechInNumbers = () => {
     const sectionRef = useRef<HTMLElement>(null);
     const hasAnimated = useRef<boolean>(false);
     useEffect(() => {
+        const currentSection = sectionRef.current
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -17,7 +18,7 @@ const GovTechInNumbers = () => {
                     const counters = sectionRef.current?.querySelectorAll('[data-count]');
                     counters?.forEach((counter) => {
                         const target = parseInt(counter.getAttribute('data-count') || '0');
-                            animateCounter(counter as HTMLElement, 0, target, 2000); // 2 seconds
+                            animateCounter(counter as HTMLElement, 0, target, 3000); // 2 seconds
                         }
                     );
                     hasAnimated.current = true;
@@ -27,13 +28,13 @@ const GovTechInNumbers = () => {
             { threshold: 0.3 }
         );
 
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
+        if (currentSection) {
+            observer.observe(currentSection);
         }
 
         return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
+            if (currentSection) {
+                observer.unobserve(currentSection);
             }
         };
     }, []);

@@ -25,14 +25,14 @@
         }
         .card, .card2 {
             opacity: 0;
-            transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+            transition: translate 0.8s ease-out, opacity 0.8s ease-out;
         }
         &.visible {
             transition: all 400ms ease-in-out;
             .card, .card2 {
                 opacity: 1;
                 translate: 0% 0;
-                transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                transition: translate 0.8s ease-out, opacity 0.8s ease-out;
             }
             .card:nth-child(1), .card2:nth-child(1) {
                 animation-delay: 0;
