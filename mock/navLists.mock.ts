@@ -1,4 +1,4 @@
-import { NavLink } from "@/interfaces";
+import { NavLink, StatItem } from "@/interfaces";
 
 export const navLinks: NavLink[] = [
 	{
@@ -454,4 +454,13 @@ export const inquiryTypes = [
 	{ label: 'Speaking Opportunities', value: 'speaking opportunities' },
 	{ label: 'General Inquiry', value: 'general inquiry' },
 	{ label: 'Media and Press', value: 'media and press' },
+];
+
+export const stats: StatItem[] = [
+    { value: 200, label: 'African Public and Private Sector Leaders' },
+    { value: 3000, label: 'VIP and Delegate Participants' },
+    { value: 100, label: 'Exhibiting companies' },
+    { value: 15, label: 'Technical and commercial sessions/forums/fireside chats' },
+    { value: 5, label: 'Days of week-long engagements' },
+    { value: 3, label: 'days of core conferencing, exhibition, and networking parleys' },
 ];

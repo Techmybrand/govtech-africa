@@ -46,7 +46,8 @@ const Partners = () => {
             </div>
             <CustomLink className={styles.link_class}
               label='Explore'
-              href='/explore' />
+              href='/explore'
+            />
           </div>
         }
       />

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
-import styles from './BecomeASponsor.module.scss'
 import { CustomLink, DetailedPairDisplay } from '@/shared';
+import styles from './BecomeASponsor.module.scss';
 
 const BecomeASponsor = () => {
   return (

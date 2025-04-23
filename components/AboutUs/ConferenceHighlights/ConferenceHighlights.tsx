@@ -1,8 +1,9 @@
 'use client';
 import React from 'react';
 import { CustomLink } from '@/shared';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import styles from './ConferenceHighlights.module.scss'
+import styles from './ConferenceHighlights.module.scss';
 interface cardsProp {
   icon: string
   title: string
@@ -11,6 +12,7 @@ interface cardsProp {
 }
 
 const ConferenceHighlights = () => {
+  const router = useRouter();
   const cardsData: cardsProp[] = [
     {
       icon: '/svgs/govathon.svg',
@@ -52,7 +54,7 @@ const ConferenceHighlights = () => {
               ${index === 1 && styles.second_card}
               ${index === 2 && styles.last_card}`}
             >
-              <div className={styles.box}>
+              <div onClick={() => router.push(`${data?.href}`)} className={styles.box}>
                 <div className={styles.icon_wrapper}>
                   <Image alt='' fill src={data?.icon} />
                 </div>
