@@ -8,7 +8,7 @@ const BookAStand = () => {
     <section id='book-a-stand' className={styles.container}>
         <DetailedPairDisplay
             className={styles.wrapper}
-            image1='/images/book_a_stand.png'
+            image1='/images/book_a_stand1.jpg'
             TextDetails1={
                 <div className={styles.text_details}>
                     <h1>Looking to showcase your brand without a Sponsorship commitment?</h1>

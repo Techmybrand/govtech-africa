@@ -62,7 +62,7 @@ const WhyPartner = () => {
                 }
             />
             <div className={styles.divider}></div>
-            <DetailedPairDisplay image1='/images/private_sector.png' 
+            <DetailedPairDisplay image1='/images/private_sector.jpg' 
                 image2='/images/organisations.png' divider
                 className={styles.wrapper}
                 className2={styles.wrapper_reverse}

@@ -8,7 +8,7 @@ const BecomeASponsor = () => {
     <section className={styles.container}>
         <DetailedPairDisplay
             className={styles.wrapper}
-            image1='/images/sponsor.png'
+            image1='/images/sponsor2.jpg'
             TextDetails1={
                 <div className={styles.text_details}>
                     <h1>Become a Sponsor</h1>
