@@ -8,7 +8,7 @@ const Partners = () => {
     <section className={styles.partners_container}>
       <DetailedPairDisplay
         className={styles.wrapper_class}
-        image1='/images/partners.png'
+        image1='/images/partnership.jpg'
         TextDetails1={
           <div className={styles.text}>
             <h2>Partner with Us</h2>

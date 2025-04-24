@@ -1,6 +1,6 @@
 import React from 'react';
 import { DetailedPairDisplay } from '@/shared';
-import styles from './CrossRoads.module.scss'
+import styles from './CrossRoads.module.scss';
 
 const CrossRoads = () => {
   return (
@@ -8,7 +8,7 @@ const CrossRoads = () => {
       <div className={styles.cards_container_wrapper}>
         <div className={styles.first_container}>
           <DetailedPairDisplay reverseBottomSection divider
-            image1='/images/crossroads1.png'
+            image1='/images/expectations.jpg'
             image2='/images/crossroads2.png'
             className={styles.wrapper_class}
             className2={styles.wrapper_class_reverse}
@@ -91,7 +91,7 @@ const CrossRoads = () => {
 
         <div className={styles.event_details}>
           <DetailedPairDisplay reverseBottomSection divider
-            image1='/images/event_details.png'
+            image1='/images/about_event.jpg'
             className={styles.wrapper_class}
             TextDetails1={
               <div className={styles.event_details_text}>
