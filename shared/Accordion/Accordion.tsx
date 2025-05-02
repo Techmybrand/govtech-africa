@@ -1,22 +1,19 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Accordion.module.scss';
 
 interface AccordionProps {
     title?: string;
-    image?: string;
     children?: React.ReactNode;
+    isOpen?: boolean
+    onToggle?: () => void
 }
 
-const Accordion = ({ title, children }: AccordionProps) => {
-    const [isOpen, setIsOpen] = useState<boolean>(false);
-    const OpenAccordion = () => {
-        setIsOpen((isOpen) => !isOpen);
-    };
+const Accordion = ({ title, children, isOpen, onToggle }: AccordionProps) => {
 
     return (
-        <div data-active={isOpen} onClick={OpenAccordion} className={styles.accordion_container}>
-            <div className={styles.accordion_header_container}>
+        <div data-active={isOpen} className={styles.accordion_container}>
+            <div onClick={onToggle} className={styles.accordion_header_container}>
                 <div className={styles.accordion_header}>
                     <h1 className={styles.accordion_title}>
                         {title}

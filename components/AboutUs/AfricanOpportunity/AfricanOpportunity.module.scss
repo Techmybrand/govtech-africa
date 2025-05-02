@@ -1,0 +1,139 @@
+@import "@/styles/imports";
+
+.theme_cards_container {
+    width: 100%;
+    padding: 0;
+    background: $col-white;
+    @include noScrollBar();
+    .cards_container_wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        & > section {
+            gap: 3rem;
+        }
+        .first_container {
+            padding: 0 10rem;
+            .wrapper_class_reverse {
+                flex-direction: row-reverse!important;
+                @include noScrollBar();
+            }
+            .theme_details {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                width: 100%;
+                h3 {
+                    font-family: $font-gothic-bold;
+                    color: #14361B;
+                    font-size: 4.4rem;
+                    line-height: 5.6rem;
+                }
+                h6 {
+                    font-family: $font-gothic;
+                    color: #14361B;
+                    font-size: 2.2rem;
+                    line-height: 2.8rem;
+                }
+                .details_container {
+                    display: flex;
+                    gap: 0.8rem;
+                    align-items: flex-start;
+                    width: 100%;
+                    .details {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.8rem;
+                        width: 33.3%;
+                        h3 {
+                            font-size: 2.2rem;
+                            line-height: 2.8rem;
+                            color: #3DB54A;
+                            font-family: $font-gothic-bold;
+                        }
+                        p {
+                            color: #616161;
+                            font-family: $font-gothic;
+                            font-size: 1.8rem;
+                            line-height: 2.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include screenMax('tablet') {
+        padding: 0;
+        margin: -4rem 0 0;
+        .cards_container_wrapper {
+            .first_container {
+                padding: 0 5rem;
+                .wrapper_class_reverse {
+                    flex-direction: column!important;
+                    gap: 5rem;
+                    & > div {
+                        width: 100%!important;
+                    }
+                }
+                .theme_details {
+                    gap: 2rem;
+                    h3 {
+                        font-size: 3.2rem;
+                        line-height: 4.4rem;
+                    }
+                    h6 {
+                        font-size: 1.8rem;
+                        line-height: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @include screenMax('mobile') {
+        padding: 3.2rem 0 0;
+        margin: 0;
+        .cards_container_wrapper {
+            & > section {
+                gap: 3rem!important;
+            }
+            .first_container {
+                padding: 0 1.6rem;
+                .wrapper_class_reverse {
+                    flex-direction: column!important;
+                    gap: 2.4rem;
+                }
+                .theme_details {
+                    gap: 0.8rem;
+                    margin: 0 auto;
+                    width: 100%;
+                    h3 {
+                        font-size: 2rem;
+                        text-align: left;
+                        line-height: 2.8rem;
+                    }
+                    h6 {
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                        text-align: justify;
+                    }
+                    .details_container {
+                        align-items: flex-start;
+                        .details {
+                            h3 {
+                                font-size: 2rem;
+                                line-height: 2.8rem;
+                                text-align: left;
+                            }
+                            p {
+                                font-size: 1.3rem;
+                                line-height: 1.6rem;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

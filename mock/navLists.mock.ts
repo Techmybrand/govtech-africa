@@ -399,7 +399,7 @@ export const FaqLists = [
 				answer: 'Yes. There will be dedicated country showcases where governments can present their digital transformation journeys, share best practices, and discuss collaborative opportunities.'
 			},
 			{
-				question: 'Will there be country-specific discussions?',
+				question: 'Will there be post event recordings?',
 				answer: 'Yes. Key sessions will be recorded and made available on the Media Page post-event.'
 			},
 			{

@@ -28,6 +28,7 @@
                 flex-direction: column;
                 gap: 3rem;
                 overflow-x: hidden;
+                transition: all 0.5s ease-in-out;
                 .icon_wrapper {
                     width: 6rem;
                     height: 6rem;
@@ -48,18 +49,20 @@
                     line-height: 5.2rem;
                     font-family: $font-gothic-bold;
                     translate: 0 45%;
+                    transition: all 0.3s ease-in-out;
                 }
                 p {
                     opacity: 0;
-                    font-size: 2.4rem;
-                    line-height: 3.2rem;
+                    font-size: 2.2rem;
+                    line-height: 2.8rem;
                     font-family: $font-gothic;
                     color: $col-white;
                     translate: 25% 0;
+                    transition: all 0.3s ease-in-out;
                 }
                 &:hover {
-                    scale: 1.1;
-                    transition: all 0.3s ease-in-out;
+                    translate: 0 -10%;
+                    transition: all 0.5s ease-in-out;
                     h3 {
                         translate: 0 -10%;
                         transition: all 0.3s ease-in-out;
@@ -90,6 +93,10 @@
                         font-size: 3.2rem;
                         line-height: 4.4rem;
                     }
+                    p {
+                        font-size: 1.8rem;
+                        line-height: 2.4rem;
+                    }
                 }
             }
         }
@@ -104,11 +111,12 @@
                 line-height: 4rem;
             }
             .cards_container {
-                @include grid(repeat(1, 1fr), 1rem, 3.2rem);
+                @include grid(repeat(1, 1fr), 1rem, 3.6rem);
                 .card {
                     padding: 3.2rem 2.4rem;
                     height: 25rem;
                     gap: 1.6rem;
+                    transition: all 0.4s ease-in-out;
                     .icon_wrapper {
                         width: 4rem;
                         height: 4rem;
@@ -118,25 +126,25 @@
                         font-size: 2.2rem;
                         line-height: 2.8rem;
                         width: 90%;
-                        translate: 0 50%;
+                        translate: 0 30%;
+                        transition: all 0.4s ease-in-out;
                     }
                     p {
                         opacity: 1;
                         font-size: 1.4rem;
                         line-height: 2rem;
-                        translate: 110% 0;
+                        translate: 0% 40%;
                     }
                     &:hover {
-                        scale: 1.05;
-                        transition: all 0.3s ease-in-out;
+                        translate: 0 -10%;
+                        transition: all 0.4s ease-in-out;
                         h3 {
-                            translate: 0 -10%;
-                            transition: all 0.3s ease-in-out;
+                            translate: 0 0%;
+                            transition: all 0.4s ease-in-out;
                         }
                         p {
-                            opacity: 1;
-                            transition: all 0.3s ease-in-out;
-                            translate: -0% 0;
+                            translate: 0 0%;
+                            transition: all 0.4s ease-in-out;
                         }
                     }
                 }

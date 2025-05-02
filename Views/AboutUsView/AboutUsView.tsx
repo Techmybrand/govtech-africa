@@ -1,5 +1,5 @@
 import React from 'react';
-import { ConferenceHighlights, CrossRoads, Participation, Partners, Registration } from '@/components';
+import { AfricanOpportunity, ConferenceHighlights, CrossRoads, EventDetails, Participation, Partners, Registration } from '@/components';
 import { BookATicket, Carousel, HeroComponent } from '@/shared';
 import styles from './AboutUsView.module.scss';
 
@@ -38,9 +38,10 @@ const AboutUsView = () => {
       />
       <BookATicket />
       <CrossRoads />
+      <AfricanOpportunity />
+      <EventDetails />
       <Participation />
       <ConferenceHighlights />
-      {/* <Slider /> */}
       <Carousel items={items} direction='left' speed='slow' />
       <Partners />
       <Registration />

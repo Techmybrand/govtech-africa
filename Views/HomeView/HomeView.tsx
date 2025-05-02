@@ -1,6 +1,6 @@
 import React from 'react';
 import { BookATicket, Carousel, CountDown, GovTechInNumbers, HeroComponent } from '@/shared'
-import { Continent, Expectation, Participation, Partners, Registration, ThemeCards } from '@/components';
+import { Continent, Expectation, Introduction, Participation, Partners, Registration, ThemeCards } from '@/components';
 import styles from './HomeView.module.scss'
 
 const HomeView = () => {
@@ -19,13 +19,13 @@ const HomeView = () => {
         headerTitleClass={styles.header_title_class}
       />
       <BookATicket />
+      <Introduction />
       <ThemeCards />
       <CountDown />
       <GovTechInNumbers />
       <Continent />
       <Expectation />
       <Participation />
-      {/* <Slider /> */}
       <Carousel items={items} direction='left' speed='slow' />
       <Partners />
       <Registration />

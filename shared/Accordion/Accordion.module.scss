@@ -5,12 +5,12 @@
 	min-height: 6rem;
 	padding: 1.4rem 3.2rem 1.4rem 0;
 	border-bottom: 0.1rem solid rgba(20, 54, 27, 0.4);
-	// border-color: #14361B;
 	.accordion_header_container {
 		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		cursor: pointer;
 		.accordion_header {
 			display: flex;
 			align-items: flex-start;
@@ -24,8 +24,8 @@
 			h1 {
 				color: #14361B;
 				font-family: $font-gothic-bold;
-				font-size: 2.4rem;
-				line-height: 3.2rem;
+				font-size: 2.2rem;
+				line-height: 2.8rem;
 			}
 		}
 		.accordion_icon {
@@ -74,8 +74,8 @@
 		.accordion_header_container {
 			.accordion_header {
 				h3, h1 {
-					font-size: 2.2rem;
-					line-height: 2.8rem;
+					font-size: 1.8rem;
+					line-height: 2.4rem;
 				}
 			}
 		}

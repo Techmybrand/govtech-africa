@@ -73,13 +73,19 @@
         .row {
             margin-top: 0;
             .grid {
-                @include grid(repeat(3, 1fr), 2rem, 4rem);
+                @include grid(repeat(3, 1fr), 1rem, 3rem);
                 .text {
+                    padding-left: 1.4rem;
                     h2 {
-                        font-size: 4rem;
-                        line-height: 5.2rem;
+                        font-size: 3.6rem;
+                        line-height: 4.8rem;
                     }
                 }
+            }
+            .image {
+                width: 38rem;
+                height: 40rem;
+                flex-shrink: 0;
             }
         }
         .image_background__container {
@@ -110,7 +116,7 @@
                 max-width: 100%;
                 @include grid(repeat(2, 1fr), 5rem, 4rem);
                 .text {
-                    padding-left: 1.4rem;
+                    padding-left: 1rem;
                     h2 {
                         font-size: 3.2rem;
                         line-height: 4rem;

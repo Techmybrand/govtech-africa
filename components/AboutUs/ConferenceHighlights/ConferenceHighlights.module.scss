@@ -23,8 +23,8 @@
             .card {
                 width: 100%;
                 display: flex;
-                align-items: flex-end;
-                gap: 25rem;
+                align-items: center;
+                gap: 15rem;
                 justify-content: center;
                 .box {
                     width: 70rem;
@@ -37,8 +37,8 @@
                     cursor: pointer;
                     .icon_wrapper {
                         position: relative;
-                        height: 9.5rem;
-                        width: 28.7rem;
+                        height: 20rem;
+                        width: 30rem;
                     }
                 }
                 .text {
@@ -48,14 +48,14 @@
                     width: 45%;
                     h3 {
                         color: $col-white;
-                        font-size: 4.8rem;
+                        font-size: 4.4rem;
                         font-family: $font-gothic-bold;
-                        line-height: 6.4rem;
+                        line-height: 5.6rem;
                     }
                     p {
                         color: #14361B;
-                        font-size: 2.4rem;
-                        line-height: 3.2rem;
+                        font-size: 2.2rem;
+                        line-height: 2.8rem;
                         font-family: $font-gothic;
                         text-align: justify;
                     }
@@ -106,8 +106,8 @@
                             line-height: 4.4rem;
                         }
                         p {
-                            font-size: 2rem;
-                            line-height: 2.8rem;
+                            font-size: 1.8rem;
+                            line-height: 2.4rem;
                         }
                     }
                     .box {
@@ -128,7 +128,7 @@
                 line-height: 3.2rem;
             }
             .cards {
-                gap: 1.6rem;
+                gap: 3.2rem;
                 .card {
                     flex-direction: column;
                     justify-content: unset;
