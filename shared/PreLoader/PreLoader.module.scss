@@ -1,0 +1,66 @@
+@import "@/styles/imports";
+
+.preloader {
+	position: fixed;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $col-white;
+	z-index: 5;
+	@include flex(center, center);
+}
+.icon_container {
+	position: absolute;
+	.icon {
+		position: relative;
+		width: 10rem;
+		height: 10rem;
+	}
+}
+.loader {
+	display: block;
+	position: relative;
+	width: 15rem;
+	height: 15rem;
+	border-radius: 50%;
+	border: 1rem solid transparent;
+	border-top-color: #0F3D25;
+	-webkit-animation: spin 3s linear infinite;
+	animation: spin 3s linear infinite;
+
+	@include screenMax('tablet') {
+		width: 10rem;
+		height: 10rem;
+		border: 0.75rem solid transparent;
+	}
+	@include screenMax('mobile') {
+		height: 7.5rem;
+		width: 7.5rem;
+		border: 0.5rem solid transparent;
+	}
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}

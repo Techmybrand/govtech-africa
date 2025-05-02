@@ -1,12 +1,12 @@
 
 import NotFoundPage from "./404/NotFound"
-import { ConferenceHighlights, CrossRoads } from "./AboutUs"
+import { ConferenceHighlights, CrossRoads, AfricanOpportunity, EventDetails } from "./AboutUs"
 import ContactUs from "./ContactUs/ContactUs"
 import FAQComponent from "./FAQ/FAQ"
 import { ThemeCards, Continent, Participation,
-    Partners, Registration, Expectation
+    Partners, Registration, Expectation, Introduction
 } from "./HomePage"
-import { BecomeASponsor, BookAStand, Contact, WhyPartner } from "./Partners"
+import { BecomeASponsor, BookAStand, Contact, WhyPartner, PrivateSector, Organisations } from "./Partners"
 
 
 export {
@@ -24,6 +24,11 @@ export {
     BookAStand,
     Contact,
     WhyPartner,
-    FAQComponent
+    FAQComponent,
+    Introduction,
+    AfricanOpportunity,
+    EventDetails,
+    PrivateSector,
+    Organisations
     
 }

@@ -3,9 +3,7 @@
 .container {
     background: #14361B;
     padding: 14rem 8.2rem 19rem;
-    // .wrapper {
-    //     align-items: flex-start!important;
-    // }
+    @include noScrollBar();
     .text_details {
         h1 {
             color: #3DB54A;
@@ -18,8 +16,8 @@
             h3 {
                 font-family: $font-gothic;
                 color: $col-white;
-                font-size: 2.4rem;
-                line-height: 3.2rem;
+                font-size: 2.2rem;
+                line-height: 2.8rem;
                 text-align: justify;
                 margin-bottom: 1.6rem;
             }
@@ -49,8 +47,8 @@
             .text_body {
                 margin: 2.4rem 0;
                 h3 {
-                    font-size: 2.2rem;
-                    line-height: 2.8rem;
+                    font-size: 1.8rem;
+                    line-height: 2.4rem;
                 }
             }
         }

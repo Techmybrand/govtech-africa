@@ -64,6 +64,12 @@
 
     @include screenMax('tablet') {
         background-size: cover;
+        .continent_details {
+            p {
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+            }
+        }
     }
 
     @include screenMax('mobile') {

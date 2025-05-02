@@ -5,9 +5,6 @@
     padding: 12rem 13rem;
     background: $col-white;
     width: 100%;
-    // .wrapper {
-    //     align-items: flex-start!important;
-    // }
     .text {
         display: flex;
         flex-direction: column;
@@ -28,7 +25,7 @@
             margin-left: 2.4rem;
             li {
                 font-family: $font-gothic;
-                font-size: 2.4rem;
+                font-size: 2.2rem;
                 line-height: 2.8rem;
                 color: #14361B;
                 list-style-type: disc!important;
@@ -38,7 +35,7 @@
         }
         h3 {
             font-family: $font-gothic;
-            font-size: 2.4rem;
+            font-size: 2.2rem;
             line-height: 2.8rem;
             color: #14361B;
             text-align: justify;
@@ -72,12 +69,12 @@
                 margin: 0 1.6rem;
                 li {
                     text-align: left;
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     line-height: 2.4rem;
                 }
             }
             h3 {
-                font-size: 2rem;
+                font-size: 1.8rem;
                 line-height: 2.8rem;
             }
         }

@@ -1,0 +1,103 @@
+@import "@/styles/imports";
+
+.why_partner_container {
+    background: $col-white;
+    padding: 0 0 8rem;
+    width: 100%;
+    @include noScrollBar();
+    .why_partner_wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        .wrapper_reverse {
+            @include noScrollBar();
+            padding: 0 10rem!important;
+        }
+        .organisations_details {
+            h2 {
+                color: #14361B;
+                font-size: 4.4rem;
+                line-height: 5.6rem;
+                font-family: $font-gothic-bold;
+                margin-bottom: 5.6rem;
+            }
+            h3 {
+                font-family: $font-gothic;
+                font-size: 2.2rem;
+                line-height: 2.8rem;
+                color: #616161;
+                margin-bottom: 2.4rem;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+                li {
+                    list-style-type: disc!important;
+                    font-family: $font-gothic;
+                    font-size: 2.2rem;
+                    line-height: 2.8rem;
+                    color: #616161;
+                }
+            }
+        }
+    }
+
+    @include screenMax('tablet') {
+        padding: 0 0 6rem;
+        .why_partner_wrapper {
+            .wrapper_reverse {
+                padding: 0 2.4rem!important;
+            }
+            .organisations_details {
+                h2 {
+                    font-size: 3.2rem;
+                    line-height: 4.4rem;
+                    margin-bottom: 2.4rem;
+                }
+                h3 {
+                    font-size: 1.8rem;
+                    line-height: 2.4rem;
+                }
+                ul {
+                    li {
+                        font-size: 1.8rem;
+                        line-height: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @include screenMax('mobile') {
+        padding: 0 0 4rem;
+        .why_partner_wrapper {
+            .wrapper_reverse {
+                padding: 0 1.6rem!important;
+                gap: 2.4rem;
+            }
+            .organisations_details {
+                h2 {
+                    text-align: left;
+                    line-height: 2.4rem;
+                    margin-bottom: 1.6rem;
+                    font-size: 2rem;
+                }
+                h3 {
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                    text-align: justify;
+                    margin-bottom: 1.6rem;
+                }
+                ul {
+                    padding: 0 1rem;
+                    li {
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                        text-align: justify;
+                    }
+                }
+                
+            }
+        }
+    }
+}

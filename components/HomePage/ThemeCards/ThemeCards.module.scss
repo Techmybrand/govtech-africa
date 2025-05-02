@@ -2,25 +2,16 @@
 
 .theme_cards_container {
     width: 100%;
-    padding: 10rem 10rem 0;
-    margin: 0 auto;
+    padding: 0 10rem;
+    margin: -12rem auto 0;
     background: $col-white;
-    .text_details {
-        width: 100%;
-        h3 {
-            font-size: 2.4rem;
-            line-height: 3.2rem;
-            letter-spacing: 0.01rem;
-            text-align: justify;
-            color: #616161;
-            font-family: $font-gothic;
-        }
-    }
+    @include noScrollBar();
     .theme_details {
         display: flex;
         flex-direction: column;
         gap: 3.5rem;
         width: 100%;
+        @include noScrollBar();
         .green_line {
             margin: 0 auto;
             height: 0.3rem;
@@ -37,8 +28,8 @@
         h6 {
             font-family: $font-gothic;
             color: #14361B;
-            font-size: 2.4rem;
-            line-height: 3.2rem;
+            font-size: 2.2rem;
+            line-height: 2.8rem;
         }
         .theme_details_text {
             display: flex;
@@ -53,8 +44,8 @@
             p {
                 font-family: $font-gothic;
                 color: #14361B;
-                font-size: 2.4rem;
-                line-height: 3.2rem;
+                font-size: 2.2rem;
+                line-height: 2.8rem;
             }
         }
         .link_container {
@@ -63,13 +54,8 @@
     }
 
     @include screenMax('tablet') {
-        padding: 6rem 5rem 0;
-        .text_details{
-            h3 {
-                font-size: 2rem;
-                line-height: 2.4rem;
-            }
-        }
+        padding: 0 5rem;
+        margin-top: -6rem;
         .theme_details {
             gap: 2rem;
             h3 {
@@ -94,15 +80,8 @@
     }
 
     @include screenMax('mobile') {
-        padding: 2rem;
-        .text_details {
-            width: 100%;
-            h3 {
-                font-size: 1.4rem;
-                line-height: 2rem;
-                text-align: justify;
-            }
-        }
+        padding: 0 2rem;
+        margin-top: 0;
         .theme_details {
             gap: 0.8rem;
             margin: 0 auto;

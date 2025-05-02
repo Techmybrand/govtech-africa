@@ -5,7 +5,7 @@ import styles from './BecomeASponsor.module.scss';
 
 const BecomeASponsor = () => {
   return (
-    <section className={styles.container}>
+    <section id='sponsor' className={styles.container}>
         <DetailedPairDisplay
             className={styles.wrapper}
             image1='/images/sponsor2.jpg'

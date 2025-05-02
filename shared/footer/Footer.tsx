@@ -13,7 +13,7 @@ const year = date.getFullYear();
 const Footer = () => {
 	const router = useRouter();
 	return (
-		<footer className={styles.footer}>
+		<footer id="footer" className={styles.footer}>
 			<div className={styles.footer_body}>
 				<div className={styles.questions_container}>
 					<div className={styles.questions}>
