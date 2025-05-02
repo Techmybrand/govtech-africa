@@ -12,6 +12,7 @@ import Hero from "./hero/Hero";
 import HeroComponent from "./HeroComponent/HeroComponent";
 import InputField from "./inputField/InputField";
 import Logo from "./logo/Logo";
+import PreLoader from "./PreLoader/PreLoader";
 import Select from "./select/Select";
 import Slider from "./Slider/Slider";
 import TextArea from "./textArea/TextArea";
@@ -28,5 +29,6 @@ export { Logo, Header, Footer, Button, Hero, InputField, TextArea,
     Select,
     Accordion,
     Carousel,
+    PreLoader,
     
 };

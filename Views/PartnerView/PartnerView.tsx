@@ -1,5 +1,5 @@
 import React from 'react';
-import { BecomeASponsor, BookAStand, Contact, Registration, WhyPartner } from '@/components';
+import { BecomeASponsor, BookAStand, Contact, Organisations, PrivateSector, Registration, WhyPartner } from '@/components';
 import { BookATicket, Carousel, HeroComponent } from '@/shared';
 import styles from './PartnerView.module.scss'
 
@@ -21,6 +21,8 @@ const PartnerView = () => {
       />
       <BookATicket />
       <WhyPartner />
+      <PrivateSector />
+      <Organisations />
       <Contact />
       <BecomeASponsor />
       <Carousel items={items} direction='left' speed='slow' />

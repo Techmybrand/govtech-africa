@@ -60,7 +60,7 @@ const DetailedPairDisplay = ({image2, image1, TextDetails1, TextDetails2,
             },
             {
                 root: null,
-                threshold: 0.07,
+                threshold: 0.04,
                 rootMargin: '0px'
             }
         );
@@ -87,22 +87,6 @@ const DetailedPairDisplay = ({image2, image1, TextDetails1, TextDetails2,
         setupObservers();
 
         window.addEventListener('resize', setupObservers);
-
-
-        // const topSection = topSectionRef.current;
-        // if (topSection) {
-        //     observer.observe(topSection);
-        // }
-
-        // const bottomSection = bottomSectionRef.current;
-        // if (bottomSection) {
-        //     observer.observe(bottomSection);
-        // }
-        // return () => {
-        //     if (topSection) observer.unobserve(topSection);
-        //     if (bottomSection) observer.unobserve(bottomSection);
-        //     observer.disconnect();
-        // };
 
         return () => {
             window.removeEventListener('resize', setupObservers);

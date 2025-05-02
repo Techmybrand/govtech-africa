@@ -6,7 +6,7 @@ import FAQComponent from "./FAQ/FAQ"
 import { ThemeCards, Continent, Participation,
     Partners, Registration, Expectation, Introduction
 } from "./HomePage"
-import { BecomeASponsor, BookAStand, Contact, WhyPartner } from "./Partners"
+import { BecomeASponsor, BookAStand, Contact, WhyPartner, PrivateSector, Organisations } from "./Partners"
 
 
 export {
@@ -28,5 +28,7 @@ export {
     Introduction,
     AfricanOpportunity,
     EventDetails,
+    PrivateSector,
+    Organisations
     
 }

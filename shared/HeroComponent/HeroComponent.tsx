@@ -25,7 +25,7 @@ const HeroComponent = ({ title, subText, type = 'big', backgroundImage,
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); // Run animation only once
+          observer.disconnect();
         }
       },
       { threshold: 0.1 }

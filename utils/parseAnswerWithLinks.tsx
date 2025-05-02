@@ -24,7 +24,7 @@ export const parseAnswerWithLinks = (answer: string): React.JSX.Element => {
   const partsAfterPhone = answer.split(phoneRegex);
   const elements: React.JSX.Element[] = [];
     
-  partsAfterPhone.forEach((part: any, index: number) => {
+  partsAfterPhone.forEach((part: string, index: number) => {
     if (index > 0) {
       elements.push(
         <Link key={`phone-${index}`} href={linkMapping[phoneNumber]}
@@ -41,7 +41,7 @@ export const parseAnswerWithLinks = (answer: string): React.JSX.Element => {
     const escapedWords = words.map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
     const regex = new RegExp(`\\b(${escapedWords.join('|')})\\b`, 'g');
     const subParts = part.split(regex);
-    subParts.forEach((subPart: any, subIndex: number) => {
+    subParts.forEach((subPart: string, subIndex: number) => {
       if (words.includes(subPart)) {
         elements.push(
           <Link key={`${index}-${subIndex}`} href={linkMapping[subPart]}
@@ -55,6 +55,7 @@ export const parseAnswerWithLinks = (answer: string): React.JSX.Element => {
       }
     });
   });
+  
   
     return <>{elements}</>;
   };

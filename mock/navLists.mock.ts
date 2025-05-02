@@ -464,3 +464,24 @@ export const stats: StatItem[] = [
     { value: 5, label: 'Days of week-long engagements' },
     { value: 3, label: 'days of core conferencing, exhibition, and networking parleys' },
 ];
+
+export const govtDetails: string[] = [
+	'Showcase their digital governance achievements and position themselves as leaders in public sector innovation.',
+	'Engage with cutting-edge solutions that address regulatory efficiency, public service delivery, and data-driven policymaking.',
+	'Collaborate with tech innovators and development partners to co-create sustainable govtech solutions.',
+	'Gain insights from global best practices, ensuring that policies are aligned with emerging digital trends.',
+]
+
+export const organisationDetails: string[] = [
+	'Support the co-creation of digital governance policies that enhance inclusivity, transparency, and service efficiency.',
+	'Strengthen multi-stakeholder collaboration, ensuring that digital transformation aligns with sustainable development objectives.',
+	'Fund and incubate govtech solutions, helping scale impactful innovations across multiple African countries.',
+	'Champion digital inclusion and governance reforms, ensuring that technology adoption benefits all citizens, particularly marginalized communities.',
+]
+
+export const privateSectorDetails: string[] = [
+	'Engage directly with policymakers and decision-makers looking for innovative govtech solutions.',
+	'Showcase cutting-edge technologies in AI, cloud computing, digital identity, fintech, and cybersecurity.',
+	'Unlock business opportunities through public-private partnerships and government procurement channels.',
+	'Shape policy discussions that influence technology regulations and digital transformation roadmaps.',
+]

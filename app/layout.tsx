@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Footer, Header } from "@/shared";
+import { Footer, Header, PreLoader } from "@/shared";
 import "@/styles/index.scss";
 
 export const metadata: Metadata = {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         influential  gathering of government technology stakeholders. 
         Discover innovations, forge partnerships, and shape the future of digital 
         governance across the continent.`,
-      // url: 'https://africagovtechweek.com',
+      url: 'https://africagovtechweek.com',
       type: 'website',
       siteName: 'Africa Govtech Week 2025',
       images: [
@@ -60,6 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <PreLoader />
         <Header />
         {children}
         <Footer />

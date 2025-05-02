@@ -137,20 +137,6 @@
             .card2.visible {
                 transition: translate 0.4s ease-out, opacity 0.4s ease-out;
             }
-            // .card.visible:nth-child(1),
-            // .card2.visible:nth-child(1) {
-            //     opacity: 1;
-            //     translate: 0 0%;
-            //     transition: translate 0.3s ease-out, opacity 0.3s ease-out;
-            //     transition-delay: 0s;
-            // }
-
-            // .card.visible:nth-child(2),
-            // .card2.visible:nth-child(2) {
-            //     opacity: 1;
-            //     translate: 0 0%;
-            //     transition: translate 0.4s ease-out, opacity 0.4s ease-out;
-            // }
             &[data-type="true"] {
                 flex-direction: column-reverse;
             }
