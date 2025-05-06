@@ -63,7 +63,7 @@ const Header = ({type = 'default'}: Props) => {
             </li>
             <li className={styles.navItem}>
               <Link href="/partner" className={`${checkActive('/partner') ? styles.active : ''} ${styles.navLink}`}>
-                {type === 'default' ? 'Partner' : 'Partner/sponsor'}
+                Partner/sponsor
               </Link>
             </li>
           </ul>
@@ -103,7 +103,7 @@ const Header = ({type = 'default'}: Props) => {
                 }}
               >
                 <div className={`${checkActive('/partner') ? styles.active : ''} ${styles.navLink}`}>
-                  {type === 'default' ? 'Partner' : 'Partner/sponsor'}
+                  Partner/sponsor
                 </div>
               </li>
             </ul>

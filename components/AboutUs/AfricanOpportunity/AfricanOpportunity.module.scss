@@ -2,7 +2,7 @@
 
 .theme_cards_container {
     width: 100%;
-    padding: 0;
+    padding: 10rem 0;
     background: $col-white;
     @include noScrollBar();
     .cards_container_wrapper {
@@ -14,76 +14,158 @@
         .first_container {
             padding: 0 10rem;
             .wrapper_class_reverse {
-                flex-direction: row-reverse!important;
-                @include noScrollBar();
-            }
-            .theme_details {
+                // flex-direction: row-reverse!important;
                 display: flex;
-                flex-direction: column;
-                gap: 3rem;
+                align-items: center;
+                gap: 12rem;
                 width: 100%;
-                h3 {
-                    font-family: $font-gothic-bold;
-                    color: #14361B;
-                    font-size: 4.4rem;
-                    line-height: 5.6rem;
-                }
-                h6 {
-                    font-family: $font-gothic;
-                    color: #14361B;
-                    font-size: 2.2rem;
-                    line-height: 2.8rem;
-                }
-                .details_container {
+                @include noScrollBar();
+                .theme_details {
                     display: flex;
-                    gap: 0.8rem;
-                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 3rem;
                     width: 100%;
-                    .details {
+                    width: 55%;
+                    translate: 0 50%;
+                    opacity: 0;
+                    transition: translate 0.5s ease-out, opacity 0.5s ease-out;
+                    h3 {
+                        font-family: $font-gothic-bold;
+                        color: #14361B;
+                        font-size: 4.4rem;
+                        line-height: 5.6rem;
+                    }
+                    h6 {
+                        font-family: $font-gothic;
+                        color: #14361B;
+                        font-size: 2.2rem;
+                        line-height: 2.8rem;
+                    }
+                    .details_container {
                         display: flex;
-                        flex-direction: column;
                         gap: 0.8rem;
-                        width: 33.3%;
-                        h3 {
-                            font-size: 2.2rem;
-                            line-height: 2.8rem;
-                            color: #3DB54A;
-                            font-family: $font-gothic-bold;
-                        }
-                        p {
-                            color: #616161;
-                            font-family: $font-gothic;
-                            font-size: 1.8rem;
-                            line-height: 2.4rem;
+                        align-items: flex-start;
+                        width: 100%;
+                        .details {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.8rem;
+                            width: 33.3%;
+                            h3 {
+                                font-size: 2.2rem;
+                                line-height: 2.8rem;
+                                color: #3DB54A;
+                                font-family: $font-gothic-bold;
+                            }
+                            p {
+                                color: #616161;
+                                font-family: $font-gothic;
+                                font-size: 1.8rem;
+                                line-height: 2.4rem;
+                            }
                         }
                     }
                 }
+                .image_wrapper {
+                    width: 45%;
+                    height: 60rem;
+                    position: relative;
+                    translate: 0 50%;
+                    opacity: 0;
+                    flex-shrink: 0;
+                    @include noScrollBar();
+                    transition: translate 0.5s ease-out, opacity 0.5s ease-out;
+                }
+                &.visible {
+                    transition: all 0.5s ease-out;
+                    .image_wrapper, .theme_details {
+                        opacity: 1;
+                        translate: 0 0%;
+                    }
+                    .theme_details {
+                        transition-delay: 0.15s;
+                    }
+                }
+            }
+            .divider {
+                display: none;
             }
         }
     }
 
     @include screenMax('tablet') {
-        padding: 0;
-        margin: -4rem 0 0;
+        padding: 5rem 0;
+        margin: 0;
         .cards_container_wrapper {
             .first_container {
                 padding: 0 5rem;
                 .wrapper_class_reverse {
-                    flex-direction: column!important;
+                    flex-direction: column-reverse!important;
                     gap: 5rem;
                     & > div {
                         width: 100%!important;
                     }
-                }
-                .theme_details {
-                    gap: 2rem;
-                    h3 {
-                        font-size: 3.2rem;
-                        line-height: 4.4rem;
+                    .theme_details {
+                        width: 100%;
+                        opacity: 1;
+                        translate: 0 0%;
+                        gap: 2rem;
+                        h3 {
+                            font-size: 3.2rem;
+                            line-height: 4.4rem;
+                            opacity: 0;
+                            translate: 0 50%;
+                            transition: all 0.4s ease-out;
+                            &.visible {
+                                transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                                opacity: 1;
+                                translate: 0 0%;
+                            }
+                        }
+                        h6 {
+                            font-size: 1.8rem;
+                            line-height: 2.4rem;
+                            opacity: 0;
+                            translate: 0 50%;
+                            transition: all 0.4s ease-out;
+                            &.visible {
+                                transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                                opacity: 1;
+                                translate: 0 0%;
+                            }
+                        }
+                        .details_container {
+                            .details {
+                                opacity: 0;
+                                translate: 0 50%;
+                                transition: all 0.4s ease-out;
+                            }
+                            &.visible {
+                                .details, .details h3, .details p {
+                                    transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                                    opacity: 1;
+                                    translate: 0 0%;
+                                    &:nth-child(2) {
+                                        transition-delay: 0.3s;
+                                    }
+                                    &:nth-child(3) {
+                                        transition-delay: 0.6s;
+                                    }
+                                }
+                            }
+                        }
                     }
-                    h6 {
-                        font-size: 1.8rem;
-                        line-height: 2.4rem;
+                    .image_wrapper {
+                        width: 100%;
+                        height: 45rem;
+                        opacity: 0;
+                        translate: 0 50%;
+                        transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                        &.visible {
+                            opacity: 1;
+                            translate: 0 0%;
+                            transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                        }
                     }
                 }
             }
@@ -91,8 +173,8 @@
     }
 
     @include screenMax('mobile') {
-        padding: 0;
-        margin: -2rem 0 0;
+        padding: 2.4rem 0;
+        margin: 0;
         .cards_container_wrapper {
             & > section {
                 gap: 3rem!important;
@@ -102,36 +184,46 @@
                 .wrapper_class_reverse {
                     flex-direction: column!important;
                     gap: 2.4rem;
-                }
-                .theme_details {
-                    gap: 0.8rem;
-                    margin: 0 auto;
-                    width: 100%;
-                    h3 {
-                        font-size: 2rem;
-                        text-align: left;
-                        line-height: 2.8rem;
-                    }
-                    h6 {
-                        font-size: 1.4rem;
-                        line-height: 2rem;
-                        text-align: justify;
-                    }
-                    .details_container {
-                        align-items: flex-start;
-                        .details {
-                            h3 {
-                                font-size: 2rem;
-                                line-height: 2.8rem;
-                                text-align: left;
-                            }
-                            p {
-                                font-size: 1.3rem;
-                                line-height: 1.6rem;
-                                text-align: left;
+                    .theme_details {
+                        gap: 0.8rem;
+                        margin: 0 auto;
+                        width: 100%;
+                        h3 {
+                            font-size: 2rem;
+                            text-align: left;
+                            line-height: 2.8rem;
+                        }
+                        h6 {
+                            font-size: 1.4rem;
+                            line-height: 2rem;
+                            text-align: justify;
+                        }
+                        .details_container {
+                            align-items: flex-start;
+                            .details {
+                                h3 {
+                                    font-size: 2rem;
+                                    line-height: 2.8rem;
+                                    text-align: left;
+                                }
+                                p {
+                                    font-size: 1.3rem;
+                                    line-height: 1.6rem;
+                                    text-align: left;
+                                }
                             }
                         }
                     }
+                    .image_wrapper {
+                        height: 28rem;
+                    }
+                }
+                .divider {
+                    width: 100%;
+                    height: 0.1rem;
+                    background: #000;
+                    display: block;
+                    margin: 1rem 0 4rem;
                 }
             }
         }

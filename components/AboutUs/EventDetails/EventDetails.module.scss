@@ -2,7 +2,7 @@
 
 .theme_cards_container {
     width: 100%;
-    padding: 0;
+    padding: 0 0 10rem;
     background: $col-white;
     @include noScrollBar();
     .cards_container_wrapper {
@@ -21,6 +21,9 @@
             align-items: center;
             justify-content: center;
             @include noScrollBar();
+            opacity: 0;
+            translate: 0 50%;
+            transition: all 500ms ease-in-out;
             .theme_container_content {
                 display: flex;
                 flex-direction: column;
@@ -54,40 +57,76 @@
                     }
                 }
             }
+            &.visible {
+                opacity: 1;
+                translate: 0 0%;
+                transition: translate 0.5s ease-out, opacity 0.5s ease-out;
+            }
         }
         .event_details {
+            .divider {
+                display: none;
+            }
             width: 100%;
             padding: 0 10rem 1rem;
             margin: 0;
             @include noScrollBar();
             .wrapper_class {
-                align-items: flex-start!important;
-                flex-direction: row-reverse!important;
-                @include noScrollBar();
-            }
-            .event_details_text {
                 display: flex;
-                flex-direction: column;
-                gap: 5.2rem;
-                h1 {
-                    font-size: 4.4rem;
-                    font-family: $font-gothic-bold;
-                    line-height: 5.6rem;
-                    color: #14361B;
+                align-items: center;
+                gap: 12rem;
+                width: 100%;
+                align-items: center;
+                flex-direction: row-reverse;
+                @include noScrollBar();
+                .image_wrapper {
+                    width: 45%;
+                    height: 60rem;
+                    position: relative;
+                    translate: 0 50%;
+                    opacity: 0;
+                    flex-shrink: 0;
+                    @include noScrollBar();
+                    transition: translate 0.5s ease-out, opacity 0.5s ease-out;
                 }
-                h3 {
-                    font-size: 2.2rem;
-                    line-height: 2.8rem;
-                    font-family: $font-gothic;
-                    color: #616161;
-                    text-align: justify;
+                .event_details_text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5.2rem;
+                    width: 55%;
+                    translate: 0 50%;
+                    opacity: 0;
+                    transition: translate 0.5s ease-out, opacity 0.5s ease-out;
+                    h1 {
+                        font-size: 4.4rem;
+                        font-family: $font-gothic-bold;
+                        line-height: 5.6rem;
+                        color: #14361B;
+                    }
+                    h3 {
+                        font-size: 2.2rem;
+                        line-height: 2.8rem;
+                        font-family: $font-gothic;
+                        color: #616161;
+                        text-align: justify;
+                    }
+                }
+                &.visible {
+                    transition: all 0.5s ease-out;
+                    .image_wrapper, .event_details_text {
+                        opacity: 1;
+                        translate: 0 0%;
+                    }
+                    .event_details_text {
+                        transition-delay: 0.15s;
+                    }
                 }
             }
         }
     }
 
     @include screenMax('tablet') {
-        padding: 0;
+        padding: 0 0 5rem;
         margin: -4rem 0 0;
         .cards_container_wrapper {
             .theme_container {
@@ -118,16 +157,57 @@
                     & > div {
                         width: 100%!important;
                     }
-                }
-                .event_details_text {
-                    gap: 1.6rem;
-                    h1 {
-                        font-size: 3.2rem;
-                        line-height: 4rem;
+                    .event_details_text {
+                        opacity: 1;
+                        translate: 0 0%;
+                        width: 100%;
+                        gap: 1.6rem;
+                        h1 {
+                            font-size: 3.2rem;
+                            line-height: 4rem;
+                            opacity: 0;
+                            translate: 0 50%;
+                            transition: all 0.4s ease-out;
+                            &.visible {
+                                transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                                opacity: 1;
+                                translate: 0 0%;
+                            }
+                        }
+                        h3 {
+                            font-size: 1.8rem;
+                            line-height: 2.4rem;
+                            opacity: 0;
+                            translate: 0 50%;
+                            transition: all 0.4s ease-out;
+                            &.visible {
+                                transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                                opacity: 1;
+                                translate: 0 0%;
+                            }
+                        }
+                        .paragraph_2 {
+                            &.visible {
+                                transition-delay: 0.25s;
+                            }
+                        }
+                        .paragraph_3 {
+                            &.visible {
+                                transition-delay: 0.5s;
+                            }
+                        }
                     }
-                    h3 {
-                        font-size: 1.8rem;
-                        line-height: 2.4rem;
+                    .image_wrapper {
+                        width: 100%;
+                        height: 45rem;
+                        opacity: 0;
+                        translate: 0 50%;
+                        transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                        &.visible {
+                            opacity: 1;
+                            translate: 0 0%;
+                            transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                        }
                     }
                 }
             }
@@ -135,7 +215,7 @@
     }
 
     @include screenMax('mobile') {
-        padding: 0;
+        padding: 0 0 3.2rem;
         margin: 0;
         .cards_container_wrapper {
             & > section {
@@ -169,18 +249,28 @@
                 .wrapper_class {
                     flex-direction: column-reverse!important;
                     gap: 2.4rem;
+                    .event_details_text {
+                        gap: 0.8rem;
+                        h1 {
+                            font-size: 2.4rem;
+                            line-height: 3.2rem;
+                            text-align: left;
+                        }
+                        h3 {
+                            font-size: 1.4rem;
+                            line-height: 2rem;
+                        }
+                    }
+                    .image_wrapper {
+                        height: 28rem;
+                    }
                 }
-                .event_details_text {
-                    gap: 0.8rem;
-                    h1 {
-                        font-size: 2.4rem;
-                        line-height: 3.2rem;
-                        text-align: left;
-                    }
-                    h3 {
-                        font-size: 1.4rem;
-                        line-height: 2rem;
-                    }
+                .divider {
+                    width: 100%;
+                    height: 0.1rem;
+                    background: #000;
+                    display: block;
+                    margin: 1rem 0 4rem;
                 }
             }
         }

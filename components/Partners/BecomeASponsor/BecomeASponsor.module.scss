@@ -1,81 +1,180 @@
 @import "@/styles/imports";
 
-.container {
+.section_wrapper {
+    width: 100%;
     background: #14361B;
     padding: 14rem 8.2rem 19rem;
-    @include noScrollBar();
-    .text_details {
-        h1 {
-            color: #3DB54A;
-            font-family: $font-gothic-bold;
-            font-size: 4.4rem;
-            line-height: 5.6rem;
-        }
-        .text_body {
-            margin: 4rem 0;
-            h3 {
-                font-family: $font-gothic;
-                color: $col-white;
-                font-size: 2.2rem;
-                line-height: 2.8rem;
-                text-align: justify;
-                margin-bottom: 1.6rem;
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        position: relative;
+        @include noScrollBar();
+        .wrapper {
+            @include noScrollBar();
+            display: flex;
+            align-items: center;
+            gap: 12rem;
+            width: 100%;
+            .image_wrapper {
+                width: 45%;
+                height: 60rem;
+                position: relative;
+                translate: 0 50%;
+                opacity: 0;
+                flex-shrink: 0;
+                @include noScrollBar();
+                transition: translate 0.5s ease-out, opacity 0.5s ease-out;
+            }
+            .text_details {
+                width: 55%;
+                translate: 0 50%;
+                opacity: 0;
+                transition: translate 0.5s ease-out, opacity 0.5s ease-out;
+                h1 {
+                    color: #3DB54A;
+                    font-family: $font-gothic-bold;
+                    font-size: 4.4rem;
+                    line-height: 5.6rem;
+                }
+                .text_body {
+                    margin: 4rem 0;
+                    h3 {
+                        font-family: $font-gothic;
+                        color: $col-white;
+                        font-size: 2.2rem;
+                        line-height: 2.8rem;
+                        text-align: justify;
+                        margin-bottom: 1.6rem;
+                    }
+                }
+                .custom_link_container {
+                    position: relative;
+                    .custom_link_class {
+                        max-width: fit-content!important;
+                    }
+                    .custom_link_class > p {
+                        font-size: 2rem!important;
+                        line-height: 2.4rem!important;
+                    }
+                }
+            }
+            &.visible {
+                transition: all 0.5s ease-out;
+                .image_wrapper, .text_details {
+                    opacity: 1;
+                    translate: 0 0%;
+                }
+                .text_details {
+                    transition-delay: 0.15s;
+                }
             }
         }
-        .custom_link_class {
-            max-width: fit-content!important;
-        }
-        .custom_link_class > p {
-            font-size: 2rem!important;
-            line-height: 2.4rem!important;
-        }
     }
-
     @include screenMax('tablet') {
         padding: 8rem 6rem 0;
-        .wrapper {
-            flex-direction: column-reverse!important;
-            & > div {
-                width: 100%!important;
-            }
-        }
-        .text_details {
-            h1 {
-                font-size: 3.2rem;
-                line-height: 4.4rem;
-            }
-            .text_body {
-                margin: 2.4rem 0;
-                h3 {
-                    font-size: 1.8rem;
-                    line-height: 2.4rem;
+        .container {
+            .wrapper {
+                flex-direction: column-reverse!important;
+                gap: 6rem;
+                & > div {
+                    width: 100%!important;
+                }
+                .text_details {
+                    opacity: 1;
+                    translate: 0 0%;
+                    h1 {
+                        font-size: 3.2rem;
+                        line-height: 4.4rem;
+                        opacity: 0;
+                        translate: 0 50%;
+                        transition: all 0.4s ease-out;
+                        &.visible {
+                            transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                            opacity: 1;
+                            translate: 0 0%;
+                        }
+                    }
+                    .text_body {
+                        margin: 2.4rem 0;
+                        h3 {
+                            font-size: 1.8rem;
+                            line-height: 2.4rem;
+                            opacity: 0;
+                            translate: 0 50%;
+                            transition: all 0.4s ease-out;
+                            &.visible {
+                                transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                                opacity: 1;
+                                translate: 0 0%;
+                            }
+                        }
+                        .paragraph_2 {
+                            &.visible {
+                                transition-delay: 0.2s;
+                            }
+                        }
+                        .paragraph_3 {
+                            &.visible {
+                                transition-delay: 0.45s;
+                            }
+                        }
+                    }
+                    .custom_link_container {
+                        opacity: 0;
+                        translate: 0 50%;
+                        margin-top: 1.6rem;
+                        transition: all 0.4s ease-out;
+                        &.visible {
+                            transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                            opacity: 1;
+                            translate: 0 0%;
+                        }
+                    }
+                }
+                .image_wrapper {
+                    width: 100%;
+                    height: 45rem;
+                    transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                    &.visible {
+                        opacity: 1;
+                        translate: 0 0%;
+                        transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                    }
                 }
             }
         }
     }
-
     @include screenMax('mobile') {
         padding: 2.4rem 2rem 0;
-        .text_details {
-            h1 {
-                font-size: 2.2rem;
-                line-height: 2.8rem;
-                text-align: left;
-            }
-            .text_body {
-                margin: 1.6rem 0;
-                display: flex;
-                flex-direction: column;
-                gap: 0.8rem;
-                h3 {
-                    font-size: 1.4rem;
-                    line-height: 2rem;
-                    margin: 0;
+        .container {
+            .wrapper {
+                gap: 3.2rem;
+                .text_details {
+                    h1 {
+                        font-size: 2.2rem;
+                        line-height: 2.8rem;
+                        text-align: left;
+                    }
+                    .text_body {
+                        margin: 1.6rem 0;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.6rem;
+                        h3 {
+                            font-size: 1.4rem;
+                            line-height: 2.4rem;
+                            margin: 0;
+                            text-align: left;
+                        }
+                    }
+                    .custom_link_class > p {
+                        font-size: 1.2rem!important;
+                        line-height: 1.6rem!important;
+                    }
                 }
-            }
-            .custom_link_class > p {
-                font-size: 1.2rem!important;
-                line-height: 1.6rem!important;
+                .image_wrapper {
+                    height: 28rem;
+                }
             }
         }
     }

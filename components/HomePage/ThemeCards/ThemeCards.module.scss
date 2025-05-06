@@ -3,7 +3,7 @@
 .theme_cards_container {
     width: 100%;
     padding: 0 10rem;
-    margin: -12rem auto 0;
+    margin: -6rem auto 0;
     background: $col-white;
     @include noScrollBar();
     .theme_details {
@@ -55,7 +55,7 @@
 
     @include screenMax('tablet') {
         padding: 0 5rem;
-        margin-top: -6rem;
+        margin-top: -2rem;
         .theme_details {
             gap: 2rem;
             h3 {
