@@ -12,14 +12,6 @@ interface FaqCardProps {
   QA: QAProps[]
 }
 
-// const linkMapping: { [key: string]: string } = {
-//   'website': 'https://www.africagovtechweek.com',
-//   'contact': '/contact',
-//   'www.africagovtechweek.com': 'https://www.africagovtechweek.com',
-//   'info@africagovtechweek.com': 'mailto:info@africagovtechweek.com',
-//   '+2348102875064': 'tel:+234 810 287 5064'
-// };
-// new line
 // const parseAnswerWithLinks = (answer: string): React.JSX.Element => {
 //   const words = Object.keys(linkMapping);
 //   const escapedWords = words.map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));

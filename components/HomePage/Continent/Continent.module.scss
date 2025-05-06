@@ -2,49 +2,70 @@
 
 .continent_container {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     align-items: center;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
     justify-content: center;
     position: relative;
-    background-image: url('../../../public/images/continent.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    // overflow-x: hidden;
+    clip-path: inset(0);
+    scroll-margin-top: 8.8rem;
+    overflow: clip;
+        background-image: url('../../../public/images/continent_.png');
+        background-size: cover;
+        background-position: top center;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+    @include noScrollBar();
     // &::before {
     //     content: '';
     //     position: absolute;
-    //     top: 0;
-    //     left: 0;
     //     width: 100%;
     //     height: 100%;
-    //     background-image: url('../../../public/images/continent.png');
-    //     background-size: cover;
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    //     transform: translateY(var(--bg-translate-y, 0)); /* Controlled by JS */
-    //     z-index: 0;
-    //     transition: transform 0.1s ease-out; /* Smooth background movement */
-    //   }
-    .overlay {
+    // }
+    &::before {
+        content: "";
         position: absolute;
-        top: 0;
-        left: 0;
+        z-index: 2;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .image {
+        z-index: 1;
         width: 100%;
         height: 100%;
-        background-color: #14361B;
-        opacity: 0.75;
-        z-index: 1;
-
+        position: fixed;
+        top: 0;
+        left: 0;
+        & > img {
+            object-fit: cover;
+            vertical-align: middle;
+            overflow: clip;
+            overflow-clip-margin: content-box;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
     }
+    
     .continent_details {
         display: flex;
         flex-direction: column;
         gap: 3.2rem;
         margin: 0 auto;
         max-width: 1440px;
-        z-index: 2;
-        // transition: transform 0.3s ease-out;
+        position: relative;
+        z-index: 3;
+        // transform: translateZ(-1px) scale(1.6);
+        // transform-style: inherit;
+        // top: 10%;
         h3 {
             text-align: center;
             font-family: $font-gothic-bold;
@@ -89,16 +110,5 @@
                 text-align: center;
             }
         }
-    }
-}
-
-@keyframes slideUp {
-    from {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
     }
 }

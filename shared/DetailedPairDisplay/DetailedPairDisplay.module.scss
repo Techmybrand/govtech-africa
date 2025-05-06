@@ -17,14 +17,14 @@
         width: 100%;
         @include noScrollBar();
         .image_wrapper {
-            width: 50%;
+            width: 45%;
             height: 60rem;
             position: relative;
             translate: 0 50%;
             @include noScrollBar();
         }
         .text_details{
-            width: 50%;
+            width: 55%;
             translate: 0 50%;
             @include noScrollBar();
         }

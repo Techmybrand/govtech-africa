@@ -28,7 +28,6 @@ export const parseAnswerWithLinks = (answer: string): React.JSX.Element => {
     if (index > 0) {
       elements.push(
         <Link key={`phone-${index}`} href={linkMapping[phoneNumber]}
-          // target="_blank"
           rel="noopener noreferrer"
           className={styles.faq_link}
         >

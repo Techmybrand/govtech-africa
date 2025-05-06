@@ -8,35 +8,64 @@
     .why_partner_wrapper {
         max-width: 1440px;
         margin: 0 auto;
+        position: relative;
         .wrapper_reverse {
             @include noScrollBar();
             padding: 0 10rem!important;
-        }
-        .organisations_details {
-            h2 {
-                color: #14361B;
-                font-size: 4.4rem;
-                line-height: 5.6rem;
-                font-family: $font-gothic-bold;
-                margin-bottom: 5.6rem;
+            display: flex;
+            align-items: center;
+            gap: 12rem;
+            width: 100%;
+            .image_wrapper {
+                width: 45%;
+                height: 60rem;
+                position: relative;
+                translate: 0 50%;
+                opacity: 0;
+                flex-shrink: 0;
+                @include noScrollBar();
+                transition: translate 0.5s ease-out, opacity 0.5s ease-out;
             }
-            h3 {
-                font-family: $font-gothic;
-                font-size: 2.2rem;
-                line-height: 2.8rem;
-                color: #616161;
-                margin-bottom: 2.4rem;
-            }
-            ul {
-                display: flex;
-                flex-direction: column;
-                gap: 0.8rem;
-                li {
-                    list-style-type: disc!important;
+            .organisations_details {
+                width: 55%;
+                translate: 0 50%;
+                opacity: 0;
+                transition: translate 0.5s ease-out, opacity 0.5s ease-out;
+                h2 {
+                    color: #14361B;
+                    font-size: 4.4rem;
+                    line-height: 5.6rem;
+                    font-family: $font-gothic-bold;
+                    margin-bottom: 5.6rem;
+                }
+                h3 {
                     font-family: $font-gothic;
                     font-size: 2.2rem;
                     line-height: 2.8rem;
                     color: #616161;
+                    margin-bottom: 2.4rem;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.8rem;
+                    li {
+                        list-style-type: disc!important;
+                        font-family: $font-gothic;
+                        font-size: 2.2rem;
+                        line-height: 2.8rem;
+                        color: #616161;
+                    }
+                }
+            }
+            &.visible {
+                transition: all 0.5s ease-out;
+                .image_wrapper, .organisations_details {
+                    opacity: 1;
+                    translate: 0 0%;
+                }
+                .organisations_details {
+                    transition-delay: 0.15s;
                 }
             }
         }
@@ -47,56 +76,114 @@
         .why_partner_wrapper {
             .wrapper_reverse {
                 padding: 0 2.4rem!important;
-            }
-            .organisations_details {
-                h2 {
-                    font-size: 3.2rem;
-                    line-height: 4.4rem;
-                    margin-bottom: 2.4rem;
-                }
-                h3 {
-                    font-size: 1.8rem;
-                    line-height: 2.4rem;
-                }
-                ul {
-                    li {
+                gap: 2rem;
+                .organisations_details {
+                    h2 {
+                        font-size: 3.2rem;
+                        line-height: 4.4rem;
+                        margin-bottom: 2.4rem;
+                    }
+                    h3 {
                         font-size: 1.8rem;
                         line-height: 2.4rem;
                     }
+                    ul {
+                        li {
+                            font-size: 1.8rem;
+                            line-height: 2.4rem;
+                        }
+                    }
+                }
+                .image_wrapper {
+                    height: 45rem;
                 }
             }
         }
     }
 
     @include screenMax('mobile') {
-        padding: 0 0 4rem;
+        padding: 0 0 5rem;
         .why_partner_wrapper {
             .wrapper_reverse {
                 padding: 0 1.6rem!important;
+                flex-direction: column;
                 gap: 2.4rem;
-            }
-            .organisations_details {
-                h2 {
-                    text-align: left;
-                    line-height: 2.4rem;
-                    margin-bottom: 1.6rem;
-                    font-size: 2rem;
-                }
-                h3 {
-                    font-size: 1.4rem;
-                    line-height: 2rem;
-                    text-align: justify;
-                    margin-bottom: 1.6rem;
-                }
-                ul {
-                    padding: 0 1rem;
-                    li {
+                .organisations_details {
+                    opacity: 1;
+                    translate: 0 0%;
+                    width: 100%;
+                    h2 {
+                        text-align: left;
+                        line-height: 2.4rem;
+                        margin-bottom: 1.6rem;
+                        font-size: 2rem;
+                        opacity: 0;
+                        translate: 0 50%;
+                        transition: all 0.4s ease-out;
+                        &.visible {
+                            transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                            opacity: 1;
+                            translate: 0 0%;
+                        }
+                    }
+                    h3 {
                         font-size: 1.4rem;
                         line-height: 2rem;
                         text-align: justify;
+                        margin-bottom: 1.6rem;
+                        opacity: 0;
+                        translate: 0 50%;
+                        transition: all 0.4s ease-out;
+                        &.visible {
+                            transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                            opacity: 1;
+                            translate: 0 0%;
+                        }
+                    }
+                    ul {
+                        padding: 0 1rem;
+                        li {
+                            font-size: 1.4rem;
+                            line-height: 2rem;
+                            text-align: justify;
+                            opacity: 0;
+                            translate: 0 50%;
+                            transition: all 0.4s ease-out;
+                        }
+                        &.visible {
+                            li {
+                                transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                                opacity: 1;
+                                translate: 0 0%;
+                                &:nth-child(1) {
+                                    transition-delay: 0s;
+                                }
+                                &:nth-child(2) {
+                                    transition-delay: 0.3s;
+                                }
+                                &:nth-child(3) {
+                                    transition-delay: 0.6s;
+                                }
+                                &:nth-child(4) {
+                                    transition-delay: 0.9s;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                .image_wrapper {
+                    width: 100%;
+                    height: 28rem;
+                    opacity: 0;
+                    translate: 0 50%;
+                    transition: translate 0.4s ease-out, opacity 0.4s ease-out;
+                    &.visible {
+                        opacity: 1;
+                        translate: 0 0%;
+                        transition: translate 0.4s ease-out, opacity 0.4s ease-out;
                     }
                 }
-                
             }
         }
     }
