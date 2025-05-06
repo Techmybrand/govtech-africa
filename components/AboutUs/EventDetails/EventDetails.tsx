@@ -1,8 +1,7 @@
 'use client';
 import React, { useRef, useEffect } from 'react';
-// import { DetailedPairDisplay } from '@/shared';
-import styles from './EventDetails.module.scss';
 import Image from 'next/image';
+import styles from './EventDetails.module.scss';
 
 const EventDetails = () => {
   const headerRef = useRef<HTMLDivElement>(null);

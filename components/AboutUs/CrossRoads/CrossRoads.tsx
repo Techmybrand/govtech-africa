@@ -1,6 +1,5 @@
 'use client';
 import React, { useRef, useEffect } from 'react';
-// import { DetailedPairDisplay } from '@/shared';
 import Image from 'next/image';
 import styles from './CrossRoads.module.scss';
 

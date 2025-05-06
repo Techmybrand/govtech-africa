@@ -1,9 +1,8 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
-// import { DetailedPairDisplay } from '@/shared';
-import styles from './PrivateSector.module.scss';
 import { privateSectorDetails } from '@/mock/navLists.mock';
 import Image from 'next/image';
+import styles from './PrivateSector.module.scss';
 
 const PrivateSector = () => {
     const topSectionRef = useRef<HTMLDivElement>(null);

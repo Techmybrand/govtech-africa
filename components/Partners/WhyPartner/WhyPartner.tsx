@@ -1,9 +1,8 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
-// import { DetailedPairDisplay } from '@/shared';
-import styles from './WhyPartner.module.scss';
 import { govtDetails } from '@/mock/navLists.mock';
 import Image from 'next/image';
+import styles from './WhyPartner.module.scss';
 
 const WhyPartner = () => {
     const headerRef = useRef<HTMLDivElement>(null);

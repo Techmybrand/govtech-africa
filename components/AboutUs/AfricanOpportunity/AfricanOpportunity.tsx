@@ -1,8 +1,7 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
-// import { DetailedPairDisplay } from '@/shared';
-import styles from './AfricanOpportunity.module.scss';
 import Image from 'next/image';
+import styles from './AfricanOpportunity.module.scss';
 
 const AfricanOpportunity = () => {
   const topSectionRef = useRef<HTMLDivElement>(null);
