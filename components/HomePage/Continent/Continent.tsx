@@ -1,18 +1,11 @@
 'use client';
-import React, { useRef } from 'react';
+import React from 'react';
 import styles from './Continent.module.scss'
-// import Image from 'next/image';
 
 const Continent = () => {
-  const containerRef = useRef<HTMLElement>(null);
-  const detailsRef = useRef<HTMLDivElement>(null);
-
   return (
-    <section ref={containerRef} className={styles.continent_container}>
-      {/* <div className={styles.image}>
-        <Image alt='' fill src='/images/continent_.png' />
-      </div> */}
-      <div ref={detailsRef} className={styles.continent_details}>
+    <section className={styles.continent_container}>
+      <div className={styles.continent_details}>
         <h3>A Continent at Crossroads</h3>
         <p>
           With over 60% of Africa’s population under 25, the demand 

@@ -58,3 +58,29 @@ export const parseAnswerWithLinks = (answer: string): React.JSX.Element => {
   
     return <>{elements}</>;
   };
+
+  // const parseAnswerWithLinks = (answer: string): React.JSX.Element => {
+  //   const words = Object.keys(linkMapping);
+  //   const escapedWords = words.map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  //   const regex = new RegExp(`\\b(${escapedWords.join('|')})\\b`, 'g');
+  //   const parts = answer.split(regex);
+  
+  //   return (
+  //     <>
+  //       {parts.map((part, index) => {
+  //         if (words.includes(part)) {
+  //           return (
+  //             <Link key={index} href={linkMapping[part]}
+  //               // target="_blank"
+  //               // rel="noopener noreferrer"
+  //               className={styles.faq_link}
+  //             >
+  //               {part}
+  //             </Link>
+  //           );
+  //         }
+  //         return <span key={index}>{part}</span>;
+  //       })}
+  //     </>
+  //   );
+  // };
