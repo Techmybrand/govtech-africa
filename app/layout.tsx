@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Footer, Header, PreLoader } from "@/shared";
+import { PreLoader } from "@/shared";
 import "@/styles/index.scss";
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     influential  gathering of government technology stakeholders. 
     Discover innovations, forge partnerships, and shape the future of digital 
     governance across the continent.`,
-    keywords: [
+  keywords: [
       'Africa Govtech Week',
       'GovTech Africa 2025',
       'Government technology Africa',
@@ -29,28 +29,28 @@ export const metadata: Metadata = {
       'Africa GovTech policy forum',
       'AI in public sector Africa',
       'Digital ID and infrastructure in African governance',
+  ],
+  openGraph: {
+    title: `Africa Govtech Week 2025 | Powering Africa's Public Sector Digitisation`,
+    description: `Join top government leaders, tech innovators, and development 
+      partners at Africa Govtech Week 2025—a premier conference and exhibition 
+      focused on  digitising Africa's public sector. Be part of Africa's most 
+      influential  gathering of government technology stakeholders. 
+      Discover innovations, forge partnerships, and shape the future of digital 
+      governance across the continent.`,
+    url: 'https://africagovtechweek.com',
+    type: 'website',
+    siteName: 'Africa Govtech Week 2025',
+    images: [
+      {
+        url: '/images/social_card.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Africa Govtech Week 2025',
+      },
     ],
-    openGraph: {
-      title: `Africa Govtech Week 2025 | Powering Africa's Public Sector Digitisation`,
-      description: `Join top government leaders, tech innovators, and development 
-        partners at Africa Govtech Week 2025—a premier conference and exhibition 
-        focused on  digitising Africa's public sector. Be part of Africa's most 
-        influential  gathering of government technology stakeholders. 
-        Discover innovations, forge partnerships, and shape the future of digital 
-        governance across the continent.`,
-      url: 'https://africagovtechweek.com',
-      type: 'website',
-      siteName: 'Africa Govtech Week 2025',
-      images: [
-        {
-          url: '/images/social_card.jpg',
-          width: 1200,
-          height: 630,
-          alt: 'Africa Govtech Week 2025',
-        },
-      ],
-    }
-  };
+  }
+};
 
 export default function RootLayout({
   children,
@@ -61,9 +61,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <PreLoader />
-        <Header />
+        {/* <Header /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

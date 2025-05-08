@@ -10,7 +10,6 @@
         max-width: 1440px;
         margin: 0 auto;
         .wrapper {
-            padding: 0 10rem!important;
             @include noScrollBar();
             display: flex;
             align-items: center;
@@ -108,7 +107,7 @@
     }
 
     @include screenMax('mobile') {
-        padding: 0;
+        padding: 4rem 0;
         .why_partner_wrapper {
             .wrapper {
                 padding: 0 1.6rem!important;
@@ -190,7 +189,7 @@
             }
             .divider {
                 display: block;
-                margin: 4rem 0;
+                margin: 0;
             }
         }
     }

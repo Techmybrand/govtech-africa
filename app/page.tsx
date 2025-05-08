@@ -1,6 +1,11 @@
 "use client";
 import { HomeView } from "@/Views";
+import MainLayout from "./(home)/layout";
 
 export default function Home() {
-	return  <HomeView />
+	return (
+		<MainLayout>
+			<HomeView />
+		</MainLayout>
+	)
 }

@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import { FaqLists } from '@/mock/navLists.mock';
 import FaqCard from './FaqCard/FaqCard';
 import styles from './FAQ.module.scss';
@@ -12,6 +13,10 @@ interface FaqProps {
 }
 
 const FAQ = () => {
+  const [isOpen, setIsOpen] = useState<string | null>(null);
+  const openAccordion = (index: string) => {
+    setIsOpen(isOpen === index ? null : index)
+  };  
   return (
     <section className={styles.faq_container}>
         <div className={styles.faq_content}>    
@@ -25,6 +30,9 @@ const FAQ = () => {
                     <FaqCard key={index}
                         QA={data?.QA}
                         header={data?.title}
+                        sectionIndex={index}
+                        isOpenId={isOpen}
+                        onToggle={openAccordion}
                     />
                 )}
             </div>

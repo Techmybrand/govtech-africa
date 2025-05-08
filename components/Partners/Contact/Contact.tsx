@@ -8,7 +8,6 @@ const Contact = () => {
   const router = useRouter();
   return (
     <section className={styles.continent_container}>
-      <div className={styles.overlay}></div>
       <div className={styles.continent_details}>
         <h3>
           The Africa Govtech Week is not just a conference—it is a movement 
@@ -19,9 +18,9 @@ const Contact = () => {
           transformative role in shaping Africa’s digital governance landscape.
         </h3>
         <Button buttonType='transparent' onClick={() => router.push('/contact')} 
-            className={styles.contact_btn}
+          className={styles.contact_btn}
         >
-            <p>Contact us today</p>
+          <p>Contact us today</p>
         </Button>
       </div>
     </section>

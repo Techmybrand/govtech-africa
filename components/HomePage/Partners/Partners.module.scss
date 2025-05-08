@@ -161,7 +161,7 @@
         }
     
         @include screenMax('mobile') {
-            padding: 2rem 1.6rem 0;
+            padding: 2rem 1.6rem 4rem;
             .wrapper_class {
                 flex-direction: column-reverse!important;
                 gap: 3.2rem;

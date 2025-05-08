@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import { Accordion } from '@/shared';
 import { parseAnswerWithLinks } from '@/utils';
 import styles from './FaqCard.module.scss';
@@ -10,46 +10,23 @@ interface QAProps {
 interface FaqCardProps {
   header: string
   QA: QAProps[]
+  sectionIndex: number;
+  isOpenId?: string | null;
+  onToggle: (questionId: string) => void;
 }
 
-// const parseAnswerWithLinks = (answer: string): React.JSX.Element => {
-//   const words = Object.keys(linkMapping);
-//   const escapedWords = words.map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-//   const regex = new RegExp(`\\b(${escapedWords.join('|')})\\b`, 'g');
-//   const parts = answer.split(regex);
+const FaqCard = ({ header, QA, sectionIndex, isOpenId, onToggle }: FaqCardProps) => {
 
-//   return (
-//     <>
-//       {parts.map((part, index) => {
-//         if (words.includes(part)) {
-//           return (
-//             <Link key={index} href={linkMapping[part]}
-//               // target="_blank"
-//               // rel="noopener noreferrer"
-//               className={styles.faq_link}
-//             >
-//               {part}
-//             </Link>
-//           );
-//         }
-//         return <span key={index}>{part}</span>;
-//       })}
-//     </>
-//   );
-// };
-
-const FaqCard = ({ header, QA }: FaqCardProps) => {
-  const [isOpen, setIsOpen] = useState<number | null>(null);
-  const OpenAccordion = (index: number) => {
-    setIsOpen(isOpen === index ? null : index)
-  };
   return (
     <div className={styles.faq_card_container}>
       <h1>{header}</h1>
       <div className={styles.q_and_a_wrapper}>
-        {QA.map((data: QAProps, index: number) =>
-          <Accordion key={index} isOpen={isOpen === index}
-            title={data?.question} onToggle={() => OpenAccordion(index)}
+        {QA.map((data: QAProps, index: number) => {
+          const questionId = `${sectionIndex}-${index}`;
+          return (
+          <Accordion key={questionId} isOpen={isOpenId === questionId}
+            title={data?.question} 
+            onToggle={() => onToggle(questionId)}
           >
             <div className={styles.answers_container}>
               <p>
@@ -57,6 +34,8 @@ const FaqCard = ({ header, QA }: FaqCardProps) => {
               </p>
             </div>
           </Accordion>
+          )
+        }
         )}
       </div>
     </div>
