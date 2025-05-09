@@ -217,6 +217,9 @@
                             font-size: 1.4rem;
                             line-height: 2rem;
                             text-align: justify;
+                            opacity: 0;
+                            translate: 0 50%;
+                            transition: all 0.4s ease-out;
                         }
                         &.visible {
                             li {
