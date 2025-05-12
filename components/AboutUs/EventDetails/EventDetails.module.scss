@@ -81,13 +81,16 @@
                 @include noScrollBar();
                 .image_wrapper {
                     width: 45%;
-                    height: 60rem;
+                    height: 47.5rem;
                     position: relative;
                     translate: 0 50%;
                     opacity: 0;
                     flex-shrink: 0;
                     @include noScrollBar();
                     transition: translate 0.5s ease-out, opacity 0.5s ease-out;
+                    & > img {
+                        object-fit: cover;
+                    }
                 }
                 .event_details_text {
                     display: flex;
@@ -199,7 +202,7 @@
                     }
                     .image_wrapper {
                         width: 100%;
-                        height: 45rem;
+                        height: 40rem;
                         opacity: 0;
                         translate: 0 50%;
                         transition: translate 0.4s ease-out, opacity 0.4s ease-out;

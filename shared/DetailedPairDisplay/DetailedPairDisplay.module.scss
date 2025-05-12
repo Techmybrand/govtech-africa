@@ -18,10 +18,13 @@
         @include noScrollBar();
         .image_wrapper {
             width: 45%;
-            height: 60rem;
+            height: 47.5rem;
             position: relative;
             translate: 0 50%;
             @include noScrollBar();
+            & > img {
+                object-fit: cover;
+            }
         }
         .text_details{
             width: 55%;
@@ -32,21 +35,6 @@
             opacity: 0;
             transition: translate 0.5s ease-out, opacity 0.5s ease-out;
         }
-        // &.visible {
-        //     transition: all 650ms ease-in-out;
-        //     .card {
-        //         opacity: 1;
-        //         translate: 0 0%;
-        //         transition: translate 0.5s ease-out, opacity 0.5s ease-out;
-        //         @include noScrollBar();
-        //     }
-        //     .card2 {
-        //         opacity: 1;
-        //         translate: 0 0%;
-        //         transition: translate 0.65s ease-out, opacity 0.65s ease-out;
-        //         @include noScrollBar();
-        //     }
-        // }
         &.visible {
             transition: all 500ms ease-in-out;
             .card:nth-child(1) {
@@ -106,7 +94,7 @@
             gap: 2rem;
             .image_wrapper {
                 width: 50%;
-                height: 45rem;
+                height: 40rem;
             }
         }
     }

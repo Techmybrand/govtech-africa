@@ -184,8 +184,8 @@
   display: none;
   .button {
     h3 {
-      font-size: 2.4rem;
-      line-height: 3.2rem
+      font-size: 2.2rem;
+      line-height: 2.8rem
     }
   }
 
@@ -193,11 +193,12 @@
     @include flex();
     display: flex;
 		flex-wrap: wrap;
+    margin-left: 0;
 		.button{
 			width: 100%;
       h3 {
-        font-size: 2.2rem;
-        line-height: 2.8rem;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
       }
 		}
 	}
@@ -207,7 +208,7 @@
     display: flex;
 		flex-wrap: wrap;
 		.button{
-			width: 100%;
+			width: 18rem;
       h3 {
         font-size: 1.4rem;
         line-height: 2rem;
@@ -220,6 +221,11 @@
   position: relative;
   left: 20rem;
   margin: 0;
+  a {
+    button {
+      width: 18rem!important;
+    }
+  }
   @include flex();
 
   @include screenMax("tablet") {

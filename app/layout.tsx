@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PreLoader } from "@/shared";
 import "@/styles/index.scss";
+import React from "react";
 
 export const metadata: Metadata = {
   title: `Africa Govtech Week 2025 | Powering Africa's Public Sector Digitisation`,
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     siteName: 'Africa Govtech Week 2025',
     images: [
       {
-        url: '/images/social_card.jpg',
+        url: '/images/opengraph-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Africa Govtech Week 2025',
@@ -61,9 +62,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <PreLoader />
-        {/* <Header /> */}
-        {children}
-        {/* <Footer /> */}
+        <React.Fragment>
+          {children}
+        </React.Fragment>
       </body>
     </html>
   );

@@ -27,8 +27,12 @@
             font-size: 2.2rem;
             line-height: 2.8rem;
             color: #14361B;
-            text-align: justify;
+            text-align: left;
             span {
+                font-size: 2.2rem!important;
+                line-height: 2.8rem!important;
+            }
+            a {
                 font-size: 2.2rem!important;
                 line-height: 2.8rem!important;
             }
@@ -61,6 +65,10 @@
                     font-size: 1.8rem!important;
                     line-height: 2.4rem!important;
                 }
+                a {
+                    font-size: 1.8rem!important;
+                    line-height: 2.4rem!important;
+                }
             }
         }
     }
@@ -81,6 +89,10 @@
                 font-size: 1.2rem;
                 line-height: 1.6rem;
                 span {
+                    font-size: 1.2rem!important;
+                    line-height: 1.6rem!important;
+                }
+                a {
                     font-size: 1.2rem!important;
                     line-height: 1.6rem!important;
                 }
