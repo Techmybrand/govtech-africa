@@ -7,7 +7,7 @@ import { ThemeCards, Continent, Participation,
     Partners, Registration, Expectation, Introduction
 } from "./HomePage"
 import { BecomeASponsor, BookAStand, Contact, WhyPartner, PrivateSector, Organisations } from "./Partners"
-
+import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy"
 
 export {
     ThemeCards,
@@ -29,6 +29,7 @@ export {
     AfricanOpportunity,
     EventDetails,
     PrivateSector,
-    Organisations
+    Organisations,
+    PrivacyPolicy,
     
 }

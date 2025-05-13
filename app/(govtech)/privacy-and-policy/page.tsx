@@ -1,7 +1,7 @@
-
+import { PrivacyPolicyView } from "@/Views";
 
 export default function PrivacyPolicyPage() {
     return (
-        <h1>Privacy and Policy Page</h1>
+        <PrivacyPolicyView />
     )
 }

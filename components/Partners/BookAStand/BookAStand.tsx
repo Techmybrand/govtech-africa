@@ -106,6 +106,7 @@ const BookAStand = () => {
         }
         };
     }, []);
+    
   return (
     <section id='book-a-stand' className={styles.section_wrapper}>
         <div className={styles.container}>
@@ -154,20 +155,14 @@ const BookAStand = () => {
                         </h3>
                     </div>
                     <div ref={customLinkRef} className={styles.custom_link_container}>
-                        <CustomLink href='' color='black' subType='black'
-                            label='Request sponsorship packages'
-                            className={styles.custom_link_class}
+                        <CustomLink label='Request Exhibition Packages' className={styles.custom_link_class}
+                            // href="mailto:info@africagovtechweek.com?subject=Exhibition%20Inquiry?body=Request Exhibition Packages" color='black' subType='black'
+                            href="mailto:info@africagovtechweek.com?body=Request Exhibition Packages" color='black' subType='black'
                         />
                     </div>
                 </div>
             </div>
         </div>
-        {/* <DetailedPairDisplay
-            className={styles.wrapper}
-            image1='/images/book_a_stand1.jpg'
-            TextDetails1={
-            }
-        /> */}
     </section>
   )
 }

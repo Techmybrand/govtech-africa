@@ -1,0 +1,10 @@
+@import "@/styles/imports";
+
+.privacy_policy_container {
+    width: 100%;
+    position: relative;
+    .privacy_policy_content {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}

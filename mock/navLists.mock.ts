@@ -269,7 +269,7 @@ export const footerNav = [
 	},
 	{
 		label: 'Privacy Policy',
-		href: '/'
+		href: '/privacy-and-policy'
 	},
 ]
 
