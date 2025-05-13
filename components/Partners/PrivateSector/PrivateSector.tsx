@@ -96,7 +96,7 @@ const PrivateSector = () => {
         <div className={styles.why_partner_wrapper}>
             <div ref={topSectionRef} className={styles.wrapper}>
                 <div ref={topImageRef} className={styles.image_wrapper}>
-                    <Image alt='' fill src='/images/private_sector.jpg' />
+                    <Image alt='' fill src='/images/private_sector.png' />
                 </div>
                 <div className={styles.private_sector_details}>
                     <h2 ref={paragraphOneRef}>For Private Sector</h2>

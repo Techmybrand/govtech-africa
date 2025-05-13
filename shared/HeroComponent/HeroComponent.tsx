@@ -11,9 +11,10 @@ interface HeroProps {
   backgroundImage: string
   headerTitleClass?: string
   headerSubtextClass?: string
+  overlay?: boolean
 }
 const HeroComponent = ({ title, subText, type = 'big', backgroundImage,
-  headerSubtextClass, headerTitleClass
+  headerSubtextClass, headerTitleClass, overlay = false
 }: HeroProps) => {
   const pathname = usePathname();
   const isPath = pathname === '/about-us'
@@ -43,7 +44,9 @@ const HeroComponent = ({ title, subText, type = 'big', backgroundImage,
       <div className={styles.background_image}>
         <Image alt='background' fill src={backgroundImage} />
       </div>
-      <div className={styles.background_image_wrapper}></div>
+      {overlay && (
+        <div className={styles.background_image_wrapper}></div>
+      )}
       <div ref={heroRef} data-path={isPath}
         className={`${styles.hero_content_wrapper} ${isVisible ? styles.visible : ""}`}
       >

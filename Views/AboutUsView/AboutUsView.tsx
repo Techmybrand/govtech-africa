@@ -32,7 +32,7 @@ const AboutUsView = () => {
             </p>
           </div>
         }
-        backgroundImage='/images/hero-2.jpeg'
+        backgroundImage='/images/hero_for_about.png'
         headerSubtextClass={styles.header_subtext_class}
         headerTitleClass={styles.header_title_class}
       />

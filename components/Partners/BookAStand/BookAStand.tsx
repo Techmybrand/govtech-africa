@@ -112,7 +112,7 @@ const BookAStand = () => {
         <div className={styles.container}>
             <div ref={topSectionRef} className={styles.wrapper}>
                 <div ref={topImageRef} className={styles.image_wrapper}>
-                    <Image alt='' fill src='/images/book_a_stand1.jpg' />
+                    <Image alt='' fill src='/images/book-a-stand.png' />
                 </div>
                 <div className={styles.text_details}>
                     <h1 ref={topTextRef}>Looking to showcase your brand without a Sponsorship commitment?</h1>

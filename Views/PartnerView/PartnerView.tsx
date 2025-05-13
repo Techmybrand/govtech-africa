@@ -14,9 +14,9 @@ const PartnerView = () => {
   return (
     <>
       <HeroComponent title='A New Era for African governance'
-        subText={`Join us as we chart the course for Africa's 
+        subText={`Join us as we chart the course for Africa's
           public sector renaissance`}
-        backgroundImage='/images/hero-1.jpeg'
+        backgroundImage='/images/hero_for_partner.png'
         headerSubtextClass={styles.header_subtext_class}
       />
       <BookATicket />

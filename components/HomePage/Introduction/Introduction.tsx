@@ -6,7 +6,7 @@ const Introduction = () => {
   return (
     <div className={styles.theme_cards_container}>
         <DetailedPairDisplay reverseTopSection
-            image1='/images/theme.jpg'
+            image1='/images/theme.png'
             TextDetails1={
                 <div className={styles.text_details}>
                     <h3>

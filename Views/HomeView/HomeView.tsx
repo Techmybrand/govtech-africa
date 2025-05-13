@@ -15,7 +15,7 @@ const HomeView = () => {
     <>
       <HeroComponent title='Africa Govtech Week'
         subText={`Powering Africa's public sector digitisation`}
-        backgroundImage='/images/hero-1.jpeg'
+        backgroundImage='/images/hero_for_homepage.png'
         headerTitleClass={styles.header_title_class}
       />
       <BookATicket />

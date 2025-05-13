@@ -97,7 +97,7 @@ const CrossRoads = () => {
         <div className={styles.first_container}>
           <div ref={topSectionRef} className={styles.wrapper_class}>
             <div ref={topImageRef} className={styles.image_wrapper}>
-              <Image alt='' fill src='/images/expectations.jpg' />
+              <Image alt='' fill src='/images/crossroads.png' />
             </div>
             <div className={styles.text_details}>
               <h1 ref={topTextRef}>A Continent at Crossroads</h1>
