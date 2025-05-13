@@ -157,7 +157,7 @@ const BookAStand = () => {
                     <div ref={customLinkRef} className={styles.custom_link_container}>
                         <CustomLink label='Request Exhibition Packages' className={styles.custom_link_class}
                             // href="mailto:info@africagovtechweek.com?subject=Exhibition%20Inquiry?body=Request Exhibition Packages" color='black' subType='black'
-                            href="mailto:info@africagovtechweek.com?body=Request Exhibition Packages" color='black' subType='black'
+                            href="mailto:info@africagovtechweek.com?subject=Request Exhibition Packages" color='black' subType='black'
                         />
                     </div>
                 </div>

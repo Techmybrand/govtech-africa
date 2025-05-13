@@ -141,7 +141,7 @@ const BecomeASponsor = () => {
                     </div>
                     <div ref={customLinkRef} className={styles.custom_link_container}>
                         <CustomLink label='Request Sponsorship Packages' className={styles.custom_link_class}
-                            href="mailto:info@africagovtechweek.com?body=Request Sponsorship Packages" color='black'
+                            href="mailto:info@africagovtechweek.com?subject=Request Sponsorship Packages" color='black'
                         />
                     </div>
                     
