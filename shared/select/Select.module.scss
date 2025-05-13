@@ -35,6 +35,9 @@
 			span {
 				@extend %text-14;
 				text-transform: capitalize;
+				color: #000;
+				font-family: $font-gothic;
+				font-weight: 600!important;
 			}
 		}
 		.select_smallRow {

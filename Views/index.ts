@@ -4,6 +4,7 @@ import ContactView from "./ContactView/ContactView";
 import FAQView from "./FAQView/FAQView";
 import HomeView from "./HomeView/HomeView";
 import PartnerView from "./PartnerView/PartnerView";
+import PrivacyPolicyView from "./PrivacyPolicyView/PrivacyPolicyView";
 
 
 export {
@@ -13,5 +14,6 @@ export {
     HomeView,
     PartnerView,
     FAQView,
+    PrivacyPolicyView,
     
 }

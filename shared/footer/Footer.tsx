@@ -1,9 +1,8 @@
 "use client";
-
-import Link from "next/link";
 import { footerNav, socialMediaLinks } from "@/mock/navLists.mock";
 import { footerNavProps, socialsProps } from "@/interfaces";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "./Footer.module.scss";
 
