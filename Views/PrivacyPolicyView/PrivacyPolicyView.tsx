@@ -1,5 +1,5 @@
 import React from 'react';
-import { PrivacyPolicy, Registration } from '@/components';
+import { PrivacyPolicy } from '@/components';
 import { HeroComponent } from '@/shared';
 
 const PrivacyPolicyView = () => {
@@ -9,9 +9,9 @@ const PrivacyPolicyView = () => {
         title='Africa Govtech Week' 
         type='small'
         backgroundImage='/images/hero-3.jpeg'
+        overlay={true}
       />
       <PrivacyPolicy />
-      <Registration />
     </>
   )
 }

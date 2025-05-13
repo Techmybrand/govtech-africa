@@ -134,7 +134,7 @@ const EventDetails = () => {
         <div className={styles.event_details}>
           <div ref={topSectionRef} className={styles.wrapper_class}>
             <div ref={topImageRef} className={styles.image_wrapper}>
-              <Image alt='' fill src='/images/about_event.jpg' />
+              <Image alt='' fill src='/images/event_details.png' />
             </div>
             <div className={styles.event_details_text}>
               <h1 ref={topTextRef}>Event Details</h1>
@@ -169,12 +169,6 @@ const EventDetails = () => {
             </div>
           </div>
           <div className={styles.divider}></div>
-          {/* <DetailedPairDisplay reverseBottomSection divider
-            image1='/images/about_event.jpg'
-            className={styles.wrapper_class}
-            TextDetails1={
-            } 
-          /> */}
         </div>
       </div>
     </div>

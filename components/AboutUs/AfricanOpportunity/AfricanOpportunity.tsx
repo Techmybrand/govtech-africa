@@ -97,7 +97,7 @@ const AfricanOpportunity = () => {
         <div className={styles.first_container}>
           <div ref={topSectionRef} className={styles.wrapper_class_reverse}>
             <div ref={topImageRef} className={styles.image_wrapper}>
-              <Image alt='' fill src='/images/crossroads2.png' />
+              <Image alt='' fill src='/images/govtech_opportunity.png' />
             </div>
             <div className={styles.theme_details}>
               <h3 ref={paragraphOneRef}>The African Govtech Opportunity</h3>

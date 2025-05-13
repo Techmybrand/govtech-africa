@@ -106,7 +106,7 @@ const Partners = () => {
       <div className={styles.partners_container}>
         <div ref={topSectionRef} className={styles.wrapper_class}>
           <div ref={topImageRef} className={styles.image_wrapper}>
-            <Image alt='' fill src='/images/partnership.jpg' />
+            <Image alt='' fill src='/images/partnership.png' />
           </div>
           <div className={styles.text}>
             <h2 ref={topTextRef}>Partner with Us</h2>

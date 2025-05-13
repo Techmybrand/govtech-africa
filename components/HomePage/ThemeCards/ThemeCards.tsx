@@ -6,7 +6,7 @@ const ThemeCards = () => {
   return (
     <div className={styles.theme_cards_container}>
         <DetailedPairDisplay reverseTopSection
-            image2='/images/govt_excel.jpg'
+            image2='/images/govt_excel.png'
             TextDetails2={
                 <div className={styles.theme_details}>
                     <div className={styles.green_line}></div>
