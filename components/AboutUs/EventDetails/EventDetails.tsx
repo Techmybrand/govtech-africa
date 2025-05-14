@@ -116,7 +116,7 @@ const EventDetails = () => {
   }, []);
 
   return (
-    <div className={styles.theme_cards_container}>
+    <div id='theme' className={styles.theme_cards_container}>
       <div className={styles.cards_container_wrapper}>
         <div ref={headerRef} className={styles.theme_container}>
           <div className={styles.theme_container_content}>

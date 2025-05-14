@@ -35,7 +35,7 @@ const Expectation = () => {
               define Africa's trajectory in digital governance.`}
             </h3>
             <div className={styles.text_btn}>
-              <CustomLink label='Learn more' href='/learn-more'
+              <CustomLink label='Learn more' href='/about-us#expect'
                 className={styles.text_btn_link}
               />
             </div>

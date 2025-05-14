@@ -21,7 +21,7 @@ const ThemeCards = () => {
                         <p>Harnessing the Power of Technology and the Digital Economy for Shared Prosperity</p>
                     </div>
                     <div className={styles.link_container}>
-                        <CustomLink label='Learn more' href='/learn-more' />
+                        <CustomLink label='Learn more' href='/about-us#theme' />
                     </div>
                 </div>
             }

@@ -92,7 +92,7 @@ const AfricanOpportunity = () => {
   }, []);
 
   return (
-    <div className={styles.theme_cards_container}>
+    <div id='expect' className={styles.theme_cards_container}>
       <div className={styles.cards_container_wrapper}>
         <div className={styles.first_container}>
           <div ref={topSectionRef} className={styles.wrapper_class_reverse}>

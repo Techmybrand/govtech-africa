@@ -1,4 +1,4 @@
-import { NavLink, StatItem } from "@/interfaces";
+import { NavLink, PrivacyPolicyProps, StatItem } from "@/interfaces";
 
 export const navLinks: NavLink[] = [
 	{
@@ -257,7 +257,7 @@ export const footerNav = [
 	},
 	{
 		label: 'Register',
-		href: '#register'
+		href: '/register'
 	},
 	{
 		label: 'Contact us',
@@ -486,7 +486,7 @@ export const privateSectorDetails: string[] = [
 	'Shape policy discussions that influence technology regulations and digital transformation roadmaps.',
 ]
 
-export const privacyPolicyData = [
+export const privacyPolicyData: PrivacyPolicyProps[] = [
 	{
 		title: ' Legal Basis for Processing',
 		headerText: 'We process your personal data on the following legal bases:',
