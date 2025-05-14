@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './PrivacyPolicy.module.scss';
 import TermsOfUse from './TermsOfUse/TermsOfUse';
 import CookiesPolicy from './CookiesPolicy/CookiesPolicy';
 import { privacyPolicyData } from '@/mock/navLists.mock';
 import { ContentProps, PrivacyPolicyProps } from '@/interfaces';
+import styles from './PrivacyPolicy.module.scss';
 
 const PrivacyPolicy = () => {
 
@@ -11,7 +11,6 @@ const PrivacyPolicy = () => {
     <section className={styles.privacy_policy_section}>
       <div className={styles.privacy_policy_content}>
         <h1>Privacy Policy</h1>
-        <h3>Effective Date: 12th May 2025</h3>
         <h3>
           {`Welcome to AfricaGovTechWeek.com ("we," "our," or "us").`} 
           We are committed to protecting your personal data and respecting your privacy. 
