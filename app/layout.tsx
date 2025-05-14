@@ -61,7 +61,15 @@ export const metadata: Metadata = {
       influential  gathering of government technology stakeholders.
       Discover innovations, forge partnerships, and shape the future of digital
       governance across the continent.`,
-    images: '/images/opengraph-image.jpg',
+    // images: '/images/opengraph-image.jpg',
+    images: [
+      {
+        url: '/images/opengraph-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Africa Govtech Week 2025',
+      }
+    ]
   },
 };
 
