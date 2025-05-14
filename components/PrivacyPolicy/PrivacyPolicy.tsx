@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
         <h1>Privacy Policy</h1>
         <h3>Effective Date: 12th May 2025</h3>
         <h3>
-          Welcome to AfricaGovTechWeek.com ("we," "our," or "us"). 
+          {`Welcome to AfricaGovTechWeek.com ("we," "our," or "us").`} 
           We are committed to protecting your personal data and respecting your privacy. 
           This Privacy Policy explains how we collect, use, disclose, 
           and safeguard your information when you visit our website or engage with our services.
