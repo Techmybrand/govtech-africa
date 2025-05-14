@@ -1,13 +1,12 @@
 import React from 'react';
-import styles from './CookiesPolicy.module.scss'
 import { ContentProps, PrivacyPolicyProps } from '@/interfaces';
 import { cookiesPolicyData } from '@/mock/navLists.mock';
+import styles from './CookiesPolicy.module.scss';
 
 const CookiesPolicy = () => {
   return (
     <div className={styles.cookies_policy_section}>
       <h1>Cookies Policy</h1>
-      <h3>Effective Date: 12th May 2025</h3>
       <h3>
         This Cookies Policy outlines how AfricaGovTechWeek.com uses 
         cookies and similar technologies to recognize users and enhance 
