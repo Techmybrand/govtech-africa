@@ -485,3 +485,330 @@ export const privateSectorDetails: string[] = [
 	'Unlock business opportunities through public-private partnerships and government procurement channels.',
 	'Shape policy discussions that influence technology regulations and digital transformation roadmaps.',
 ]
+
+export const privacyPolicyData = [
+	{
+		title: ' Legal Basis for Processing',
+		headerText: 'We process your personal data on the following legal bases:',
+		content: [
+			{
+				title: '',
+				body: [
+					'Your consent, where required',
+					'Performance of a contract (e.g., event registration)',
+					'Legal Obligation',
+					'Our legitimate interest, such as enhancing event experiences and securing our systems'
+				]
+			}
+		]
+	},
+	{
+		title: ' Information We Collect',
+		headerText: 'We collect several types of information to provide and improve our services:',
+		content: [
+			{
+				title: 'a. Personal Information',
+				body: [
+					'Full name',
+					'Email address',
+					'Phone number',
+					'Job title and organization',
+					'Government or corporate affiliation',
+					'Billing or payment information (if applicable)',
+					'Event registration and participation details',
+				]
+			},
+			{
+				title: 'b. Non-Personal Information',
+				body: [
+					'IP address',
+					'Browser type and version',
+					'Referring website',
+					'Device type, operating system',
+					'Pages visited, time spent on pages, and other analytical data',
+				]
+			},
+			{
+				title: 'c. Cookies and Tracking Technologies',
+				body: [
+					'Session cookies',
+					'Persistent cookies',
+					'Third-party analytics cookies  (e.g., Google Analytics)',
+					'Pixel tags and web beacons',
+				]
+			}
+		]
+	},
+	{
+		title: 'How We Use Your Information',
+		headerText: 'Your information is used to:',
+		content: [
+			{
+				title: '',
+				body: [
+					'Register and manage your event participation',
+					'Send event updates, reminders, and newsletters (with consent)',
+					'Facilitate networking through event matchmaking platforms',
+					' Enable access to event-specific features such as speaker sessions, partner showcases, and interactive content',
+					'Improve site usability and user engagement analytics',
+					'Respond to customer inquiries and support requests',
+					'Comply with legal obligations or enforce contractual rights',
+				]
+			}
+		]
+	},
+	{
+		title: 'Data Sharing and Disclosure',
+		headerText: 'We do not sell your personal data. We may share your data with:',
+		content: [
+			{
+				title: '',
+				body: [
+					'Event sponsors and partners for networking purposes (with your explicit consent)',
+					'Third-party service providers under Data Processing Agreements (DPAs)',
+					'Data analytics platforms to analyze usage patterns',
+					'Legal authorities, government agencies, or law enforcement where legally required',
+					'We ensure that any third parties handling your data comply with GDPR and NDPR obligations.',
+				]
+			}
+		]
+	},
+	{
+		title: 'Data Retention',
+		headerText: 'Your personal data is retained only as long as necessary for the purpose for which it was collected or as required by law. Once the retention period expires, your data is securely deleted or anonymized.',
+		content: []
+	},
+	{
+		title: 'Your Rights',
+		headerText: 'You have the following rights:',
+		content: [
+			{
+				title: '',
+				body: [
+					'Right to access your personal data',
+					'Right to rectification of inaccurate or incomplete data',
+					'Right to erasure(right to be forgotten)',
+					'Right to restrict processing',
+					'Right to data portability',
+					'Right to object to processing based on legitimate interest or direct marketing',
+					'Right to withdraw consent at any time',
+				]
+			}
+		]
+	},
+	{
+		title: 'Data Security',
+		headerText: 'We implement appropriate technical and organizational measures, including:',
+		content: [
+			{
+				title: '',
+				body: [
+					'SSL encryption',
+					'Access controls and authentication',
+					'Encrypted backups',
+					'Regular security audits and vulnerability assessments',
+				]
+			}
+		]
+	},
+	{
+		title: 'International Data Transfers',
+		headerText: 'Where we transfer your personal data outside Nigeria or the European Economic Area (EEA), we implement safeguards such as: ',
+		content: [
+			{
+				title: '',
+				body: [
+					'EU Standard Contractual Clauses',
+					'Adequacy decisions by the European Commission',
+					'Binding Corporate Rules (where applicable)',
+				]
+			}
+		]
+	},
+	{
+		title: 'Changes to This Policy',
+		headerText: 'We may update this Privacy Policy to comply with changes in laws or our practices. Updates will be reflected on this page with a new "Effective Date."',
+		content: []
+	},
+]
+
+export const termsOfUseData = [
+    {
+        title: 'Acceptance of Terms',
+        headerText: 'Use of the Website constitutes your acceptance of these terms. If you disagree, please refrain from using the Website.',
+        content: []
+    },
+    {
+        title: 'Use of the Website',
+        headerText: 'You agree to:',
+        content: [
+            {
+                title: '',
+                body: [
+                    'Use the Website for lawful, non-commercial purposes',
+                    'Provide accurate and up-to-date information',
+                    'Not engage in disruptive, harmful, or illegal activity'
+                ]
+            },
+            {
+                title: 'Prohibited activities include:',
+                body: [
+                    'Attempting unauthorized access to servers, data or networks.',
+                    'Violation of intellectual property rights',
+                    'Collection or misuse of personal data'
+                ]
+            }
+        ]
+    },
+    {
+        title: 'Event Registration and Payments',
+        headerText: 'By registering for events or submitting data, you agree to provide accurate personal and payment information. Tickets are non-transferable unless specified. Refund policies will be clearly outlined on the ticketing page.',
+        content: []
+    },
+    {
+        title: 'Intellectual Property',
+        headerText: 'All site content (text, images, trademarks, recordings) is the exclusive property of GovTech Africa or its partners. You agree not to use or replicate any material without written consent.',
+        content: []
+    },
+    {
+        title: 'User-Generated Content',
+        headerText: 'You may have the ability to post or submit content to community forums, surveys, or feedback forms. By submitting content, you:',
+        content: [
+            {
+                title: '',
+                body: [
+                    'Represent that you own or control rights to such content.',
+                    'Grant us a license to use, edit, reproduce, and display such content.'
+                ]
+            },
+            {
+                title: '',
+                body: [
+                    'We reserve the right to remove content deemed offensive, unlawful, or inappropriate.'
+                ]
+            }
+        ]
+    },
+    {
+        title: 'Disclaimer of Warranties',
+        headerText: 'We provide the Website on an "as is" basis and disclaim all warranties including:',
+        content: [
+            {
+                title: '',
+                body: [
+                    'That the website will be available without interruption',
+                    'That it will be error-free or free of viruses',
+                    'That any data shared is fully secured'
+                ]
+            }
+        ]
+    },
+    {
+        title: 'Limitation of Liability',
+        headerText: 'We are not liable for any indirect, incidental, or consequential damages arising from your use of the Website.',
+        content: []
+    },
+    {
+        title: 'External Links',
+        headerText: 'The Website may include links to external sites. We are not responsible for the privacy practices or content of third-party sites linked from our platform.',
+        content: []
+    },
+    {
+        title: 'Termination',
+        headerText: 'We reserve the right to suspend or terminate access to the Website for any reason, without prior notice.',
+        content: []
+    },
+    {
+        title: 'Governing Law and Jurisdiction',
+        headerText: 'These terms shall be governed by the laws of the Federal Republic of Nigeria. Disputes shall be subject to the exclusive jurisdiction of Nigerian courts.',
+        content: []
+    }
+];
+
+export const cookiesPolicyData = [
+    {
+        title: 'What Are Cookies?',
+        headerText: 'Cookies are small text files stored in your browser or device by websites you visit to track, personalize, and enhance your user experience.',
+        content: []
+    },
+    {
+        title: 'Lawful Basis for Using Cookies',
+        headerText: 'We use cookies based on:',
+        content: [
+            {
+                title: '',
+                body: [
+                    'Your consent (via banner or settings)',
+                    'Our legitimate interest to ensure website functionality'
+                ]
+            }
+        ]
+    },
+    {
+        title: 'Types of Cookies We Use',
+        headerText: '',
+        content: [
+            {
+                title: 'a. Essential Cookies',
+                body: [
+                    'These are required for basic site operations like navigation and access to secure areas.'
+                ]
+            },
+            {
+                title: 'b. Analytics and Performance Cookies',
+                body: [
+                    'Help us measure and understand how users interact with our site. They help us improve design and content based on user behaviour.'
+                ]
+            },
+            {
+                title: 'c. Functional Cookies',
+                body: [
+                    'These cookies remember choices you make such as region, language or session preferences.'
+                ]
+            },
+            {
+                title: 'd. Marketing and Third-Party Cookies',
+                body: [
+                    'These are used to deliver ads relevant to your interests and integrate with social platforms.'
+                ]
+            }
+        ]
+    },
+    {
+        title: 'Third-Party Services',
+        headerText: 'We may allow trusted third parties (e.g., Google, YouTube, LinkedIn) that may set cookies on your device. These providers have their own privacy policies.',
+        content: []
+    },
+    {
+        title: 'Managing Cookies',
+        headerText: 'You may:',
+        content: [
+            {
+                title: '',
+                body: [
+                    'Accept or reject cookies using our cookie banner',
+                    'Change your cookie settings at any time through your browser',
+                    'Withdraw consent without affecting the lawfulness of prior processing'
+                ]
+            }
+        ]
+    },
+    {
+        title: 'Data Sharing via Cookies',
+        headerText: 'Data collected via cookies may be shared with:',
+        content: [
+            {
+                title: '',
+                body: [
+                    'Analytics service providers',
+                    'Advertising partners (only with your consent)'
+                ]
+            }
+        ]
+    },
+    {
+        title: 'Updates to This Policy',
+        headerText: 'We may revise this policy to reflect changes in our cookie usage or applicable regulations. Any update will be posted with an updated Effective Date.',
+        content: []
+    }
+];

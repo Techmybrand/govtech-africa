@@ -41,3 +41,14 @@ export interface StatItem {
     value: number;
     label: string;
 }
+
+export interface ContentProps {
+	title?: string;
+	body?: string[];
+}
+
+export interface PrivacyPolicyProps {
+	title: string;
+	headerText: string;
+	content: ContentProps[];
+}
