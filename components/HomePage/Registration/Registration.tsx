@@ -18,7 +18,7 @@ const Registration = () => {
               continent's Govtech future`}
             </h3>
             <div className={styles.divider}></div>
-            <CustomLink label='Register' href='/contact' subType='black'
+            <CustomLink label='Register' href='/register' subType='black'
               className={styles.custom_link_class}
             />
           </div>

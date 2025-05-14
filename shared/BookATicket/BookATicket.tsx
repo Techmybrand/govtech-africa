@@ -13,7 +13,7 @@ const BookATicket = () => {
             <div className={styles.book_a_ticket_details}>
                 <h2>Book your ticket/stand</h2>
                 <div className={styles.buttons}>
-                    <Button onClick={() => router.push('/contact')} className={styles.register_button}>
+                    <Button onClick={() => router.push('/register')} className={styles.register_button}>
                         <h3>Register</h3>
                         <div className={styles.button_icon}>
                             <Image src='/svgs/button_arrow_icon.svg' fill alt='arrow right' />
