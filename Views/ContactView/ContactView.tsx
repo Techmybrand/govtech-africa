@@ -9,6 +9,7 @@ const ContactView = () => {
         title='Get in touch today!'
         type='small'
         backgroundImage='/images/hero-3.jpeg'
+        overlay={true}
       />
       <ContactUs />
       <Registration />

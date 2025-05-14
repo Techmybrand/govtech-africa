@@ -9,6 +9,7 @@ const FAQView = () => {
         title='Africa Govtech Week' 
         type='small'
         backgroundImage='/images/hero-3.jpeg'
+        overlay={true}
       />
       <FAQComponent />
       <Registration />
