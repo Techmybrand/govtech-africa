@@ -1,7 +1,7 @@
+import React from "react";
 import type { Metadata } from "next";
 import { PreLoader } from "@/shared";
 import "@/styles/index.scss";
-import React from "react";
 
 export const metadata: Metadata = {
   title: `Africa Govtech Week 2025 | Powering Africa's Public Sector Digitisation`,
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: 'Africa Govtech Week 2025',
     images: [
       {
-        url: '/images/opengraph-image.jpg',
+        url: 'https://africagovtechweek.com/images/opengraph-image.jpg',
         width: 800,
         height: 418,
         alt: 'Africa Govtech Week 2025',
@@ -64,10 +64,10 @@ export const metadata: Metadata = {
     // images: '/images/opengraph-image.jpg',
     images: [
       {
-        url: '/images/opengraph-image.jpg',
+        url: 'https://africagovtechweek.com/images/opengraph-image.jpg',
         // width: 1200,
-        width: 800,
         // height: 630,
+        width: 800,
         height: 418,
         alt: 'Africa Govtech Week 2025',
       }
