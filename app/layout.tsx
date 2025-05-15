@@ -1,7 +1,7 @@
+import React from "react";
 import type { Metadata } from "next";
 import { PreLoader } from "@/shared";
 import "@/styles/index.scss";
-import React from "react";
 
 export const metadata: Metadata = {
   title: `Africa Govtech Week 2025 | Powering Africa's Public Sector Digitisation`,
