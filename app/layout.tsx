@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/images/opengraph-image.jpg',
-        width: 1200,
-        height: 630,
+        width: 800,
+        height: 418,
         alt: 'Africa Govtech Week 2025',
       },
     ],
@@ -65,8 +65,10 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/images/opengraph-image.jpg',
-        width: 1200,
-        height: 630,
+        // width: 1200,
+        width: 800,
+        // height: 630,
+        height: 418,
         alt: 'Africa Govtech Week 2025',
       }
     ]
