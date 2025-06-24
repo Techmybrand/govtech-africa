@@ -1,18 +1,16 @@
 import { Document } from "@contentful/rich-text-types"
-
 export interface BlogCardProps {
     title: string
     image: string
     date?: string
 }
-
 export interface BlogDetailsProps {
-    blogTitle: string
+    title: string
     author?: string
     publishedAt?: string
     blogContent: Document
     readTime?: string
-    dateAndTime: string | number | Date | any
+    dateAndTime: string | number | Date
     thumbnail?: any
     bannerImage?: any
 }

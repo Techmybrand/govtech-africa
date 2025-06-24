@@ -69,7 +69,7 @@
     }
     .content {
         width: 65%;
-        margin: 0 auto;
+        margin: 0 auto 12rem;
     }
     .divider_lg {
         width: 100vw;
@@ -78,17 +78,37 @@
         margin: 12rem -8.5rem 8rem;
     }
 
+    @include screenMax('tablet') {
+        padding: 4rem 4rem 0;
+        .image_container {
+            .image {
+                height: 36rem;
+            }
+        }
+        .content {
+            width: 80%;
+        }
+        .divider_lg {
+            margin: 8rem -4rem 4rem;
+        }
+    }
+
     @include screenMax('mobile') {
+        padding: 3.2rem 1.6rem 0;
         gap: 1.6rem;
         margin-bottom: 4rem;
         .header {
             .header_content {
+                gap: 0.4rem;
                 width: 90%;
                 h1 {
                     font-size: 2.4rem;
                     line-height: 3.6rem;
                 }
             }
+        }
+        .divider {
+            margin: 2rem 0 3.2rem;
         }
         .image_container {
             margin: 0;
@@ -99,9 +119,10 @@
         }
         .content {
             width: 100%;
-            .content_body {
-                margin-bottom: 4.8rem;
-            }
+            margin: 0 auto 3.2rem;
+        }
+        .divider_lg {
+            margin: 1rem -1.6rem 0;
         }
     }
 }
