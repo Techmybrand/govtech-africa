@@ -1,10 +1,14 @@
 'use client';
 import React from 'react';
-import { CustomLink } from '@/shared';
+import { BlogCard, Button, CustomLink } from '@/shared';
 import Image from 'next/image';
 import styles from './Registration.module.scss';
+import { usePathname, useRouter } from 'next/navigation';
 
 const Registration = () => {
+  const path = usePathname();
+  const router = useRouter();
+  const isMediaPage = path.includes('/media');
   return (
     <section id='register' className={styles.registration_container}>
       <div className={styles.content_container}>
@@ -27,6 +31,27 @@ const Registration = () => {
           </div>
         </div>
       </div>
+      {!isMediaPage && (
+        <div className={styles.media_container}>
+          <div className={styles.media_header}>
+            <h2>{`What's going on with AGW`}</h2>
+            <Button onClick={() => router.push('/media')} className={styles.media_button}>
+              <h3>See More</h3>
+            </Button>
+          </div>
+          <div className={styles.media_content}>
+            {[1, 2, 3].map((item: number) =>
+            <React.Fragment key={item}>
+              <BlogCard
+                title='South Africa’s SOLmate doubles users to 100,000 as eWallet surge drives growth'
+                image='/images/blog.png'
+                date='20th May 2025'
+              />
+            </React.Fragment>
+            )}
+          </div>
+        </div>
+      )}
     </section>
   )
 }

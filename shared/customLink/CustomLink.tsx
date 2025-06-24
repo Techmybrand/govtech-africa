@@ -17,7 +17,7 @@ const CustomLink = ({href, label, className, color = 'default', iconType = 'lg_a
       <p>{label}</p>
       <span>
         <Image src={iconType === 'lg_arrow' ?
-            (subType === 'green'? "/svgs/arrow.svg" : "/svgs/green_arrow.svg")
+            (subType === 'green' ? "/svgs/arrow.svg" : "/svgs/green_arrow.svg")
           : 
             "/svgs/arrow_sm.svg"
           } 

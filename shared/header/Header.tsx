@@ -66,6 +66,11 @@ const Header = ({type = 'default'}: Props) => {
                 Partner/sponsor
               </Link>
             </li>
+            <li className={styles.navItem}>
+              <Link href="/media" className={`${checkActive('/media') ? styles.active : ''} ${styles.navLink}`}>
+                Media
+              </Link>
+            </li>
           </ul>
           <div className={styles.button_container_lg}>
             <Link href="#register">
@@ -104,6 +109,15 @@ const Header = ({type = 'default'}: Props) => {
               >
                 <div className={`${checkActive('/partner') ? styles.active : ''} ${styles.navLink}`}>
                   Partner/sponsor
+                </div>
+              </li>
+              <li className={styles.navItem} onClick={() => {
+                  router.push('/media');
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                <div className={`${checkActive('/media') ? styles.active : ''} ${styles.navLink}`}>
+                  Media
                 </div>
               </li>
             </ul>

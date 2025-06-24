@@ -1,0 +1,43 @@
+@import '@/styles/imports';
+
+.media_container {
+    width: 100%;
+    .media_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.6rem;
+        h2 {
+            font-family: $font-gothic-bold;
+            color: #3DB54A;
+            font-size: 4.4rem;
+            line-height: 5.6rem;
+        }
+    }
+    .media_content {
+        @include grid(repeat(3, 1fr), 1.6rem, 0);
+    }
+
+    @include screenMax('tablet') {
+        .media_header {
+            margin-bottom: 0.8rem;
+            h2 {
+                font-size: 3.2rem;
+                line-height: 4rem;
+            }
+        }
+    }
+
+    @include screenMax('mobile') {
+        .media_header {
+            margin-bottom: 1.6rem;
+            h2 {
+                font-size: 2.2rem;
+                line-height: 2.8rem;
+            }
+        }
+        .media_content {
+            @include grid(repeat(1, 1fr), 0, 0);
+        }
+    }
+}

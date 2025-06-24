@@ -83,8 +83,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <PreLoader />
         <React.Fragment>
+          <PreLoader />
           {children}
         </React.Fragment>
       </body>

@@ -1,3 +1,21 @@
+import { Document } from "@contentful/rich-text-types"
+
+export interface BlogCardProps {
+    title: string
+    image: string
+    date?: string
+}
+
+export interface BlogDetailsProps {
+    blogTitle: string
+    author?: string
+    publishedAt?: string
+    blogContent: Document
+    readTime?: string
+    dateAndTime: string | number | Date | any
+    thumbnail?: any
+    bannerImage?: any
+}
 export interface NavLinkMenu {
 	label: string;
 	id?: string;

@@ -1,4 +1,6 @@
 import { animateCounter } from "./animateCounter"
+import { getBlogPostByTitle, getBlogPosts } from "./contentful"
+import { formatURL, formatDate } from "./formatUrl"
 import { parseAnswerWithLinks, linkMapping } from "./parseAnswerWithLinks"
 import { scrollTo } from "./scrollTo"
 import { stringShortner, shortenTitle } from "./stringShortner"
@@ -10,5 +12,9 @@ export {
     shortenTitle,
     animateCounter,
     scrollTo,
+    formatURL,
+    formatDate,
+    getBlogPostByTitle,
+    getBlogPosts,
     
 }
