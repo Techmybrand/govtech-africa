@@ -1,0 +1,107 @@
+@import '@/styles/imports';
+
+.blog_details_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 6rem;
+    background: $col-white;
+    width: 100%;
+    padding: 6.5rem 8.5rem 0;
+    .loader {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 40vh;
+        left: 40vw;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .header_content {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            h1 {
+                font-size: 3.6rem;
+                line-height: 4.4rem;
+                color: #000;
+                font-family: $font-gothic-bold;
+                text-align: center;
+            }
+            h3 {
+                font-size: 2rem;
+                line-height: 2.8rem;
+                font-family: $font-gothic-bold;
+                color: #000;
+                text-align: center;
+            }
+            h5 {
+                font-size: 2rem;
+                line-height: 2.8rem;
+                font-family: $font-gothic-bold;
+                color: #3DB54A;
+                text-align: center;
+            }
+        }
+    }
+    .divider {
+        width: 100%;
+        height: 0.1rem;
+        background: #000;
+        margin: 3rem auto 5rem;
+    }
+    .image_container {
+        width: 100%;
+        position: relative;
+        .image {
+            position: relative;
+            width: 100%;
+            height: 48rem;
+            margin: 0 0 6.5rem;
+            & > img {
+                object-fit: cover;
+            }
+        }
+    }
+    .content {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .divider_lg {
+        width: 100vw;
+        height: 0.1rem;
+        background: #000;
+        margin: 12rem -8.5rem 8rem;
+    }
+
+    @include screenMax('mobile') {
+        gap: 1.6rem;
+        margin-bottom: 4rem;
+        .header {
+            .header_content {
+                width: 90%;
+                h1 {
+                    font-size: 2.4rem;
+                    line-height: 3.6rem;
+                }
+            }
+        }
+        .image_container {
+            margin: 0;
+            .image {
+                margin: 0 0 2.4rem;
+                height: 26rem;
+            }
+        }
+        .content {
+            width: 100%;
+            .content_body {
+                margin-bottom: 4.8rem;
+            }
+        }
+    }
+}

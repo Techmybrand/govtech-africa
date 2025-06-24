@@ -12,24 +12,24 @@ export const metadata: Metadata = {
     Discover innovations, forge partnerships, and shape the future of digital 
     governance across the continent.`,
   keywords: [
-      'Africa Govtech Week',
-      'GovTech Africa 2025',
-      'Government technology Africa',
-      'Digital transformation public sector Africa',
-      'African digital governance conference',
-      'Gov-a-thon Africa',
-      'Public sector innovation Africa',
-      'Tech for governance Africa',
-      'Smart governance Africa',
-      'African government digitisation',
-      'How to digitize government services in Africa',
-      'Africa government technology events 2025',
-      'GovTech innovation in Africa',
-      'Public sector digital solutions Africa',
-      'Smart city and e-governance Africa',
-      'Africa GovTech policy forum',
-      'AI in public sector Africa',
-      'Digital ID and infrastructure in African governance',
+    'Africa Govtech Week',
+    'GovTech Africa 2025',
+    'Government technology Africa',
+    'Digital transformation public sector Africa',
+    'African digital governance conference',
+    'Gov-a-thon Africa',
+    'Public sector innovation Africa',
+    'Tech for governance Africa',
+    'Smart governance Africa',
+    'African government digitisation',
+    'How to digitize government services in Africa',
+    'Africa government technology events 2025',
+    'GovTech innovation in Africa',
+    'Public sector digital solutions Africa',
+    'Smart city and e-governance Africa',
+    'Africa GovTech policy forum',
+    'AI in public sector Africa',
+    'Digital ID and infrastructure in African governance',
   ],
   openGraph: {
     title: `Africa Govtech Week 2025 | Powering Africa's Public Sector Digitisation`,
@@ -83,8 +83,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <PreLoader />
         <React.Fragment>
+          <PreLoader />
           {children}
         </React.Fragment>
       </body>

@@ -1,0 +1,59 @@
+@import "@/styles/imports";
+
+.blog_section {
+    padding: 10.5rem 9rem 0;
+    background: $col-white;
+    width: 100%;
+    .media_content {
+        width: 100%;
+        @include grid(repeat(3, 1fr), 1.6rem, 4rem);
+    }
+    .read_more_btn {
+        margin: 6rem auto 10rem;
+        width: 16rem;
+        height: 5.6rem;
+        background: transparent;
+        border: 0.1rem solid #3DB54A;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3 {
+            font-family: $font-gothic-bold;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: #3DB54A;
+        }
+    }
+    .divider {
+        width: 100vw;
+        height: 0.1rem;
+        background: #000;
+        margin: 0 -9rem 3.2rem;
+    }
+
+    @include screenMax('tablet') {
+        padding: 4rem 4rem 8rem;
+        .divider {
+            margin: 0 -4rem 2.4rem;
+        }
+        .read_more_btn {
+            margin: 4rem auto 8rem;
+        }
+    }
+
+    @include screenMax('mobile') {
+        padding: 2.4rem 1.6rem 4rem;
+        .media_content {
+            @include grid(repeat(1, 1fr), 0rem, 0rem);
+        }
+        .read_more_btn {
+            margin: 4rem auto 6rem;
+            h3 {
+                font-size: 1.4rem;
+            }
+        }
+        .divider {
+            margin: 0 -1.6rem 2.4rem;
+        }
+    }
+}

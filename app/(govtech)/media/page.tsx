@@ -1,7 +1,7 @@
-
+import { MediaView } from "@/Views";
 
 export default function MediaPage() {
     return (
-        <h1>Media</h1>
+        <MediaView />
     )
 }
