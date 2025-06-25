@@ -30,7 +30,7 @@ const BlogDetails = () => {
         };
         fetchBlogDetails();
     }, [name, blogs]);
-    console.log('blog: ', blog);
+    // console.log('blog: ', blog);
 
   return (
     <main className={styles.blog_details_container}>

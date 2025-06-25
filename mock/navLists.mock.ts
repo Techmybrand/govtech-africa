@@ -456,6 +456,12 @@ export const inquiryTypes = [
 	{ label: 'Media and Press', value: 'media and press' },
 ];
 
+export const mediaTypes = [
+	{ label: 'TV', value: 'tv' },
+	{ label: 'Print', value: 'print' },
+	{ label: 'Digital Media', value: 'digital media' },
+];
+
 export const stats: StatItem[] = [
     { value: 200, label: 'African Public and Private Sector Leaders' },
     { value: 3000, label: 'VIP and Delegate Participants' },
