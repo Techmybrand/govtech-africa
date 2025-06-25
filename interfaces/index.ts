@@ -10,7 +10,7 @@ export interface BlogDetailsProps {
     publishedAt?: string
     blogContent: Document
     readTime?: string
-    dateAndTime: string | number | Date
+    date?: string
     thumbnail?: any
     bannerImage?: any
 }

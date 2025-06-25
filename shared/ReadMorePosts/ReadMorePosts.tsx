@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { BlogCard } from '@/shared';
 import { useGetContentful } from '@/hooks';
 import { BlogDetailsProps } from '@/interfaces';
+import { formatDate } from '@/utils';
 import { ChartLoader } from '../loaders';
 import styles from './ReadMorePosts.module.scss'
 
@@ -18,15 +19,6 @@ const ReadMorePosts = () => {
             <h2>Read Next</h2>
         </div>
         <div className={styles.media_content}>
-            {/* {blogs?.map((blog: BlogDetailsProps, index: number) =>
-                <React.Fragment key={index}>
-                    <BlogCard
-                        title='South Africa SOLmate doubles users to 100,000 as eWallet surge drives growth'
-                        image='/images/blog.png'
-                        date='20th May 2025'
-                    />
-                </React.Fragment>
-            )} */}
             {blogs === null ? (
                 <div className={styles.loader}>
                     <ChartLoader />
@@ -43,7 +35,7 @@ const ReadMorePosts = () => {
                                         <BlogCard 
                                             image={`https:${blog?.thumbnail?.fields?.file?.url}`}
                                             title={blog?.title}
-                                            date={blog?.publishedAt}
+                                            date={blog?.date ? formatDate(blog?.date) : blog?.publishedAt}
                                         />
                                     </React.Fragment>
                                 )

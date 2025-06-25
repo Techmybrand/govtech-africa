@@ -1,13 +1,13 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { BlogCard, Button } from '@/shared';
-import styles from './Media.module.scss';
 import { useGetContentful } from '@/hooks';
 import { BlogDetailsProps } from '@/interfaces';
 import { ChartLoader } from '@/shared/loaders';
+import { formatDate } from '@/utils';
+import styles from './Media.module.scss';
 
 const Media = () => {
-    // const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
     const [numberOfPosts, setNumberOfPosts] = useState<number>(9);
     const handleSeeMore = () => {
         setNumberOfPosts((prevNumberOfPosts: number) => prevNumberOfPosts + 3)
@@ -19,16 +19,7 @@ const Media = () => {
     }, [])
   return (
     <section id='blog' className={styles.blog_section}>
-        <div className={styles.media_content}>
-            {/* {blogs?.slice(0, numberOfPosts).map((blog: BlogDetailsProps, index: number) =>
-                <React.Fragment key={index}>
-                    <BlogCard
-                        title='South Africa SOLmate doubles users to 100,000 as eWallet surge drives growth'
-                        image='/images/blog.png'
-                        date='20th May 2025'
-                    />
-                </React.Fragment>
-            )} */}
+        <div data-length={blogs && blogs?.length > 9} className={styles.media_content}>
             {blogs === null ? (
                 <div className={styles.loader}>
                     <ChartLoader />
@@ -45,7 +36,7 @@ const Media = () => {
                                         <BlogCard 
                                             image={`https:${blog?.thumbnail?.fields?.file?.url}`}
                                             title={blog?.title}
-                                            date={blog?.publishedAt}
+                                            date={blog?.date ? formatDate(blog?.date) : blog?.publishedAt}
                                         />
                                     </React.Fragment>
                                 )

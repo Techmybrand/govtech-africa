@@ -7,6 +7,9 @@
     .media_content {
         width: 100%;
         @include grid(repeat(3, 1fr), 1.6rem, 4rem);
+        &[data-length = "false"] {
+            margin-bottom: 6rem;
+        }
     }
     .read_more_btn {
         margin: 6rem auto 10rem;

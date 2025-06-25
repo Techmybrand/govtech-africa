@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useGetContentful } from '@/hooks';
 import { ChartLoader } from '@/shared/loaders';
 import { BlogDetailsProps } from '@/interfaces';
+import { formatDate } from '@/utils';
 import Image from 'next/image';
 import styles from './Registration.module.scss';
 
@@ -64,7 +65,7 @@ const Registration = () => {
                         <BlogCard 
                           image={`https:${blog?.thumbnail?.fields?.file?.url}`}
                           title={blog?.title}
-                          date={blog?.publishedAt}
+                          date={blog?.date ? formatDate(blog?.date) : blog?.publishedAt}
                         />
                       </React.Fragment>
                     )
