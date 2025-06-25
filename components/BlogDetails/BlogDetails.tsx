@@ -4,6 +4,7 @@ import { useParams } from 'next/navigation';
 import { ReadMorePosts, RichText } from '@/shared';
 import { ChartLoader } from '@/shared/loaders';
 import { useGetContentful } from '@/hooks';
+import { formatDate } from '@/utils';
 import Image from 'next/image';
 import styles from './BlogDetails.module.scss';
 
@@ -29,7 +30,7 @@ const BlogDetails = () => {
         };
         fetchBlogDetails();
     }, [name, blogs]);
-//   console.log('blog: ', blog);
+    // console.log('blog: ', blog);
 
   return (
     <main className={styles.blog_details_container}>
@@ -43,7 +44,7 @@ const BlogDetails = () => {
                     <div className={styles.header_content}>
                         <h1>{blog?.title}</h1>
                         <h3>{blog?.author}</h3>
-                        <h5>{blog?.publishedAt}</h5>
+                        <h5>{blog?.date ? formatDate(blog?.date) : blog?.publishedAt}</h5>
                     </div>
                 </header>
                 <div className={styles.divider}></div>

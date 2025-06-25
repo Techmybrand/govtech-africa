@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { InputField, Select, TextArea } from '@/shared';
-import { inquiryTypes } from '@/mock/navLists.mock';
+import { mediaTypes } from '@/mock/navLists.mock';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './MediaForm.module.scss';
@@ -39,7 +39,7 @@ const MediaForm = ({ title }: MediaFormProps) => {
                 </div>
                 <div className={styles.container}>
                     <InputField label='Country' placeholder='Country' />
-                    <Select options={inquiryTypes} label='Media type'
+                    <Select options={mediaTypes} label='Media type'
                         defaultOption='Media type'
                     />
                     <InputField label='LinkedIn link' placeholder='LinkedIn link' />
