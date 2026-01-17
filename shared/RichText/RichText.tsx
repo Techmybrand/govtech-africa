@@ -5,7 +5,6 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './RichText.module.scss';
-
 interface RichTextProps {
   content: Document;
 }

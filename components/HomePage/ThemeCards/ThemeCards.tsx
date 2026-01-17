@@ -10,7 +10,7 @@ const ThemeCards = () => {
             TextDetails2={
                 <div className={styles.theme_details}>
                     <div className={styles.green_line}></div>
-                    <h3>2025 Theme</h3>
+                    <h3>Theme</h3>
                     <h6>
                         The government and private sector led event will provide 
                         a platform for knowledge sharing, networking, as well as 

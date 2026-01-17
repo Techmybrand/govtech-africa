@@ -120,7 +120,7 @@ const WhyPartner = () => {
     <section className={styles.why_partner_container}>
         <div className={styles.why_partner_wrapper}>
             <div ref={headerRef} className={styles.header}>
-                <h1>Why Partner with AGW’25?</h1>
+                <h1>Why Partner with AGW?</h1>
                 <div className={styles.header_subtext}>
                     <h3>
                         As Africa accelerates its digital transformation, Africa 

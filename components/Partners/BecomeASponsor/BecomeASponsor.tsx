@@ -109,18 +109,18 @@ const BecomeASponsor = () => {
                     <div className={styles.text_body}>
                         <h3 className={styles.paragraph_1} ref={paragraphOneRef}>
                             {`
-                                Africa Govtech Week 2025 redefines sponsorship 
+                                Africa Govtech Week redefines sponsorship 
                                 by offering strategic, high-impact brand visibility 
                                 across multiple platforms, venues, and engagement 
                                 formats. Unlike traditional conference sponsorships, 
-                                AGW 2025 provides tailored opportunities designed to 
+                                AGW provides tailored opportunities designed to 
                                 amplify brand presence among key government stakeholders, 
                                 technology leaders, and international development partners
                                 driving Africa's digital transformation.
                             `}
                         </h3>
                         <h3 className={styles.paragraph_2} ref={paragraphTwoRef}>
-                            Sponsorship at AGW’25 extends beyond the 
+                            Sponsorship at AGW extends beyond the 
                             conference floor—your brand will gain prime 
                             exposure through high-profile speaking engagements, 
                             exclusive networking sessions, interactive digital 
@@ -131,7 +131,7 @@ const BecomeASponsor = () => {
                             branding across AGW’s online platforms.
                         </h3>
                         <h3 className={styles.paragraph_3} ref={paragraphThreeRef}>
-                            By partnering with AGW 2025, sponsors don’t just 
+                            By partnering with AGW, sponsors don’t just 
                             support a conference—they become integral players 
                             in shaping Africa’s digital governance future. 
                             This is more than sponsorship; it’s a commitment 

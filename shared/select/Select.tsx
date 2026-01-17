@@ -4,15 +4,15 @@ import { shortenTitle } from '@/utils/stringShortner';
 import SelectUpIcon from '@/shared/jsx/SelectUpIcon';
 import SelectDownIcon from '@/shared/jsx/SelectDownIcon';
 import styles from './Select.module.scss';
-
 export interface OptionProps {
 	label: string;
 	icon: string;
 	value: string
 }
-
 export interface SelectProps {
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	options?: any[];
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	onOptionChange?: (option?: any) => void;
 	defaultOptionIndex?: number;
 	className?: string;
@@ -79,6 +79,7 @@ const Select = ({ options, onOptionChange, defaultOptionIndex = -1, className, c
 				{isOpen && (
 					<div className={styles.select_body}>
 						<div className={styles.select_listContainer}>
+							{/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
 							{options!.map((option: any, index) =>
 								 (
 									<div onClick={onOptionClicked(index)} key={index} className={styles.select_listItem}>
