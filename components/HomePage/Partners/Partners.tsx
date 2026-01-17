@@ -114,14 +114,14 @@ const Partners = () => {
               <h3 className={styles.paragraph_1} ref={paragraphOneRef}>
                 Africa is at a turning point, embracing technology to redefine 
                 governance, enhance public service delivery, and drive 
-                socio-economic transformation. <span>Africa Govtech Week 2025 </span> 
+                socio-economic transformation. <span>Africa Govtech Week </span> 
                 is the premier platform where governments, technology service 
                 providers, research think-tanks and global development partners 
                 converge to accelerate this digital evolution.
               </h3>
               <br />
               <h3 className={styles.paragraph_2} ref={paragraphTwoRef}>
-                By partnering with <span>AGW’25</span>, your organization 
+                By partnering with <span>AGW</span>, your organization 
                 gains unparalleled access to key decision-makers, industry 
                 disruptors, and policy shapers at the forefront of Africa’s 
                 govtech revolution.

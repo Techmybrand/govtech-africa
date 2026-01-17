@@ -120,7 +120,7 @@ const EventDetails = () => {
       <div className={styles.cards_container_wrapper}>
         <div ref={headerRef} className={styles.theme_container}>
           <div className={styles.theme_container_content}>
-            <h1>2025 Theme</h1>
+            <h1>Theme</h1>
             <div className={styles.subtext}>
               <h3>Enabling Government Excellence in Africa:</h3>
               <p>

@@ -120,7 +120,7 @@ const BookAStand = () => {
                     <div className={styles.text_body}>
                         <h3 className={styles.paragraph_1} ref={paragraphOneRef}>
                             {`
-                                Africa Govtech Week 2025 offers a premier 
+                                Africa Govtech Week offers a premier 
                                 platform for organizations to showcase cutting-edge 
                                 innovations in government technology. The exhibition 
                                 area is open to all attendees and is strategically positioned 

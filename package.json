@@ -12,6 +12,7 @@
     "@contentful/live-preview": "^4.6.23",
     "@contentful/rich-text-react-renderer": "^16.0.2",
     "@contentful/rich-text-types": "^17.0.1",
+    "@emailjs/browser": "^4.4.1",
     "axios": "^1.9.0",
     "contentful": "^11.7.2",
     "contentful-management": "^11.53.0",
