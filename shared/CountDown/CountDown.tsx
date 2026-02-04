@@ -4,7 +4,7 @@ import useCountdownTimer from '@/hooks/useCountdownTimer';
 
 const CountDown = () => {
     const { months, days, hours, minutes, seconds
-    } = useCountdownTimer(1754866800000);
+    } = useCountdownTimer(3509733600000);
   return (
     <div className={styles.countdown_wrapper}>
         <div className={styles.countdown_container}>

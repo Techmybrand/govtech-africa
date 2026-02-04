@@ -15,7 +15,7 @@
 		.questions_container {
 			.questions {
 				width: 44rem;
-				margin-bottom: 8.6rem;
+				margin-bottom: 5.6rem;
 				h3 {
 					color: #3DB54A;
 					font-size: 4.4rem;
@@ -23,14 +23,14 @@
 					line-height: 5.6rem;
 				}
 				p {
-					font-size: 2.2rem;
-					line-height: 2.8rem;
+					font-size: 1.6rem;
+					line-height: 2.4rem;
 					font-family: $font-gothic;
 					color: #000;
 					width: 125%;
 					span {
-						font-size: 2.2rem;
-						line-height: 2.8rem;
+						font-size: 1.6rem;
+						line-height: 2.4rem;
 						font-family: $font-gothic;
 						color: #000;
 						cursor: pointer;
@@ -46,11 +46,11 @@
 				border-top: 0.1rem solid #000;
 				width: fit-content;
 				h3 {
-					font-size: 2.4rem;
-					line-height: 3.2rem;
+					font-size: 1.2rem;
+					line-height: 1.6rem;
 					color: #000;
 					font-family: $font-gothic;
-					margin-top: 2rem;
+					margin-top: 1.6rem;
 				}
 			}
 		}
@@ -63,9 +63,9 @@
 				li {
 					color: #14361B;
 					font-family: $font-gothic;
-					font-size: 2.4rem;
+					font-size: 1.8rem;
 					text-decoration: underline;
-					line-height: 3.2rem;
+					line-height: 2.7rem;
 					&:hover {
 						color: #3DB54A;
 						transition: all 300ms ease-in-out;
@@ -116,7 +116,7 @@
         bottom: -30rem;
         left: 0;
         width: 100%;
-        height: 30rem;
+        height: 30.1rem;
 		background: $col-white;
         .image_background {
             position: relative;
