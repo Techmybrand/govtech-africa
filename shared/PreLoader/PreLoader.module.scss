@@ -2,11 +2,13 @@
 
 .preloader {
 	position: fixed;
-	inset: 0;
+	// inset: 0;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	background-color: $col-white;
-	z-index: 5;
+	z-index: 15;
 	@include flex(center, center);
 }
 .icon_container {
@@ -23,7 +25,7 @@
 	width: 15rem;
 	height: 15rem;
 	border-radius: 50%;
-	border: 1rem solid transparent;
+	border: 0.5rem solid transparent;
 	border-top-color: #0F3D25;
 	-webkit-animation: spin 3s linear infinite;
 	animation: spin 3s linear infinite;
