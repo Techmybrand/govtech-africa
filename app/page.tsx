@@ -7,6 +7,5 @@ export default function Home() {
 		<MainLayout>
 			<HomeView />
 		</MainLayout>
-		// <h1>j</h1>
 	)
 }
