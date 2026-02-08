@@ -51,7 +51,7 @@ const HeroComponent = ({ title, subText, type = 'big', backgroundImage,
         className={`${styles.hero_content_wrapper} ${isVisible ? styles.visible : ""}`}
       >
         <h3 className={`${headerTitleClass}`}>{title}</h3>
-        <div className={`${headerSubtextClass} ${styles.text}`}>{subText}</div>
+        <h6 className={`${headerSubtextClass} ${styles.text}`}>{subText}</h6>
       </div>
     </div>
   )
