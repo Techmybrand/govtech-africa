@@ -29,7 +29,9 @@ const PreLoader: React.FC = () => {
 		<div className={styles.preloader}>
 			<div className={styles.loader}></div>
 			<div className={styles.icon_container}>
-				<div className={styles.icon}></div>
+				<div className={styles.icon}>
+					
+				</div>
 			</div>
 		</div>
 		);
