@@ -1,6 +1,6 @@
-import React from 'react';
-import { CustomLink, DetailedPairDisplay } from '@/shared';
-import styles from './ThemeCards.module.scss';
+import React from "react";
+import { CustomLink, DetailedPairDisplay } from "@/shared";
+import styles from "./ThemeCards.module.scss";
 
 const ThemeCards = () => {
   return (
