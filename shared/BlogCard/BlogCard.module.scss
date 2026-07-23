@@ -16,7 +16,7 @@
     .blog_thumbnail {
         position: relative;
         width: 100%;
-        height: 26rem;
+        height: 40rem;
         cursor: pointer;
         & > img {
             object-fit: cover;
@@ -26,7 +26,7 @@
     .btn {
         position: absolute;
         left: 0;
-        top: 23.7rem;
+        top: 37.7rem;
         background: #3DB54A;
         width: 6.4rem;
         height: 4rem;
@@ -74,6 +74,12 @@
     }
 
     @include screenMax('tablet') {
+        .blog_thumbnail {
+            height: 32rem;
+        }
+        .btn {
+            top: 29.7rem;
+        }
         .blog_content {
             .blog_header {
                 h1 {
@@ -85,6 +91,17 @@
     }
 
     @include screenMax('mobile') {
+        .blog_thumbnail {
+            height: 22rem;
+        }
+        .btn {
+            top: 19.7rem;
+            width: 4rem;
+            h3 {
+                font-size: 1rem;
+                line-height: 1.4rem;
+            }
+        }
         .blog_content {
             .blog_header {
                 width: 100%;
