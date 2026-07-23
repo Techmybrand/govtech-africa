@@ -1,18 +1,18 @@
-import React from 'react';
-import { AfricanOpportunity, ConferenceHighlights, CrossRoads, EventDetails, Participation, Partners, Registration } from '@/components';
-import { BookATicket, Carousel, HeroComponent } from '@/shared';
-import styles from './AboutUsView.module.scss';
+import React from "react";
+import { AfricanOpportunity, ConferenceHighlights, CrossRoads, EventDetails, Participation, Partners, Registration } from "@/components";
+import { BookATicket, Carousel, HeroComponent } from "@/shared";
+import styles from "./AboutUsView.module.scss";
 
 const AboutUsView = () => {
-  const items = ['/svgs/slider.svg',
-    '/svgs/slider.svg',
-    '/svgs/slider.svg',
-    '/svgs/slider.svg',
-    '/svgs/slider.svg',
-    '/svgs/slider.svg',
+  const items = ["/svgs/slider_27.svg",
+    "/svgs/slider_27.svg",
+    "/svgs/slider_27.svg",
+    "/svgs/slider_27.svg",
+    "/svgs/slider_27.svg",
+    "/svgs/slider_27.svg",
   ]
   return (
-    <>
+    <React.Fragment>
       <HeroComponent title={`Hosted for Africa, by Africans`}
         subText={
           <div className={styles.hero_subtext}>
@@ -32,7 +32,7 @@ const AboutUsView = () => {
             </p>
           </div>
         }
-        backgroundImage='/images/hero_for_about.png'
+        backgroundImage="/images/hero_for_about.png"
         headerSubtextClass={styles.header_subtext_class}
         headerTitleClass={styles.header_title_class}
       />
@@ -42,10 +42,10 @@ const AboutUsView = () => {
       <EventDetails />
       <Participation />
       <ConferenceHighlights />
-      <Carousel items={items} direction='left' speed='slow' />
+      <Carousel items={items} direction="left" speed="slow" />
       <Partners />
       <Registration />
-    </>
+    </React.Fragment>
   )
 }
 

@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import styles from './Slider.module.scss';
+import React from "react";
+import Image from "next/image";
+import styles from "./Slider.module.scss";
 
 const Slider = () => {
   
@@ -13,7 +13,7 @@ const Slider = () => {
               <Image
                 quality={100}
                 priority
-                src="/svgs/slider.svg"
+                src="/svgs/slider_27.svg"
                 alt="Govtech"
                 fill
               />
@@ -22,7 +22,7 @@ const Slider = () => {
               <Image
                 quality={100}
                 priority
-                src="/svgs/slider.svg"
+                src="/svgs/slider_27.svg"
                 alt="Govtech"
                 fill
               />

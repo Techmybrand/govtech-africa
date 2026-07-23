@@ -1,21 +1,21 @@
-import React from 'react';
-import { BookATicket, Carousel, CountDown, GovTechInNumbers, HeroComponent } from '@/shared'
-import { Continent, Expectation, Introduction, Participation, Partners, Registration, ThemeCards } from '@/components';
-import styles from './HomeView.module.scss'
+import React from "react";
+import { BookATicket, Carousel, CountDown, GovTechInNumbers, HeroComponent } from "@/shared"
+import { Continent, Expectation, Introduction, Participation, Partners, Registration, ThemeCards } from "@/components";
+import styles from "./HomeView.module.scss"
 
 const HomeView = () => {
-  const items = ['/svgs/slider.svg',
-    '/svgs/slider.svg',
-    '/svgs/slider.svg',
-    '/svgs/slider.svg',
-    '/svgs/slider.svg',
-    '/svgs/slider.svg',
+  const items = ["/svgs/slider_27.svg",
+    "/svgs/slider_27.svg",
+    "/svgs/slider_27.svg",
+    "/svgs/slider_27.svg",
+    "/svgs/slider_27.svg",
+    "/svgs/slider_27.svg",
   ]
   return (
-    <>
-      <HeroComponent title='Africa Govtech Week'
-        subText={`Powering Africa's public sector digitisation`}
-        backgroundImage='/images/hero_for_homepage.png'
+    <React.Fragment>
+      <HeroComponent title="Africa Govtech Week"
+        subText={`Powering Africa"s public sector digitisation`}
+        backgroundImage="/images/hero_for_homepage.png"
         headerTitleClass={styles.header_title_class}
       />
       <BookATicket />
@@ -26,10 +26,10 @@ const HomeView = () => {
       <Continent />
       <Expectation />
       <Participation />
-      <Carousel items={items} direction='left' speed='slow' />
+      <Carousel items={items} direction="left" speed="slow" />
       <Partners />
       <Registration />
-    </>
+    </React.Fragment>
   )
 }
 
