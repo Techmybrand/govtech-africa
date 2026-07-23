@@ -1,13 +1,13 @@
 @import "@/styles/imports";
 
 .partners_wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
     position: relative;
+    background: $col-white;
+    width: 100%;
+    padding: 6rem 10rem 0;
     .partners_container {
-        padding: 6rem 10rem 0;
-        width: 100%;
-        background: $col-white;
+        max-width: 1440px;
+        margin: 0 auto;
         @include noScrollBar();
         .wrapper_class {
             @include noScrollBar();
