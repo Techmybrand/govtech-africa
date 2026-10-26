@@ -28,21 +28,13 @@ const Media = () => {
                 blogs?.length === 0 ? (
                     <p>No blogs available at the moment.</p>
             ) : (
-                    <React.Fragment>
-                        {
-                            blogs?.slice(0, numberOfPosts)?.map((blog: BlogDetailsProps, index: number) => {
-                                return (
-                                    <React.Fragment key={index}>
-                                        <BlogCard 
-                                            image={`https:${blog?.thumbnail?.fields?.file?.url}`}
-                                            title={blog?.title}
-                                            date={blog?.date ? formatDate(blog?.date) : blog?.publishedAt}
-                                        />
-                                    </React.Fragment>
-                                )
-                            }
-                        )}
-                    </React.Fragment>
+                blogs?.slice(0, numberOfPosts)?.map((blog: BlogDetailsProps, index: number) => {
+                    return (
+                        <BlogCard key={index} image={`https:${blog?.thumbnail?.fields?.file?.url}`} title={blog?.title}
+                            date={blog?.date ? formatDate(blog?.date) : blog?.publishedAt}
+                        />
+                    )
+                })
                 )
             )}
         </div>
