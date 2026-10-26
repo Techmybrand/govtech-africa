@@ -1,13 +1,13 @@
-'use client';
-import React, { useEffect } from 'react';
-import { BlogCard, Button, CustomLink } from '@/shared';
-import { usePathname, useRouter } from 'next/navigation';
-import { useGetContentful } from '@/hooks';
-import { ChartLoader } from '@/shared/loaders';
-import { BlogDetailsProps } from '@/interfaces';
-import { formatDate } from '@/utils';
-import Image from 'next/image';
-import styles from './Registration.module.scss';
+"use client";
+import React, { useEffect } from "react";
+import { BlogCard, Button, CustomLink } from "@/shared";
+import { usePathname, useRouter } from "next/navigation";
+import { useGetContentful } from "@/hooks";
+import { ChartLoader } from "@/shared/loaders";
+import { BlogDetailsProps } from "@/interfaces";
+import { formatDate } from "@/utils";
+import Image from "next/image";
+import styles from "./Registration.module.scss";
 
 const Registration = () => {
   const path = usePathname();

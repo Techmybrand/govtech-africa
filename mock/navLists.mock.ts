@@ -257,7 +257,7 @@ export const footerNav = [
 	},
 	{
 		label: 'Register',
-		href: '/register'
+		href: '/coming-soon'
 	},
 	{
 		label: 'Contact us',
