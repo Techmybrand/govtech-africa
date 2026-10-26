@@ -1,11 +1,11 @@
-'use client';
-import React, { useEffect, useState } from 'react';
-import { BlogCard, Button } from '@/shared';
-import { useGetContentful } from '@/hooks';
-import { BlogDetailsProps } from '@/interfaces';
-import { ChartLoader } from '@/shared/loaders';
-import { formatDate } from '@/utils';
-import styles from './Media.module.scss';
+"use client";
+import React, { useEffect, useState } from "react";
+import { BlogCard, Button } from "@/shared";
+import { useGetContentful } from "@/hooks";
+import { BlogDetailsProps } from "@/interfaces";
+import { ChartLoader } from "@/shared/loaders";
+import { formatDate } from "@/utils";
+import styles from "./Media.module.scss";
 
 const Media = () => {
     const [numberOfPosts, setNumberOfPosts] = useState<number>(9);
