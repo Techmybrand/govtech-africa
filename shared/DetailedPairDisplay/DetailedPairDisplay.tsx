@@ -104,42 +104,42 @@ const DetailedPairDisplay = ({image2, image1, TextDetails1, TextDetails2,
         };
     }, []);
 
-  return (
-    <div className={styles.detailed_pair_display_container}>
-        {TextDetails1 && (
-            <div data-type={reverseTopSection}
-                className={`${styles.wrapper} ${className}`}
-                ref={topSectionRef}
-            >
-                {image1 && (
-                    <div ref={topImageRef} className={`${styles.card} ${styles.image_wrapper}`}>
-                        <Image src={image1} fill alt="Detailed Pair Display" />
-                    </div>
-                )}
-                <div ref={topTextRef} className={`${styles.card} ${styles.text_details}`}>
-                    {TextDetails1}
-                </div>
-            </div>
-        )}
-        <div data-type={divider} className={styles.divider}></div>
-        {TextDetails2 && (
-            <div data-type={reverseBottomSection}
-                className={`${styles.wrapper_reverse} ${className2}`}
-                ref={bottomSectionRef}
-            >
-                <div ref={bottomTextRef} className={`${styles.card2} ${styles.text_details}`}>
-                    {TextDetails2}
-                </div>
-                <div ref={bottomImageRef} className={`${styles.card2} ${styles.image_wrapper}`}>
-                    {image2 && (
-                        <Image src={image2} fill alt="Detailed Pair Display" />
+    return (
+        <div className={styles.detailed_pair_display_container}>
+            {TextDetails1 && (
+                <div data-type={reverseTopSection}
+                    className={`${styles.wrapper} ${className}`}
+                    ref={topSectionRef}
+                >
+                    {image1 && (
+                        <div ref={topImageRef} className={`${styles.card} ${styles.image_wrapper}`}>
+                            <Image src={image1} fill alt="Detailed Pair Display" />
+                        </div>
                     )}
+                    <div ref={topTextRef} className={`${styles.card} ${styles.text_details}`}>
+                        {TextDetails1}
+                    </div>
                 </div>
-            </div>
-        )}
-        <div></div>
-    </div>
-  )
+            )}
+            <div data-type={divider} className={styles.divider}></div>
+            {TextDetails2 && (
+                <div data-type={reverseBottomSection}
+                    className={`${styles.wrapper_reverse} ${className2}`}
+                    ref={bottomSectionRef}
+                >
+                    <div ref={bottomTextRef} className={`${styles.card2} ${styles.text_details}`}>
+                        {TextDetails2}
+                    </div>
+                    <div ref={bottomImageRef} className={`${styles.card2} ${styles.image_wrapper}`}>
+                        {image2 && (
+                            <Image src={image2} fill alt="Detailed Pair Display" />
+                        )}
+                    </div>
+                </div>
+            )}
+            <div></div>
+        </div>
+    )
 }
 
 export default DetailedPairDisplay

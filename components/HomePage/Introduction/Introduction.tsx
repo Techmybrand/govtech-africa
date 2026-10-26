@@ -14,7 +14,7 @@ const Introduction = () => {
                         conference and exhibition bringing together government 
                         leaders, private sector innovators and financiers, 
                         development partners, and civil society to channel conversations 
-                        around government technology and help shape the future of governance 
+                        around government technology and help shape the future of digital governance 
                         in Africa.
                     </h3>
                     <br />
