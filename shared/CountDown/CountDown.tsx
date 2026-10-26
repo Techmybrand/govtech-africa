@@ -1,11 +1,15 @@
-import React from 'react';
-import styles from './CountDown.module.scss';
-import useCountdownTimer from '@/hooks/useCountdownTimer';
+import useCountdownTimer from "@/hooks/useCountdownTimer";
+import styles from "./CountDown.module.scss";
 
-const CountDown = () => {
-    const { months, days, hours, minutes, seconds
-    } = useCountdownTimer(1794265200000);
-    // console.log('nov: ', new Date("2026-11-10T00:00:00").getTime())
+// Target date: June 1, 2027 00:00:00 UTC (1811808000000 ms)
+const JUNE_2027_MS = new Date("2027-06-01T00:00:00Z").getTime();
+
+interface CountDownProps {
+    targetTimeMs?: number;
+}
+
+const CountDown = ({ targetTimeMs = JUNE_2027_MS }: CountDownProps) => {
+    const { months, days, hours, minutes, seconds } = useCountdownTimer(targetTimeMs);
   return (
     <div className={styles.countdown_wrapper}>
         <div className={styles.countdown_container}>

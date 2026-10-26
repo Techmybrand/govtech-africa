@@ -10,8 +10,8 @@
         width: 100%;
         @include noScrollBar();
         h3 {
-            font-size: 2.4rem;
-            line-height: 3.2rem;
+            font-size: 2rem;
+            line-height: 2.8rem;
             letter-spacing: 0.01rem;
             text-align: justify;
             color: #616161;
@@ -24,7 +24,7 @@
         .text_details{
             h3 {
                 font-size: 1.8rem;
-                line-height: 2.4rem;
+                line-height: 2.7rem;
             }
         }
     }
@@ -34,8 +34,8 @@
         .text_details {
             width: 100%;
             h3 {
-                font-size: 1.4rem;
-                line-height: 2rem;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
                 text-align: justify;
             }
         }

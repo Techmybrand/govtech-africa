@@ -1,6 +1,7 @@
 import NotFoundPage from "./404/NotFound";
 import { ConferenceHighlights, CrossRoads, AfricanOpportunity, EventDetails } from "./AboutUs";
 import BlogDetails from "./BlogDetails/BlogDetails";
+import ComingSoon from "./ComingSoon/ComingSoon";
 import ContactUs from "./ContactUs/ContactUs";
 import FAQComponent from "./FAQ/FAQ";
 import { ThemeCards, Continent, Participation,
@@ -14,6 +15,7 @@ export {
     ThemeCards,
     Continent,
     Participation,
+    ComingSoon,
     Partners,
     Registration,
     Expectation,

@@ -1,11 +1,11 @@
-'use client';
-import React, { useEffect, useState } from 'react';
-import { BlogCard, Button } from '@/shared';
-import { useGetContentful } from '@/hooks';
-import { BlogDetailsProps } from '@/interfaces';
-import { ChartLoader } from '@/shared/loaders';
-import { formatDate } from '@/utils';
-import styles from './Media.module.scss';
+"use client";
+import React, { useEffect, useState } from "react";
+import { BlogCard, Button } from "@/shared";
+import { useGetContentful } from "@/hooks";
+import { BlogDetailsProps } from "@/interfaces";
+import { ChartLoader } from "@/shared/loaders";
+import { formatDate } from "@/utils";
+import styles from "./Media.module.scss";
 
 const Media = () => {
     const [numberOfPosts, setNumberOfPosts] = useState<number>(9);
@@ -28,21 +28,13 @@ const Media = () => {
                 blogs?.length === 0 ? (
                     <p>No blogs available at the moment.</p>
             ) : (
-                    <React.Fragment>
-                        {
-                            blogs?.slice(0, numberOfPosts)?.map((blog: BlogDetailsProps, index: number) => {
-                                return (
-                                    <React.Fragment key={index}>
-                                        <BlogCard 
-                                            image={`https:${blog?.thumbnail?.fields?.file?.url}`}
-                                            title={blog?.title}
-                                            date={blog?.date ? formatDate(blog?.date) : blog?.publishedAt}
-                                        />
-                                    </React.Fragment>
-                                )
-                            }
-                        )}
-                    </React.Fragment>
+                blogs?.slice(0, numberOfPosts)?.map((blog: BlogDetailsProps, index: number) => {
+                    return (
+                        <BlogCard key={index} image={`https:${blog?.thumbnail?.fields?.file?.url}`} title={blog?.title}
+                            date={blog?.date ? formatDate(blog?.date) : blog?.publishedAt}
+                        />
+                    )
+                })
                 )
             )}
         </div>

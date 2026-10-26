@@ -13,13 +13,13 @@ const BookATicket = () => {
             <div className={styles.book_a_ticket_details}>
                 <h2>Book your ticket/stand</h2>
                 <div className={styles.buttons}>
-                    <Button onClick={() => router.push('/register')} className={styles.register_button}>
+                    <Button onClick={() => router.push('/coming-soon')} className={styles.register_button}>
                         <h3>Register</h3>
                         <div className={styles.button_icon}>
                             <Image src='/svgs/button_arrow_icon.svg' fill alt='arrow right' />
                         </div>
                     </Button>
-                    <Button onClick={() => router.push('/partner#book-a-stand')} className={styles.book_button}>
+                    <Button onClick={() => router.push('/coming-soon')} className={styles.book_button}>
                         <h3>Book a stand</h3>
                         <div className={styles.button_icon}>
                             <Image src='/svgs/button_arrow_icon.svg' fill alt='arrow right' />
